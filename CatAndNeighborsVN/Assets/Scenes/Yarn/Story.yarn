@@ -1,7 +1,7 @@
 ﻿title: Start
 tags:
 ---
-Narrator: Oh, hello!
+Narrator: Oh, hello testing!
     -> Hi, where am I?
         Narrator: You're in Unity!
             -> Oh.
@@ -13,9 +13,11 @@ Narrator: Oh, hello!
 title: Oh
 ---
 Narrator: Yeah, fun, right?
+<<change_scene Beginning>>
 ===
 
 title: Unity
 ---
 Narrator: Someone read the Beginner's Guide!
+<<change_scene Beginning>>
 ===
