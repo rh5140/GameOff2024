@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58afb3dda224be148b7dc95b47d2b2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemInteractionCanva: {fileID: 1942951348}
   conversationStartNode: Character_Select
 --- !u!1001 &151269303
 PrefabInstance:
