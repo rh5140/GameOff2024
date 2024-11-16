@@ -7,3 +7,12 @@ Narrator: Ready to interact with the item?
 -> No...
     <<change_scene Day_2>>
 ===
+
+title: Character_Select
+---
+This is where the player will select which character to return the item to
+-> Character 1
+-> Character 2
+-> Character 3
+-> Character 4
+===
