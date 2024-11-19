@@ -1,8 +1,13 @@
 ﻿title: Start
 tags:
 ---
+
+// sets background image to sprite called "bg_office"
+<<Scene bg_office>>
+
 Narrator: Ready to interact with the item?
 -> Yes
+    <<Scene bg_interact>>
     <<item_interaction>>
 -> No...
     <<change_scene Day_2>>
