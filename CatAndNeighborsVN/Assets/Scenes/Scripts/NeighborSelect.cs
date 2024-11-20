@@ -19,24 +19,29 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     // neighbor hint info?
     // neighbor name is ??? if haven't given the first item?
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
+    void Awake() {
         variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
         bool metNeighbor;
         variableStorage.TryGetValue("$metNeighbor", out metNeighbor);
+        Debug.Log("Prologue");
 
         if (metNeighbor) {
             neighborPortrait.SetActive(true);
             neighborName.SetActive(true);
             mysteryNeighborPortrait.SetActive(false);
             mysteryNeighborName.SetActive(false);
+            Debug.Log("TRUE");
         } else {
             mysteryNeighborPortrait.SetActive(true);
             mysteryNeighborName.SetActive(true);
             neighborPortrait.SetActive(false);
             neighborName.SetActive(false);
+            Debug.Log("FALSE");
         }
+    }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
         // chooseButton.SetActive(true);
         // closeButton.SetActive(true);
     }
