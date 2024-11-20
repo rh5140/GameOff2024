@@ -14,6 +14,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject closeButton;
 
     private InMemoryVariableStorage variableStorage;
+    
     // implement if neighbor has been interacted with or not
     // neighbor hint info?
     // neighbor name is ??? if haven't given the first item?

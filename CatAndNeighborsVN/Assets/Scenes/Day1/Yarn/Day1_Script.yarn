@@ -16,3 +16,9 @@ This is where the player will select which character to return the item to
 -> Character 3
 -> Character 4
 ===
+
+title: Before_Neighbor_Select
+---
+Protagonist: Who does this belong to?
+<<neighbor_selection>>
+===
