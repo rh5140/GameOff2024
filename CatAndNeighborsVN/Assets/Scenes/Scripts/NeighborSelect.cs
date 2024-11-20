@@ -10,11 +10,11 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject mysteryNeighborPortrait;
     public GameObject mysteryNeighborName;
 
-    public GameObject chooseButton;
-    public GameObject closeButton;
+    // public GameObject chooseButton;
+    // public GameObject closeButton;
 
     private InMemoryVariableStorage variableStorage;
-    
+
     // implement if neighbor has been interacted with or not
     // neighbor hint info?
     // neighbor name is ??? if haven't given the first item?
@@ -37,8 +37,8 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
             neighborName.SetActive(false);
         }
 
-        chooseButton.SetActive(true);
-        closeButton.SetActive(true);
+        // chooseButton.SetActive(true);
+        // closeButton.SetActive(true);
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
