@@ -20,5 +20,10 @@ This is where the player will select which character to return the item to
 title: Before_Neighbor_Select
 ---
 Protagonist: Who does this belong to?
-<<neighbor_selection>>
+<<declare $metNeighbor = false>>
+-> Mystery
+    <<neighbor_selection>>
+-> Friend
+    <<set $metNeighbor = true>>
+    <<neighbor_selection>>
 ===
