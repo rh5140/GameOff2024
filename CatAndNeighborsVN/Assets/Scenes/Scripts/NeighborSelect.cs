@@ -10,8 +10,8 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject mysteryNeighborPortrait;
     public GameObject mysteryNeighborName;
 
-    // public GameObject chooseButton;
-    // public GameObject cancelButton;
+    public GameObject chooseButton;
+    public GameObject cancelButton;
 
     private InMemoryVariableStorage variableStorage;
 
@@ -39,8 +39,8 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        // chooseButton.SetActive(true);
-        // cancelButton.SetActive(true);
+        chooseButton.SetActive(true);
+        cancelButton.SetActive(true);
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)

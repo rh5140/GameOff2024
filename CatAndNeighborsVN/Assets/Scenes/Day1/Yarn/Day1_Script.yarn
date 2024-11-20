@@ -28,3 +28,13 @@ Protagonist: Who does this belong to?
     <<set $metNeighbor = true>>
     <<neighbor_selection>>
 ===
+
+title: Correct_Neighbor
+---
+Friend: Wow! You stole from me?!
+===
+
+title: Incorrect_Neighbor
+---
+???: Who are you?
+===
