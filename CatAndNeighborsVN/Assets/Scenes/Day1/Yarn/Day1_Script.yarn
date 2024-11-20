@@ -12,6 +12,7 @@ title: Character_Select
 ---
 This is where the player will select which character to return the item to
 -> Character 1
+    <<jump Before_Neighbor_Select>>
 -> Character 2
 -> Character 3
 -> Character 4

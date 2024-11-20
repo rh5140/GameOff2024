@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject neighborPortrait;
-    public GameObject nighborName;
+    public GameObject neighborName;
     public GameObject mysteryNeighborPortrait;
     public GameObject mysteryNeighborName;
 
