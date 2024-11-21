@@ -11,6 +11,7 @@ public class NeighborCanvasParent : MonoBehaviour
     }
 
     public void UnsetChosenNeighbor() {
+        Debug.Log("NO CHOOSE");
         chosenNeighbor = null;
     }
 }

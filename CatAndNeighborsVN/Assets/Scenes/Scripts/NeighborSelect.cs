@@ -15,10 +15,6 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     private InMemoryVariableStorage variableStorage;
 
-    // implement if neighbor has been interacted with or not
-    // neighbor hint info?
-    // neighbor name is ??? if haven't given the first item?
-
     void Start() {
         variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
         bool metNeighbor;
