@@ -4,8 +4,9 @@ using UnityEngine.UI;
 
 public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 { 
-    public GameObject popup;
-    public GameObject inspectImage;
+    [SerializeField] private GameObject popup;
+    [SerializeField] private GameObject inspectImage;
+    [SerializeField] private bool changesItemState;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -13,7 +14,7 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         popup.SetActive(true);
 
         // replace current image with new image
-        inspectImage.SetActive(true);
+        if (changesItemState) inspectImage.SetActive(true);
         gameObject.SetActive(false);
     }
 
