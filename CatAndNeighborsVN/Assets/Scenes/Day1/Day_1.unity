@@ -1030,6 +1030,7 @@ GameObject:
   - component: {fileID: 458613187}
   - component: {fileID: 458613186}
   - component: {fileID: 458613185}
+  - component: {fileID: 458613188}
   m_Layer: 5
   m_Name: ChooseNeighbor
   m_TagString: Untagged
@@ -1139,6 +1140,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458613183}
   m_CullTransparentMesh: 1
+--- !u!114 &458613188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458613183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7c41e186955d148a0d16562e2e0f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighborSelectionCanva: {fileID: 735756150}
+  correctNeighbor: {fileID: 520025582}
+  chosenNeighbor: {fileID: 0}
+  otherNeighborOne: {fileID: 1478470008}
+  correctNeighborStartNode: Correct_Neighbor
+  otherNeighborOneStartNode: Incorrect_Neighbor
 --- !u!1 &462835685
 GameObject:
   m_ObjectHideFlags: 0

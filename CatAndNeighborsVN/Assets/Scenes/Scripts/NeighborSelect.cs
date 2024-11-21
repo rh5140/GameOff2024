@@ -19,7 +19,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     // neighbor hint info?
     // neighbor name is ??? if haven't given the first item?
 
-    void Awake() {
+    void Start() {
         variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
         bool metNeighbor;
         variableStorage.TryGetValue("$metNeighbor", out metNeighbor);
@@ -43,6 +43,10 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     {
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
+
+        NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
+        Debug.Log("Parent " + parentCanva);
+        parentCanva.SetChosenNeighbor(gameObject);
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
