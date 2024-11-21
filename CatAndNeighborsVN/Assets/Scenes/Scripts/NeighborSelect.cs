@@ -35,6 +35,8 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
             neighborPortrait.SetActive(false);
             neighborName.SetActive(false);
         }
+        chooseButton.SetActive(false);
+        cancelButton.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
