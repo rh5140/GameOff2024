@@ -10,7 +10,6 @@ public class ChooseNeighborButton : MonoBehaviour
     public GameObject chosenNeighbor;
     public GameObject otherNeighborOne;
 
-    // internal properties exposed to editor
     [SerializeField] private string correctNeighborStartNode;
     [SerializeField] private string otherNeighborOneStartNode;
 
@@ -33,9 +32,8 @@ public class ChooseNeighborButton : MonoBehaviour
     public void Click() {
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         chosenNeighbor = parentCanva.chosenNeighbor;
-        // if no conversation is already running
+
         if (!dialogueRunner.IsDialogueRunning) {
-            // then jump to character selection node
             JumpToNeighborDialogue(chosenNeighbor);
         }
 
