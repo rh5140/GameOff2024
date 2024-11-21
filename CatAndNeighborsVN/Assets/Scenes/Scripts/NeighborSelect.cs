@@ -2,6 +2,7 @@ using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
+using TMPro;
 
 public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -12,6 +13,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public GameObject chooseButton;
     public GameObject cancelButton;
+    public GameObject chooseText;
 
     private InMemoryVariableStorage variableStorage;
 
@@ -33,15 +35,19 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         }
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
+        chooseText.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
+        chooseText.SetActive(true);
+
+        TextMeshProUGUI selectText = chooseText.GetComponent<TextMeshProUGUI>();
+        selectText.text = "Selected " + gameObject.name;
 
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
-        Debug.Log("Parent " + parentCanva);
         parentCanva.SetChosenNeighbor(gameObject);
     }
 
