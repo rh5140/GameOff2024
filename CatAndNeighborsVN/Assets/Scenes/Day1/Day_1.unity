@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: 1f2a943b711ed6f48befa01744df073a, type: 3}
+    - target: {fileID: 3739197626111815070, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4540255442126730747, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1015,6 +1019,8 @@ MonoBehaviour:
   popup: {fileID: 1184121175}
   inspectImage: {fileID: 0}
   changesItemState: 0
+  node: Character_Select
+  cursorTexture: {fileID: 2800000, guid: 7662955175de7594d82ecba6748cb9fb, type: 3}
 --- !u!114 &714514337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,6 +1609,8 @@ MonoBehaviour:
   popup: {fileID: 1196123398}
   inspectImage: {fileID: 1409933739}
   changesItemState: 1
+  node: Character_Select
+  cursorTexture: {fileID: 2800000, guid: 7662955175de7594d82ecba6748cb9fb, type: 3}
 --- !u!114 &1403728307
 MonoBehaviour:
   m_ObjectHideFlags: 0
