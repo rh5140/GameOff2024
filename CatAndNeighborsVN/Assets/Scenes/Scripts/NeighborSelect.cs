@@ -20,13 +20,21 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     void Start() {
         variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
         bool metNeighbor;
+        bool incorrectFinished;
         variableStorage.TryGetValue("$metNeighbor", out metNeighbor);
+        variableStorage.TryGetValue("$incorrectFinished", out incorrectFinished);
+        Debug.Log("FINISHED? " + incorrectFinished);
 
         if (metNeighbor) {
             neighborPortrait.SetActive(true);
             neighborName.SetActive(true);
             mysteryNeighborPortrait.SetActive(false);
             mysteryNeighborName.SetActive(false);
+            if (incorrectFinished) {
+                Image portrait = neighborPortrait.GetComponent<Image>();
+                portrait.color = new Color(166, 166, 166);
+                Debug.Log("GREYSCALE");
+            }
         } else {
             mysteryNeighborPortrait.SetActive(true);
             mysteryNeighborName.SetActive(true);

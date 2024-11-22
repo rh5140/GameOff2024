@@ -41,5 +41,7 @@ Friend: Wow! You stole from me?!
 
 title: Incorrect_Neighbor
 ---
+<<declare $incorrectFinished = true>>
 ???: Who are you?
+<<jump Before_Neighbor_Select>>
 ===
