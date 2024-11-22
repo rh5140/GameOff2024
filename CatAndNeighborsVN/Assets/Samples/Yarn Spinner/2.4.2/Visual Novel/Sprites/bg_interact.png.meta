@@ -1,5 +1,12 @@
 fileFormatVersion: 2
-guid: 77d8f11e4af00594c8aaf1784c1dd7a8
+guid: 7662955175de7594d82ecba6748cb9fb
+AssetOrigin:
+  serializedVersion: 1
+  productId: 82090
+  packageName: Free 2D Adventure Beach Pack
+  packageVersion: 1.0
+  assetPath: Assets/Free 2D Adventure Beach Pack/night-backgrounds/night-beach-sky.png
+  uploadId: 159945
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,7 +58,7 @@ TextureImporter:
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 0
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -79,23 +86,10 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 1024
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
