@@ -4,6 +4,9 @@ tags:
 
 // sets background image to sprite called "bg_office"
 <<Scene bg_office>>
+<<setFashionDesignerNotSelected true>>
+<<setVampireNurseNotSelected true>>
+<<setPitifulRobotNotSelected true>>
 
 Narrator: Ready to interact with the item?
 -> Yes
@@ -13,14 +16,14 @@ Narrator: Ready to interact with the item?
     <<change_scene Day_2>>
 ===
 
-title: Character_Select
+title: Inspection1
 ---
-This is where the player will select which character to return the item to
--> Character 1
-    <<jump Before_Neighbor_Select>>
--> Character 2
--> Character 3
--> Character 4
+Nothing out of place...
+===
+
+title: Inspection2
+---
+This fancy lipstick has been used.
 ===
 
 title: Before_Neighbor_Select
@@ -32,6 +35,45 @@ Protagonist: Who does this belong to?
 -> Friend
     <<set $metNeighbor = true>>
     <<neighbor_selection>>
+===
+
+title: Character_Select
+---
+Protagonist: Who does this belong to?
+<<neighbor_selection>>
+===
+
+title: Correct_Fern
+---
+Friend: Wow! You stole from me?!
+===
+
+title: Incorrect_Dorian
+---
+<<if getVampireNurseNotSelected()>>
+    ???: Who are you?
+    <<setVampireNurseNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Incorrect_MarieElle
+---
+<<if getFashionDesignerNotSelected()>>
+    ???: I'm busy. Begone.
+    <<setFashionDesignerNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Already_Selected
+---
+Protagonist: I already checked with them.
+<<neighbor_selection>>
 ===
 
 title: Correct_Neighbor
