@@ -9,24 +9,28 @@ public class ChooseNeighborButton : MonoBehaviour
     public GameObject correctNeighbor;
     public GameObject chosenNeighbor;
     public GameObject otherNeighborOne;
+    public GameObject cancelButton;
 
     [SerializeField] private string correctNeighborStartNode;
     [SerializeField] private string otherNeighborOneStartNode;
+    [SerializeField] private string noRepeatNode;
 
 	private DialogueRunner dialogueRunner;
+    private InMemoryVariableStorage variableStorage;
 
     public void Start() {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+        variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
     }
 
     private void JumpToNeighborDialogue(GameObject neighbor) {
         if (neighbor == correctNeighbor) {
+            variableStorage.SetValue("$incorrectFinished", true);
             dialogueRunner.StartDialogue(correctNeighborStartNode);
         }
         if (neighbor == otherNeighborOne) {
             dialogueRunner.StartDialogue(otherNeighborOneStartNode);
         }
-        
     }
 
     public void Click() {
@@ -38,6 +42,7 @@ public class ChooseNeighborButton : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+        cancelButton.SetActive(false);
         neighborSelectionCanva.SetActive(false);
     }
 }

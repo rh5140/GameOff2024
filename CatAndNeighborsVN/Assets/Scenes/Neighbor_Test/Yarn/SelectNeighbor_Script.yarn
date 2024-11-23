@@ -4,6 +4,7 @@ tags:
 
 // sets background image to sprite called "bg_office"
 <<Scene bg_office>>
+<<declare $incorrectFinished = false>>
 
 Narrator: Ready to interact with the item?
 -> Yes
@@ -41,7 +42,17 @@ Friend: Wow! You stole from me?!
 
 title: Incorrect_Neighbor
 ---
-<<declare $incorrectFinished = true>>
-???: Who are you?
-<<jump Before_Neighbor_Select>>
+<<if $incorrectFinished>>
+    <<jump Already_Selected>>
+<<else>>
+    <<set $incorrectFinished = true>>
+    ???: Who are you?
+    <<jump Before_Neighbor_Select>>
+<<endif>>
+===
+
+title: Already_Selected
+---
+Protagonist: I already checked with them.
+<<neighbor_selection>>
 ===
