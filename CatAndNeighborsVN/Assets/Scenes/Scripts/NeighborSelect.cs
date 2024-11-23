@@ -8,42 +8,56 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 {
     public GameObject neighborPortrait;
     public GameObject neighborName;
-    public GameObject mysteryNeighborPortrait;
-    public GameObject mysteryNeighborName;
+    public GameObject grayPortrait;
+    public GameObject grayName;
 
     public GameObject chooseButton;
     public GameObject cancelButton;
     public GameObject chooseText;
 
-    private InMemoryVariableStorage variableStorage;
+    public static bool fashionDesignerNotSelected;
+    public static bool vampireNurseNotSelected;
+    public static bool pitifulRobotNotSelected;
+    public static string currentNeighbor;
 
     void Start() {
-        variableStorage = FindObjectOfType<Yarn.Unity.InMemoryVariableStorage>();
-        bool metNeighbor;
-        bool incorrectFinished;
-        variableStorage.TryGetValue("$metNeighbor", out metNeighbor);
-        variableStorage.TryGetValue("$incorrectFinished", out incorrectFinished);
-        Debug.Log("FINISHED? " + incorrectFinished);
-
-        if (metNeighbor) {
-            neighborPortrait.SetActive(true);
-            neighborName.SetActive(true);
-            mysteryNeighborPortrait.SetActive(false);
-            mysteryNeighborName.SetActive(false);
-            if (incorrectFinished) {
-                Image portrait = neighborPortrait.GetComponent<Image>();
-                portrait.color = new Color(166, 166, 166);
-                Debug.Log("GREYSCALE");
-            }
-        } else {
-            mysteryNeighborPortrait.SetActive(true);
-            mysteryNeighborName.SetActive(true);
-            neighborPortrait.SetActive(false);
-            neighborName.SetActive(false);
-        }
+        neighborPortrait.SetActive(true);
+        neighborName.SetActive(true);
+        grayPortrait.SetActive(false);
+        grayName.SetActive(false);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
         chooseText.SetActive(false);
+    }
+
+    [YarnFunction("getFashionDesignerNotSelected")]
+    public static bool GetFashionDesignerNotSelected() {
+        return fashionDesignerNotSelected;
+    }
+
+    [YarnFunction("getVampireNurseNotSelected")]
+    public static bool GetVampireNurseNotSelected() {
+        return vampireNurseNotSelected;
+    }
+
+    [YarnFunction("getPitifulRobotNotSelected")]
+    public static bool GetPitifulRobotNotSelected() {
+        return pitifulRobotNotSelected;
+    }
+
+    [YarnCommand("setFashionDesignerNotSelected")]
+    public static void SetFashionDesignerNotSelected(bool status) {
+        fashionDesignerNotSelected = status;
+    }
+
+    [YarnCommand("setVampireNurseNotSelected")]
+    public static void SetVampireNurseNotSelected(bool status) {
+        vampireNurseNotSelected = status;
+    }
+
+    [YarnCommand("setPitifulRobotNotSelected")]
+    public static void SetPitifulRobotNotSelected(bool status) {
+        pitifulRobotNotSelected = status;
     }
 
     public void OnPointerClick(PointerEventData eventData)

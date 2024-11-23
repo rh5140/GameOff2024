@@ -4,7 +4,9 @@ tags:
 
 // sets background image to sprite called "bg_office"
 <<Scene bg_office>>
-<<declare $incorrectFinished = false>>
+<<setFashionDesignerNotSelected true>>
+<<setVampireNurseNotSelected true>>
+<<setPitifulRobotNotSelected true>>
 
 Narrator: Ready to interact with the item?
 -> Yes
@@ -16,38 +18,34 @@ Narrator: Ready to interact with the item?
 
 title: Character_Select
 ---
-This is where the player will select which character to return the item to
--> Character 1
-    <<jump Before_Neighbor_Select>>
--> Character 2
--> Character 3
--> Character 4
-===
-
-title: Before_Neighbor_Select
----
 Protagonist: Who does this belong to?
-<<declare $metNeighbor = false>>
--> Mystery
-    <<neighbor_selection>>
--> Friend
-    <<set $metNeighbor = true>>
-    <<neighbor_selection>>
+<<neighbor_selection>>
 ===
 
-title: Correct_Neighbor
+title: Correct_Fern
 ---
 Friend: Wow! You stole from me?!
 ===
 
-title: Incorrect_Neighbor
+title: Incorrect_Dorian
 ---
-<<if $incorrectFinished>>
-    <<jump Already_Selected>>
-<<else>>
-    <<set $incorrectFinished = true>>
+<<if getVampireNurseNotSelected()>>
     ???: Who are you?
-    <<jump Before_Neighbor_Select>>
+    <<setVampireNurseNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Incorrect_MarieElle
+---
+<<if getFashionDesignerNotSelected()>>
+    ???: I'm busy. Begone.
+    <<setFashionDesignerNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
 <<endif>>
 ===
 
