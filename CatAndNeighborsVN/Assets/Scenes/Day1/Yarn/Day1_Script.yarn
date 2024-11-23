@@ -17,7 +17,29 @@ title: Character_Select
 ---
 This is where the player will select which character to return the item to
 -> Character 1
+    <<jump Before_Neighbor_Select>>
 -> Character 2
 -> Character 3
 -> Character 4
+===
+
+title: Before_Neighbor_Select
+---
+Protagonist: Who does this belong to?
+<<declare $metNeighbor = false>>
+-> Mystery
+    <<neighbor_selection>>
+-> Friend
+    <<set $metNeighbor = true>>
+    <<neighbor_selection>>
+===
+
+title: Correct_Neighbor
+---
+Friend: Wow! You stole from me?!
+===
+
+title: Incorrect_Neighbor
+---
+???: Who are you?
 ===

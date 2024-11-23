@@ -11,6 +11,7 @@ public class YarnCommands : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public GameObject gameObject;
     public GameObject itemInteractionCanva;
+    public GameObject neighborSelectionCanva;
 
 	public List<Sprite> loadSprites = new List<Sprite>();
 	public List<AudioClip> loadAudio = new List<AudioClip>();
@@ -24,10 +25,12 @@ public class YarnCommands : MonoBehaviour
     void Awake() {
         dialogueRunner.AddCommandHandler<string>("change_scene", ChangeScene);
         dialogueRunner.AddCommandHandler("item_interaction", Interact);
+        dialogueRunner.AddCommandHandler("neighbor_selection", Selection);
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
 
 
         itemInteractionCanva.SetActive(false);
+        neighborSelectionCanva.SetActive(false);
     }
 
 	/// <summary>changes background image</summary>
@@ -46,6 +49,10 @@ public class YarnCommands : MonoBehaviour
         itemInteractionCanva.SetActive(true);
     }
 
+    private void Selection() {
+        Debug.Log("Activate neighbor selection canva");
+        neighborSelectionCanva.SetActive(true);
+    }
     // utility function to find an asset, whether it's in \Resources\
 	// or manually loaded via an array
 	T FetchAsset<T>( string assetName ) where T : UnityEngine.Object {
