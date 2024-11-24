@@ -11,11 +11,11 @@ tags:
 <<setPitifulRobotNotSelected true>>
 
 Narrator: Ready to interact with the item?
+<<ResetPos left no right>>
 <<Characters no middle no left>>
 -> Yes
     <<Scene bg_interact>>
-    <<Characters no no no no>>
-    <<ResetPos left middle right left>>
+    <<ResetPos no middle no left>>
     <<item_interaction>>
 -> No...
     <<change_scene Day_2>>
@@ -26,7 +26,6 @@ title: Character_Select
 <<Characters right>>
 Protagonist: Who does this belong to?
 <<ResetPos right>>
-<<Characters no>>
 <<neighbor_selection>>
 ===
 
