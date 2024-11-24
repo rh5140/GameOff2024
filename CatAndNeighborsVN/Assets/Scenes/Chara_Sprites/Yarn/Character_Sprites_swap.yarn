@@ -1,0 +1,58 @@
+﻿title: Start
+tags:
+---
+
+// sets background image to sprite called "bg_office"
+<<Scene bg_office>>
+// activates characters and their positions on screen
+<<Characters left no right>>
+<<setFashionDesignerNotSelected true>>
+<<setVampireNurseNotSelected true>>
+<<setPitifulRobotNotSelected true>>
+
+Narrator: Ready to interact with the item?
+-> Yes
+    <<Scene bg_interact>>
+    <<item_interaction>>
+-> No...
+    <<change_scene Day_2>>
+===
+
+title: Character_Select
+---
+Protagonist: Who does this belong to?
+<<neighbor_selection>>
+===
+
+title: Correct_Fern
+---
+Friend: Wow! You stole from me?!
+===
+
+title: Incorrect_Dorian
+---
+<<if getVampireNurseNotSelected()>>
+    ???: Who are you?
+    <<setVampireNurseNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Incorrect_MarieElle
+---
+<<if getFashionDesignerNotSelected()>>
+    ???: I'm busy. Begone.
+    <<setFashionDesignerNotSelected false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Already_Selected
+---
+Protagonist: I already checked with them.
+<<neighbor_selection>>
+===
