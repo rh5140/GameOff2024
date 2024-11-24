@@ -16,6 +16,10 @@ public class YarnCommands : MonoBehaviour
 	public List<Sprite> loadSprites = new List<Sprite>();
 	public List<AudioClip> loadAudio = new List<AudioClip>();
 
+	Vector3 left = new Vector3(-300, 0, 0);
+	Vector3 right = new Vector3(300, 0, 0);
+	Vector3 middle = new Vector3(0, 0, 0);
+
 	[Header("Object references"), Tooltip("don't change these unless you know what you're doing")]
 	public RectTransform spriteGroup; // used for screenshake
 	public Image bgImage, fadeBG, nameplateBG;
@@ -28,10 +32,11 @@ public class YarnCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler("neighbor_selection", Selection);
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
 		dialogueRunner.AddCommandHandler<string, string, string, string>("Characters", LoadCharacters);
+		dialogueRunner.AddCommandHandler<string, string, string, string>("ResetPos", ResetPosition);
 
         itemInteractionCanva.SetActive(false);
         neighborSelectionCanva.SetActive(false);
-
+		
 		catImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("cat");
 		fashionDesignerImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("fashionDesigner");
 		vampireNurseImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("vampireNurse");
@@ -44,11 +49,6 @@ public class YarnCommands : MonoBehaviour
 	}
 
 	public void LoadCharacters(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
-		Debug.Log("Load Characters " + cat);
-		Vector3 left = new Vector3(-300, 0, 0);
-		Vector3 right = new Vector3(300, 0, 0);
-		Vector3 middle = new Vector3(0, 0, 0);
-		
 		if (cat != "no") {
 			catImage.SetActive(true);
 			if (cat == "left") {
@@ -102,6 +102,50 @@ public class YarnCommands : MonoBehaviour
 			pitifulRobotImage.SetActive(false);
 		}
 	}
+	
+	public void ResetPosition(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
+		if (cat != "no") {
+			if (cat == "left") {
+				catImage.transform.position = catImage.transform.position - left;
+				Debug.Log("POSITION " + catImage.transform.position);
+			} else if (cat == "right") {
+				catImage.transform.position = catImage.transform.position - right;
+			} else {
+				catImage.transform.position = catImage.transform.position - middle;
+			}
+		} 
+
+		if (fashionDesigner != "no") {
+			if (fashionDesigner == "left") {
+				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - left;
+			} else if (fashionDesigner == "right") {
+				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - right;
+			} else {
+				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - middle;
+			}
+		}
+
+		if (vampireNurse != "no") {
+			if (vampireNurse == "left") {
+				vampireNurseImage.transform.position = vampireNurseImage.transform.position - left;
+			} else if (vampireNurse == "right") {
+				vampireNurseImage.transform.position = vampireNurseImage.transform.position - right;
+			} else {
+				vampireNurseImage.transform.position = vampireNurseImage.transform.position - middle;
+			}
+		}
+
+		if (pitifulRobot != "no") {
+			if (pitifulRobot == "left") {
+				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - left;
+			} else if (pitifulRobot == "right") {
+				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - right;
+			} else {
+				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - middle;
+			}
+		}
+	}
+	
 
     private void ChangeScene(string sceneName) {
         Debug.Log("loading scene");
