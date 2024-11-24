@@ -96,7 +96,7 @@ public class YarnCommands : MonoBehaviour
 	}
 	
 	public void ResetPosition(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
-		if (cat != "no") {
+		if (cat == "no") {
 			catImage.SetActive(false);
 			if (cat == "left") {
 				catImage.transform.position = catImage.transform.position - left;
@@ -106,7 +106,7 @@ public class YarnCommands : MonoBehaviour
 			}
 		} 
 
-		if (fashionDesigner != "no") {
+		if (fashionDesigner == "no") {
 			fashionDesignerImage.SetActive(false);
 			if (fashionDesigner == "left") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - left;
@@ -116,7 +116,7 @@ public class YarnCommands : MonoBehaviour
 			}
 		}
 
-		if (vampireNurse != "no") {
+		if (vampireNurse == "no") {
 			vampireNurseImage.SetActive(false);
 			if (vampireNurse == "left") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position - left;
@@ -127,7 +127,7 @@ public class YarnCommands : MonoBehaviour
 			
 		}
 
-		if (pitifulRobot != "no") {
+		if (pitifulRobot == "no") {
 			pitifulRobotImage.SetActive(false);
 			if (pitifulRobot == "left") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - left;

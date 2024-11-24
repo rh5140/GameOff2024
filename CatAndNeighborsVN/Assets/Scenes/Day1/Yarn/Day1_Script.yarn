@@ -49,6 +49,7 @@ An expensive lipstick brand that looks like it’s almost used up.
 title: Character_Select
 ---
 <<Scene bg_interact>>
+<<ResetPos>>
 <<hide_item>>
 Rowan: Who does this belong to?
 <<neighbor_selection>>
@@ -60,6 +61,7 @@ group: mucciBag
 ---
 //1.4
 <<Scene bg_office>> // Replace with different background
+<<Characters no no middle no>>
 <<if getVampireNurseNotSelected()>>
     Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
     Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
@@ -79,6 +81,7 @@ group: mucciBag
 ---
 //1.5
 <<Scene bg_office>> // Replace with different background
+<<Characters no no no middle>>
 <<if getPitifulRobotNotSelected()>>
     Fern: This is a certified Mucci bag. My human could afford one of these, but they don’t get outside much to make use of it. 
     Rowan: Maybe it could be theirs? 
@@ -96,11 +99,12 @@ group: mucciBag
 ---
 //1.6
 <<Scene bg_office>> // Replace with different background
+<<Characters no middle no no>>
 Rowan: Hello? Is anyone in right now?
-[DOOR SLIGHTLY OPENS W/ ONLY HALF OF FASHION DESIGNER’S FACE PEEKING OUT]
+(DOOR SLIGHTLY OPENS W/ ONLY HALF OF FASHION DESIGNER’S FACE PEEKING OUT)
 Marie-Elle: I currently don’t accept visitors! Or ever really!
 Rowan: Wait! But I -
-[SLAMS DOOR]
+(SLAMS DOOR)
 Rowan: …
 Rowan: That was a bit rude. They didn’t even let me finish my sentence.
 Rowan: This bag is too expensive to leave my neighbor alone though. Maybe I should try knocking again?
@@ -110,7 +114,7 @@ Rowan: She probably didn’t hear me knocking.
 Rowan: I’m sure she’ll eventually answer?
 ->Hope
 Rowan: Now I’m a bit worried.
-[Marie-Elle OPENS DOOR]
+(Marie-Elle OPENS DOOR)
 Marie-Elle: Why is it that you keep insisting to pound on my door? I am baffled at your inability to take a hint when I didn’t answer the door for 5 minutes.
 Marie-Elle: I’m currently in the midst of something very important and each second here takes away another second I can be using productively elsewhere.
 Marie-Elle: Come on! Tell me quickly so we can get this over with. 
@@ -133,26 +137,26 @@ Marie-Elle: … Your cat stole the purse and you found it lying in your living r
 Marie-Elle: Do you seriously think I’ll believe that your cat somehow stole a designer bag without a scratch or bite marks to indicate how it apparently carried the purse to your apartment?
 Rowan: When you say it that way, it does seem far-fetched … but I swear it’s the truth!
 Rowan: Look! I even brought my cat to apologize!
-[PICKS UP SELINA AND SHOVES SELINA INTO FASHION DESIGNER’S FACE]
-Selina: [UNIMPRESSED] Meow.
+(PICKS UP SELINA AND SHOVES SELINA INTO FASHION DESIGNER’S FACE)
+Selina: (UNIMPRESSED) Meow.
 Marie-Elle: A CAT? HERE? Oh no no no.
 Marie-Elle: Do not bring that cat near me or else I’ll-
 Marie-Elle: AH CHOO!
-Selina: [CONFUSED] Meow?
+Selina: (CONFUSED) Meow?
 Rowan: Bless you! Are you okay? 
 Marie-Elle: Please bring your - AH CHOO - cat away from me! My - AH CHOO - allergies will start acting up!
 Rowan: You’re allergic to cats? Oh no! I’m so sorry!
 Rowan: I’ll leave CAT in my apartment for now!
-Selina: [OUTRAGED] MEOW?!
-[PROTAGONIST RUNS OVER TO APARTMENT TO PUT SOME DISTANCE]
+Selina: (OUTRAGED) MEOW?!
+(PROTAGONIST RUNS OVER TO APARTMENT TO PUT SOME DISTANCE)
 Rowan: I’m sorry about that! If I knew you were allergic, I wouldn’t have brought CAT with me to return the purse.
 Marie-Elle: I was starting to wonder why my nose was starting to get stuffy out of the blue. AH CHOO
 Rowan: How bad is your cat allergy? If you need to get any medicine, I’ll compensate you!
-Marie-Elle: [SNIFF] Nothing too serious thankfully, but enough for me to have a stuffy nose and rashes for a few days. Can’t say I won’t be irritated the whole time though.
+Marie-Elle: (SNIFF) Nothing too serious thankfully, but enough for me to have a stuffy nose and rashes for a few days. Can’t say I won’t be irritated the whole time though.
 Marie-Elle: I also have something at home to take care of my allergies so no need for compensation. 
 Marie-Elle: But I believe you have a purse to return to me.
 Rowan: Yes! Here you go. I grabbed the purse from the apartment on my way back.
-[BAG IS GIVEN BACK]
+(BAG IS GIVEN BACK)
 Rowan: I hope this is the right one you’re looking for.
 Marie-Elle: – describe bag like if she’s inspecting its the right one –. 
 Marie-Elle: Yes, this is the one. 
@@ -167,7 +171,7 @@ Marie-Elle: For this purse in particular? I am expected to wear this purse in ne
 Marie-Elle: You’ll be surprised at the kind of things they ask me to do. 
 Marie-Elle: Of course, I only complete requests that are within my boundaries as I still have dignity.
 Marie-Elle: This is a small request in comparison no matter how I feel about the purse personally. 
-[BOTH STARE AT THE PURSE]
+(BOTH STARE AT THE PURSE)
 ->Interesting
     Rowan: Your client has a very uhhhh … interesting taste in fashion.
     Marie-Elle: You don’t have to mince it.
