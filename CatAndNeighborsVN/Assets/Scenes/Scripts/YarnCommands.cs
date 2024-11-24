@@ -33,14 +33,18 @@ public class YarnCommands : MonoBehaviour
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
 		dialogueRunner.AddCommandHandler<string, string, string, string>("Characters", LoadCharacters);
 		dialogueRunner.AddCommandHandler<string, string, string, string>("ResetPos", ResetPosition);
-
-        itemInteractionCanva.SetActive(false);
-        neighborSelectionCanva.SetActive(false);
 		
 		catImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("cat");
 		fashionDesignerImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("fashionDesigner");
 		vampireNurseImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("vampireNurse");
 		pitifulRobotImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("pitifulRobot");
+
+		itemInteractionCanva.SetActive(false);
+        neighborSelectionCanva.SetActive(false);
+		catImage.SetActive(false);
+		fashionDesignerImage.SetActive(false);
+		vampireNurseImage.SetActive(false);
+		pitifulRobotImage.SetActive(false);
     }
 
 	/// <summary>changes background image</summary>
@@ -58,8 +62,6 @@ public class YarnCommands : MonoBehaviour
 			if (cat == "right") {
 				catImage.transform.position = catImage.transform.position + right;
 			}
-		} else {
-			catImage.SetActive(false);
 		}
 
 		if (fashionDesigner != "no") {
@@ -70,8 +72,6 @@ public class YarnCommands : MonoBehaviour
 			if (fashionDesigner == "right") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + right;
 			}
-		} else {
-			fashionDesignerImage.SetActive(false);
 		}
 
 		if (vampireNurse != "no") {
@@ -82,8 +82,6 @@ public class YarnCommands : MonoBehaviour
 			if (vampireNurse == "right") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position + right;
 			}
-		} else {
-			vampireNurseImage.SetActive(false);
 		}
 
 		if (pitifulRobot != "no") {
@@ -94,13 +92,12 @@ public class YarnCommands : MonoBehaviour
 			if (pitifulRobot == "right") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + right;
 			}
-		} else {
-			pitifulRobotImage.SetActive(false);
 		}
 	}
 	
 	public void ResetPosition(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
 		if (cat != "no") {
+			catImage.SetActive(false);
 			if (cat == "left") {
 				catImage.transform.position = catImage.transform.position - left;
 			}
@@ -110,6 +107,7 @@ public class YarnCommands : MonoBehaviour
 		} 
 
 		if (fashionDesigner != "no") {
+			fashionDesignerImage.SetActive(false);
 			if (fashionDesigner == "left") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - left;
 			}
@@ -119,6 +117,7 @@ public class YarnCommands : MonoBehaviour
 		}
 
 		if (vampireNurse != "no") {
+			vampireNurseImage.SetActive(false);
 			if (vampireNurse == "left") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position - left;
 			}
@@ -129,6 +128,7 @@ public class YarnCommands : MonoBehaviour
 		}
 
 		if (pitifulRobot != "no") {
+			pitifulRobotImage.SetActive(false);
 			if (pitifulRobot == "left") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - left;
 			}
