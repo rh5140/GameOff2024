@@ -18,7 +18,6 @@ public class YarnCommands : MonoBehaviour
 
 	Vector3 left = new Vector3(-300, 0, 0);
 	Vector3 right = new Vector3(300, 0, 0);
-	Vector3 middle = new Vector3(0, 0, 0);
 
 	[Header("Object references"), Tooltip("don't change these unless you know what you're doing")]
 	public RectTransform spriteGroup; // used for screenshake
@@ -54,10 +53,9 @@ public class YarnCommands : MonoBehaviour
 			if (cat == "left") {
 				catImage.transform.position = catImage.transform.position + left;
 				Debug.Log("POSITION " + catImage.transform.position);
-			} else if (cat == "right") {
+			}
+			if (cat == "right") {
 				catImage.transform.position = catImage.transform.position + right;
-			} else {
-				catImage.transform.position = catImage.transform.position + middle;
 			}
 		} else {
 			catImage.SetActive(false);
@@ -67,10 +65,9 @@ public class YarnCommands : MonoBehaviour
 			fashionDesignerImage.SetActive(true);
 			if (fashionDesigner == "left") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + left;
-			} else if (fashionDesigner == "right") {
+			}
+			if (fashionDesigner == "right") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + right;
-			} else {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + middle;
 			}
 		} else {
 			fashionDesignerImage.SetActive(false);
@@ -80,10 +77,9 @@ public class YarnCommands : MonoBehaviour
 			vampireNurseImage.SetActive(true);
 			if (vampireNurse == "left") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position + left;
-			} else if (vampireNurse == "right") {
+			}
+			if (vampireNurse == "right") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position + right;
-			} else {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position + middle;
 			}
 		} else {
 			vampireNurseImage.SetActive(false);
@@ -93,10 +89,9 @@ public class YarnCommands : MonoBehaviour
 			pitifulRobotImage.SetActive(true);
 			if (pitifulRobot == "left") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + left;
-			} else if (pitifulRobot == "right") {
+			}
+			if (pitifulRobot == "right") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + right;
-			} else {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + middle;
 			}
 		} else {
 			pitifulRobotImage.SetActive(false);
@@ -107,41 +102,37 @@ public class YarnCommands : MonoBehaviour
 		if (cat != "no") {
 			if (cat == "left") {
 				catImage.transform.position = catImage.transform.position - left;
-				Debug.Log("POSITION " + catImage.transform.position);
-			} else if (cat == "right") {
+			}
+			if (cat == "right") {
 				catImage.transform.position = catImage.transform.position - right;
-			} else {
-				catImage.transform.position = catImage.transform.position - middle;
 			}
 		} 
 
 		if (fashionDesigner != "no") {
 			if (fashionDesigner == "left") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - left;
-			} else if (fashionDesigner == "right") {
+			}
+			if (fashionDesigner == "right") {
 				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - right;
-			} else {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - middle;
 			}
 		}
 
 		if (vampireNurse != "no") {
 			if (vampireNurse == "left") {
 				vampireNurseImage.transform.position = vampireNurseImage.transform.position - left;
-			} else if (vampireNurse == "right") {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position - right;
-			} else {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position - middle;
 			}
+			if (vampireNurse == "right") {
+				vampireNurseImage.transform.position = vampireNurseImage.transform.position - right;
+			}
+			
 		}
 
 		if (pitifulRobot != "no") {
 			if (pitifulRobot == "left") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - left;
-			} else if (pitifulRobot == "right") {
+			}
+			if (pitifulRobot == "right") {
 				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - right;
-			} else {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - middle;
 			}
 		}
 	}
