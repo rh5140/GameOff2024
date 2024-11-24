@@ -16,11 +16,9 @@ group: mucciBag
 //1.1
 <<Scene bg_office>>
 After a long day at work, you come home to find Selina playing around with a mysterious item in your living room.
-
+<<show_living_room>>
 Rowan: Selina! What are you doing? 
 Selina: Meow!
-<<Scene bg_interact>>
-<<item_interaction>>
 Rowan: Oh no, it’s an expensive Mucci bag! Where did you get this from?
 Selina: Meooooooow
 Rowan: This must belong to one of the neighbors. 
@@ -32,6 +30,9 @@ color: green
 group: mucciBag
 ---
 //1.2
+<<Scene bg_interact>>
+<<hide_living_room>>
+<<item_interaction>>
 A designer purse with lots of embellishments and a hefty price tag. The bag looks to be in pristine condition with some personal effects still inside the purse.
 ===
 

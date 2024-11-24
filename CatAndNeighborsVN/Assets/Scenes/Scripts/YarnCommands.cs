@@ -12,6 +12,7 @@ public class YarnCommands : MonoBehaviour
     public GameObject gameObject;
     public GameObject itemInteractionCanva;
     public GameObject neighborSelectionCanva;
+	public GameObject livingRoomCanva;
 
 	public List<Sprite> loadSprites = new List<Sprite>();
 	public List<AudioClip> loadAudio = new List<AudioClip>();
@@ -33,6 +34,8 @@ public class YarnCommands : MonoBehaviour
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
 		dialogueRunner.AddCommandHandler<string, string, string, string>("Characters", LoadCharacters);
 		dialogueRunner.AddCommandHandler<string, string, string, string>("ResetPos", ResetPosition);
+		dialogueRunner.AddCommandHandler("show_living_room", ShowLivingRoom);
+		dialogueRunner.AddCommandHandler("hide_living_room", HideLivingRoom);
 		
 		catImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("cat");
 		fashionDesignerImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("fashionDesigner");
@@ -144,6 +147,15 @@ public class YarnCommands : MonoBehaviour
         SceneManager.LoadScene(sceneName);
         gameObject.SetActive(true);
     }
+
+	private void ShowLivingRoom()
+	{
+		livingRoomCanva.SetActive(true);
+	}
+	private void HideLivingRoom()
+	{
+		livingRoomCanva.SetActive(false);
+	}
 
     private void Interact() {
         Debug.Log("Activate item interaction canva");
