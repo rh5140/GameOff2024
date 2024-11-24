@@ -25,6 +25,7 @@ public class YarnCommands : MonoBehaviour
     void Awake() {
         dialogueRunner.AddCommandHandler<string>("change_scene", ChangeScene);
         dialogueRunner.AddCommandHandler("item_interaction", Interact);
+        dialogueRunner.AddCommandHandler("hide_item", HideInteract);
         dialogueRunner.AddCommandHandler("neighbor_selection", Selection);
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
 
@@ -47,6 +48,11 @@ public class YarnCommands : MonoBehaviour
     private void Interact() {
         Debug.Log("Activate item interaction canva");
         itemInteractionCanva.SetActive(true);
+    }
+
+	private void HideInteract() {
+        Debug.Log("Hide item interaction canva");
+        itemInteractionCanva.SetActive(false);
     }
 
     private void Selection() {
@@ -76,10 +82,12 @@ public class YarnCommands : MonoBehaviour
 
 		// by default, we load all Resources assets into the asset
 		// arrays already, but if you don't want that, then uncomment
-		// this, etc. if ( useResourcesFolders ) {var newAsset =
-		// Resources.Load<T>(assetName); if ( newAsset != null )
-		// {return newAsset;
-		//  }
+		// this, etc. 
+		// if ( useResourcesFolders ) {
+		// 	var newAsset = Resources.Load<T>(assetName); 
+		// 	if ( newAsset != null ) {
+		// 		return newAsset;
+		//  	}
 		// }
 
 		Debug.LogErrorFormat(this, "VN Manager can't find asset [{0}]... maybe it is misspelled, or isn't imported as {1}?", assetName, typeof(T).ToString() );

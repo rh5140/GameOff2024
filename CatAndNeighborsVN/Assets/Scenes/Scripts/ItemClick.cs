@@ -5,7 +5,6 @@ using Yarn.Unity;
 
 public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 { 
-    [SerializeField] private GameObject popup;
     [SerializeField] private GameObject inspectImage;
     [SerializeField] private bool changesItemState;
     [SerializeField] private string node;
@@ -19,8 +18,6 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public void OnPointerClick(PointerEventData eventData)
     {
         if (dialogueRunner.IsDialogueRunning) return;
-        // text popup
-        popup.SetActive(true);
         dialogueRunner.StartDialogue(node);
 
         // replace current image with new image
