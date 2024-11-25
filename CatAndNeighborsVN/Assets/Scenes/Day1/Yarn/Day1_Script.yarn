@@ -62,7 +62,7 @@ group: mucciBag
 //1.4
 <<if getVampireNurseNotSelected()>>
     <<Scene bg_office>> // Replace with different background
-    <<Character dorian true>>
+    <<Character DORIAN true>>
     Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
     Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
     Dorian: I’m flattered, but no, this isn't mine. Although, it looks like something Marie-Elle might own. 
@@ -83,7 +83,7 @@ group: mucciBag
 //1.5
 <<if getPitifulRobotNotSelected()>>
     <<Scene bg_office>> // Replace with different background
-    <<Character fern true>>
+    <<Character feRn true>>
     Fern: This is a certified Mucci bag. My human could afford one of these, but they don’t get outside much to make use of it. 
     Rowan: Maybe it could be theirs? 
     Fern: No, there are no such items in the inventory.  I have no need for such grocery bags either. 
