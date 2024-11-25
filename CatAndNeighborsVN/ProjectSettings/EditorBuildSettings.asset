@@ -6,40 +6,40 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Testing/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Beginning.unity
+    path: Assets/Levels/Beginning/Beginning.unity
     guid: 4e52b5a8150e61049bcc2801726f2819
   - enabled: 1
     path: Assets/Scenes/Day1/Day_1.unity
     guid: 07fc4ff59ac79464ca30016fffdaf970
   - enabled: 1
-    path: Assets/Scenes/Day_2.unity
+    path: Assets/Levels/Day2/Day_2.unity
     guid: 3ca96b58032eade4d8dfcaf43ebf550d
   - enabled: 1
-    path: Assets/Scenes/Day_3.unity
+    path: Assets/Levels/Day3/Day_3.unity
     guid: ddd546963b17515419335be5293a2871
   - enabled: 1
-    path: Assets/Scenes/Day_4.unity
+    path: Assets/Levels/Day4/Day_4.unity
     guid: 54524908e03396040b1eeff56bb082d8
   - enabled: 1
-    path: Assets/Scenes/Day_5.unity
+    path: Assets/Levels/Day5/Day_5.unity
     guid: 63010409bbed1b24db946739c9c33963
   - enabled: 1
-    path: Assets/Scenes/Day_6.unity
+    path: Assets/Levels/Day6/Day_6.unity
     guid: 1d19d0cdf3274d346971aa486a1d5557
   - enabled: 1
-    path: Assets/Scenes/Day_7.unity
+    path: Assets/Levels/Day7/Day_7.unity
     guid: 35330b24fcc23b64aa0bb1d25bff6d3c
   - enabled: 1
-    path: Assets/Scenes/Day_8.unity
+    path: Assets/Levels/Day8/Day_8.unity
     guid: 603a387a42ad3444cb16c525beea991f
   - enabled: 1
-    path: Assets/Scenes/Day_9.unity
+    path: Assets/Levels/Day9/Day_9.unity
     guid: db4ac0bbeb9ab97419bdf728729d55d7
   - enabled: 1
-    path: Assets/Scenes/Ending.unity
+    path: Assets/Levels/Ending/Ending.unity
     guid: 93d35ae5da94ed54aaaeb6f08a07b420
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
