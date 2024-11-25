@@ -32,15 +32,9 @@ public class YarnCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler("hide_item", HideInteract);
         dialogueRunner.AddCommandHandler("neighbor_selection", Selection);
 		dialogueRunner.AddCommandHandler<string>("Scene", DoSceneChange);
-		dialogueRunner.AddCommandHandler<string, string, string, string>("Characters", LoadCharacters);
-		dialogueRunner.AddCommandHandler<string, string, string, string>("ResetPos", ResetPosition);
+		dialogueRunner.AddCommandHandler<string, bool>("Character", LoadCharacters);
 		dialogueRunner.AddCommandHandler("show_living_room", ShowLivingRoom);
 		dialogueRunner.AddCommandHandler("hide_living_room", HideLivingRoom);
-		
-		catImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("cat");
-		fashionDesignerImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("fashionDesigner");
-		vampireNurseImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("vampireNurse");
-		pitifulRobotImage.GetComponent<Image>().sprite = FetchAsset<Sprite>("pitifulRobot");
 
 		itemInteractionCanva.SetActive(false);
         neighborSelectionCanva.SetActive(false);
@@ -55,92 +49,48 @@ public class YarnCommands : MonoBehaviour
 		bgImage.sprite = FetchAsset<Sprite>( spriteName );
 	}
 
-	public void LoadCharacters(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
-		if (cat != "no") {
-			catImage.SetActive(true);
-			if (cat == "left") {
-				catImage.transform.position = catImage.transform.position + left;
-				Debug.Log("POSITION " + catImage.transform.position);
+	// To turn on character image: <<Character cat true>>
+	// To turn off character image: <<Character FashionDesigner false>>
+	// Character's title or name works so you can write <<Character Dorian/vampirenurse true/false>>
+	public void LoadCharacters(string character, bool active) {
+		if (character.ToLower() == "cat" || 
+			character.ToLower() == "selina") {
+			if (active) {
+				catImage.SetActive(true);
+			} else {
+				catImage.SetActive(false);
 			}
-			if (cat == "right") {
-				catImage.transform.position = catImage.transform.position + right;
+		}
+		
+		if (character.ToLower() == "fashiondesigner" || 
+			character.ToLower() == "marieelle" || 
+			character.ToLower() == "marie-elle") {
+			if (active) {
+				fashionDesignerImage.SetActive(true);
+			} else {
+				fashionDesignerImage.SetActive(false);
 			}
 		}
 
-		if (fashionDesigner != "no") {
-			fashionDesignerImage.SetActive(true);
-			if (fashionDesigner == "left") {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + left;
-			}
-			if (fashionDesigner == "right") {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position + right;
-			}
-		}
-
-		if (vampireNurse != "no") {
-			vampireNurseImage.SetActive(true);
-			if (vampireNurse == "left") {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position + left;
-			}
-			if (vampireNurse == "right") {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position + right;
+		if (character.ToLower() == "vampirenurse" || 
+			character.ToLower() == "dorian" ||
+			character.ToLower() == "dorianvayne") {
+			if (active) {
+				vampireNurseImage.SetActive(true);
+			} else {
+				vampireNurseImage.SetActive(false);
 			}
 		}
 
-		if (pitifulRobot != "no") {
-			pitifulRobotImage.SetActive(true);
-			if (pitifulRobot == "left") {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + left;
-			}
-			if (pitifulRobot == "right") {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position + right;
+		if (character.ToLower() == "pitifulrobot" || 
+			character.ToLower() == "fern") {
+			if (active) {
+				pitifulRobotImage.SetActive(true);
+			} else {
+				pitifulRobotImage.SetActive(false);
 			}
 		}
 	}
-	
-	public void ResetPosition(string cat = "no", string fashionDesigner = "no", string vampireNurse = "no", string pitifulRobot = "no") {
-		if (cat == "no") {
-			catImage.SetActive(false);
-			if (cat == "left") {
-				catImage.transform.position = catImage.transform.position - left;
-			}
-			if (cat == "right") {
-				catImage.transform.position = catImage.transform.position - right;
-			}
-		} 
-
-		if (fashionDesigner == "no") {
-			fashionDesignerImage.SetActive(false);
-			if (fashionDesigner == "left") {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - left;
-			}
-			if (fashionDesigner == "right") {
-				fashionDesignerImage.transform.position = fashionDesignerImage.transform.position - right;
-			}
-		}
-
-		if (vampireNurse == "no") {
-			vampireNurseImage.SetActive(false);
-			if (vampireNurse == "left") {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position - left;
-			}
-			if (vampireNurse == "right") {
-				vampireNurseImage.transform.position = vampireNurseImage.transform.position - right;
-			}
-			
-		}
-
-		if (pitifulRobot == "no") {
-			pitifulRobotImage.SetActive(false);
-			if (pitifulRobot == "left") {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - left;
-			}
-			if (pitifulRobot == "right") {
-				pitifulRobotImage.transform.position = pitifulRobotImage.transform.position - right;
-			}
-		}
-	}
-	
 
     private void ChangeScene(string sceneName) {
         Debug.Log("loading scene");
