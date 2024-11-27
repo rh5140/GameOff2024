@@ -41,14 +41,11 @@ public class ChooseNeighborButton : MonoBehaviour
     public void Click() {
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         chosenNeighbor = parentCanva.chosenNeighbor;
-
-        // switching out portraits to grayscale version after selecting
         chosenNeighbor.transform.Find(chosenNeighbor.name).gameObject.SetActive(false);
-        chosenNeighbor.transform.Find("Gray" + chosenNeighbor.name).gameObject.SetActive(true);
-        chosenNeighbor.transform.Find(chosenNeighbor.name + "Name").gameObject.SetActive(false);
-        chosenNeighbor.transform.Find("Inaccessible").gameObject.SetActive(true);
 
+        Debug.Log("OnClick");
         if (!dialogueRunner.IsDialogueRunning) {
+            Debug.Log("Jump");
             JumpToNeighborDialogue(chosenNeighbor);
         }
 

@@ -12,5 +12,6 @@ public class CancelNeighborButton : MonoBehaviour
 
         gameObject.SetActive(false);
         chooseButton.SetActive(false);
+        GameObject.Find("ChosenNeighborName").SetActive(false);
     }
 }

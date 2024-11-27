@@ -1,0 +1,65 @@
+﻿title: Start
+---
+<<setFashionDesignerNotSelected true>>
+<<setVampireNurseNotSelected true>>
+<<setPitifulRobotNotSelected true>>
+<<jump Character_Select>>
+===
+
+title: Character_Select
+---
+<<Scene bg_interact>>
+<<hide_item>>
+Rowan: Who does this belong to?
+<<neighbor_selection>>
+===
+
+title: levelOneDorian
+color: purple
+group: mucciBag
+---
+//1.4
+<<if getVampireNurseNotSelected()>>
+    <<Scene bg_office>> // Replace with different background
+    <<Character DORIAN true>>
+    Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
+    <<setVampireNurseNotSelected false>>
+    <<Character dorian false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: levelOneFern
+color: purple
+group: mucciBag
+---
+//1.5
+<<if getPitifulRobotNotSelected()>>
+    <<Scene bg_office>> // Replace with different background
+    <<Character feRn true>>
+    Fern: This is a certified Mucci bag. My human could afford one of these, but they don’t get outside much to make use of it. 
+    <<setPitifulRobotNotSelected false>>
+    <<Character fern false>>
+    <<jump Character_Select>>
+<<else>>
+    <<jump Already_Selected>>
+<<endif>>
+===
+
+title: Already_Selected
+---
+Rowan: I already checked with them.
+<<neighbor_selection>>
+===
+
+title: levelOneMarie
+color: purple
+group: mucciBag
+---
+//1.6
+<<Scene bg_office>> // Replace with different background
+<<Character fashiondesigner true>>
+Rowan: Hello? Is anyone in right now?
+===

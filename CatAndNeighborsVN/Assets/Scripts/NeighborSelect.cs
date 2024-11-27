@@ -7,10 +7,6 @@ using TMPro;
 public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject neighborPortrait;
-    public GameObject neighborName;
-    public GameObject grayPortrait;
-    public GameObject grayName;
-
     public GameObject chooseButton;
     public GameObject cancelButton;
     public GameObject chooseText;
@@ -22,9 +18,6 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     void Start() {
         neighborPortrait.SetActive(true);
-        neighborName.SetActive(true);
-        grayPortrait.SetActive(false);
-        grayName.SetActive(false);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
         chooseText.SetActive(false);
@@ -67,7 +60,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         chooseText.SetActive(true);
 
         TextMeshProUGUI selectText = chooseText.GetComponent<TextMeshProUGUI>();
-        selectText.text = "Selected " + gameObject.name;
+        selectText.text = gameObject.name;
 
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);

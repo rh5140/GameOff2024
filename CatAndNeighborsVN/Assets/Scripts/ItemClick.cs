@@ -17,7 +17,7 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (dialogueRunner.IsDialogueRunning) return;
+        if (dialogueRunner.IsDialogueRunning) dialogueRunner.Stop();
         dialogueRunner.StartDialogue(node);
 
         // replace current image with new image
