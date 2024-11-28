@@ -121,6 +121,8 @@ color: red
 group: bloodBag
 ---
 // 2.4
+<<Scene bg_interact>>
+<<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>
 ===
@@ -131,6 +133,7 @@ group: bloodBag
 --- 
 //2.5 
 <<Character Dorian true>>
+<<Scene dorian_apt>> 
 Rowan: Um, is this yours?
 Dorian: Why, yes it is! I’ve been looking everywhere for that. 
 Rowan: Sorry, Selina stole it. I found it this morning. 
@@ -165,6 +168,7 @@ group: bloodBag
 --- 
 //2.6 
 <<Character Fern true>>
+<<Scene fern_apt>> 
 Fern: Looks like human fuel. I wonder how it tastes.
 Rowan: Is your human… anemic? 
 Fern: They are fit as a fiddle, right as rain. I should hope they never run into an accident where a blood bag is needed.
@@ -179,6 +183,7 @@ group: bloodBag
 --- 
 //2.7 
 <<Character Marie-Elle true>>
+<<Scene marie_elle_apt>>
 Marie-Elle: What’s that in your hands?
 Rowan: I think it’s tomato juice?
 Marie-Elle: Tomato juice?! Stop! Not any closer or else you might stain my clothes somehow.
