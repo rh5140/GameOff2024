@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CancelNeighborButton : MonoBehaviour
 {
     public GameObject chooseButton;
+    public GameObject chooseNeighborNameText;
 
     public void Click() {
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
@@ -17,6 +18,6 @@ public class CancelNeighborButton : MonoBehaviour
 
         gameObject.SetActive(false);
         chooseButton.SetActive(false);
-        GameObject.Find("ChosenNeighborName").SetActive(false);
+        chooseNeighborNameText.SetActive(false);
     }
 }

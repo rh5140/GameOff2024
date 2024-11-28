@@ -62,17 +62,16 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    {
+    {   
+        // Set up selection interface buttons & text
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
         chooseNeighborNameText.SetActive(true);
-
-        TextMeshProUGUI selectText = chooseNeighborNameText.GetComponent<TextMeshProUGUI>();
-        selectText.text = gameObject.name;
         
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);
 
+        // Turn off "Which neighbor does this item belong to?"
         parentCanva.transform.Find("ChooseText").gameObject.SetActive(false);
 
         if (gameObject.name == "Marie-Elle") {
@@ -93,25 +92,16 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
             parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.white;
             parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
             parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-
-            // Position Name & Buttons to Right Side
-            if (parentCanva.transform.Find("CurrentSelection").position - buttonOriginalPosition == new Vector3(0,0,0)) {
-                
-            }
         } 
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-        // if ((gameObject.name == "Marie-Elle" && GetFashionDesignerNotSelected()) ||
-        //     (gameObject.name == "Dorian" && GetVampireNurseNotSelected()) ||
-        //     (gameObject.name == "Fern" && GetPitifulRobotNotSelected())) {
-        //     GetComponentInChildren<Image>().color = new Color(255, 0, 0 );
-        // }
+
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        // GetComponentInChildren<Image>().color = new Color(255, 255, 255);
+
     }
 }
