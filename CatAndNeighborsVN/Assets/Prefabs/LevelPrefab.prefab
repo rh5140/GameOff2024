@@ -51,6 +51,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSprites
       objectReference: {fileID: 0}
+    - target: {fileID: 3163334473263914553, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163334473263914553, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163334473263914553, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756257774858798348, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -214.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4804811848680051101, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -130,6 +146,10 @@ PrefabInstance:
     - target: {fileID: 4804811848680051101, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951815322989041656, guid: ed352c6f529273c40b1cd527cbc31519, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -254
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -407,6 +427,42 @@ PrefabInstance:
     - target: {fileID: 436911205807222014, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
       propertyPath: m_Name
       value: NeighborSelectionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 436911205807222014, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165215551412543617, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165215551412543617, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165215551412543617, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165215551412543617, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909773511471077579, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909773511471077579, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909773511471077579, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3909773511471077579, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -112.5
       objectReference: {fileID: 0}
     - target: {fileID: 6758570526679622591, guid: 9abf0d82fb8cf8a40a3d74c4f95b8243, type: 3}
       propertyPath: m_Pivot.x
@@ -863,6 +919,22 @@ PrefabInstance:
       propertyPath: neighborSelectionCanva
       value: 
       objectReference: {fileID: 7035464285539190686}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: c7815204108d30545a4f0db3eb0b1d09, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a989e71982fa5434284db2dd30b138de, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: f0de10adf0df8b14b931dc85497482dc, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[6]'
+      value: 
+      objectReference: {fileID: 21300000, guid: da9393aebd05ce04eb066d39bddf8ba9, type: 3}
     - target: {fileID: 6769243049087633965, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: m_Name
       value: YarnCommands
