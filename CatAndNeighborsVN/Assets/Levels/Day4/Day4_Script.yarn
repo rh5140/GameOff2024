@@ -7,7 +7,7 @@ You’re dozing off in your corner seat on the TART when a familiar presence sen
 <<Character Dorian true>>
 Dorian: Hello Rowan. I wasn’t expecting to see you here today.
 Rowan: AH! Oh! Hi Dorian. I wasn’t expecting to see you out in the sun, ever. Must be something urgent.
-Dorian: I ran out of my favorite sunscreen. Hard to find one that protects my undead skin and doesn’t leave a whitecast
+Dorian: I ran out of my favorite sunscreen. Hard to find one that protects my undead skin and doesn’t leave a whitecast.
 Rowan: Yeah, most sunscreen’s made for skin that’s alive, so that makes sense.
 Just then, you both hear a familiar whirring and beeping near you.
 <<Character Fern true>>
@@ -16,7 +16,7 @@ Rowan: Hi Fern! What are you doing on the TART?
 Fern: I am collecting some necessary items from the store.
 Dorian: Necessary items?
 Fern: Various cleaning solutions and detergent for cloth items.
-Dorian: Fascinating…when I was younger we could barely imagine calling someone on an electric device, let alone one doing your shopping.
+Dorian: Fascinating… when I was younger we could barely imagine calling someone on an electric device, let alone one doing your shopping.
 Fern: Hm. According to my knowledge it is not possible for you to be that old. 
 Fern: The telephone was invented over 100 years ago, which would make you much older.
 Dorian: There are ways to bypass death other than modern medicine. 
@@ -78,7 +78,7 @@ color: black
 group: tarotCard
 --- 
 //4.3 
-Rowan: I didn’t know you had a spiritual side Selina! I’d ask for a reading, but I think you need opposable thumbs to hold the cards.
+Rowan: I didn’t know you had a spiritual side, Selina! I’d ask for a reading, but I think you need opposable thumbs to hold the cards.
 <<hide_item>>
 <<Character Selina true>>
 Selina: (<i>offended</i>) Meow…
@@ -107,18 +107,19 @@ Rowan: That, or she just likes sparkly things.
 Dorian: Thank you for returning them. They’re very special to me.
 Rowan: Oh, yeah, I read the note on the back. Are they a gift from your boyfriend?
 Dorian: Ex-boyfriend actually. We parted some ages ago.
-Rowan: Oh…I’m sorry for asking, and for reading the note. I should’ve realized it was a personal thing…
+Rowan: Oh… I’m sorry for asking, and for reading the note. I should’ve realized it was a personal thing…
 Rowan: Wait, how long is “ages” exactly?
 Dorian: (<i>laughs</i>) Don’t apologize. We broke up on good terms. We met just last month actually. 
 Dorian: It seems we’re meant to stay in each other’s stars after all.
 Rowan: That’s really great! I’m glad things worked out.
-Dorian: Life tends to work itself out, I’ve learned. And tarot can be a guide on the way there. Dorian: And would you look at that, we’ve got a deck right here. Care for a reading?
+Dorian: Life tends to work itself out, I’ve learned. And tarot can be a guide on the way there.
+Dorian: And would you look at that, we’ve got a deck right here. Care for a reading?
 Rowan: I thought you’d never ask.
 Dorian: Wonderful. Now, take the cards and shuffle them.
 Rowan: For how long?
 Dorian: Until it feels right. 
-Rowan: Okay…it feels right now.
-Dorian: Alright, now pick 3. Past, present, and future. If you have any specific questions, think of them while you choose.
+Rowan: Okay… it feels right now.
+Dorian: Alright, now pick three. Past, present, and future. If you have any specific questions, think of them while you choose.
 Rowan: That’s it? What if I pick wrong?
 Dorian: Like most things, with tarot, you get what you give. Approach it with sincerity and you can’t go wrong.
 Rowan: Okay… (<i>Why am I so nervous?</i>) 
@@ -129,7 +130,7 @@ Dorian: I’m so sorry that happened. But The Tower indicates revelation and awa
 Dorian: Second, The Hanged Man.
 Rowan: Great. That’s probably bad right?
 Dorian: Not necessarily. True, it can indicate a lack of direction, but it also signals pausing to gain a change in perspective. 
-Rowan: So…it’s saying I need to hang out a bit before taking action?
+Rowan: So… it’s saying I need to hang out a bit before taking action?
 Dorian: (<i>laughs</i>) That’s a good way of putting it. 
 Dorian: And lastly, The Wheel of Fortune. Forever shifting and changing through good and bad. 
 Dorian: But, as the cycle of life turns, things will eventually end up where they’re meant to be.
@@ -167,9 +168,9 @@ group: tarotCard
 //4.7
 <<Character Marie-Elle true>>
 Rowan: Any chance these tarot cards are yours?
-Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not.. I know a superstitious designer who likes the assurance of some guidance in their future though. 
+Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not… I know a superstitious designer who likes the assurance of some guidance in their future though. 
 Rowan: Oh, does that mean you had your future read before?
-Marie-Elle: Of course, but I honestly find them creepy and it makes me feel like somebody is peering into my life.
+Marie-Elle: Of course, but I honestly find them creepy, and it makes me feel like somebody is peering into my life.
 Marie-Elle: (<i>shivers</i>) I personally prefer to take things into my own hands without any external help. 
 Rowan: I don’t know. Having some idea of what my future could hold or a nudge in the right direction would help my indecisiveness a lot.
 Rowan: (<i>laughs</i>) Or help tell me the owner of the item Selina stole that day.
