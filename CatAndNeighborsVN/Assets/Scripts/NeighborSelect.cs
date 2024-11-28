@@ -9,7 +9,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject neighborPortrait;
     public GameObject chooseButton;
     public GameObject cancelButton;
-    public GameObject chooseText;
+    public GameObject chooseNeighborNameText;
 
     public static bool fashionDesignerNotSelected;
     public static bool vampireNurseNotSelected;
@@ -23,7 +23,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         neighborPortrait.SetActive(true);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
-        chooseText.SetActive(false);
+        chooseNeighborNameText.SetActive(false);
 
         NeighborCanvasParent originalPosition = GetComponentInParent<NeighborCanvasParent>();
         buttonOriginalPosition = originalPosition.transform.Find("CurrentSelection").position;
@@ -65,13 +65,15 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     {
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
-        chooseText.SetActive(true);
+        chooseNeighborNameText.SetActive(true);
 
-        TextMeshProUGUI selectText = chooseText.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI selectText = chooseNeighborNameText.GetComponent<TextMeshProUGUI>();
         selectText.text = gameObject.name;
         
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);
+
+        parentCanva.transform.Find("ChooseText").gameObject.SetActive(false);
 
         if (gameObject.name == "Marie-Elle") {
             // Change color of characters

@@ -52,7 +52,7 @@ MonoBehaviour:
   neighborPortrait: {fileID: 6247346493994007093}
   chooseButton: {fileID: 8433072308687379550}
   cancelButton: {fileID: 3977433209832384216}
-  chooseText: {fileID: 4226208472127410375}
+  chooseNeighborNameText: {fileID: 4226208472127410375}
 --- !u!1 &183177455766381750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   neighborPortrait: {fileID: 1807035202659949674}
   chooseButton: {fileID: 8433072308687379550}
   cancelButton: {fileID: 3977433209832384216}
-  chooseText: {fileID: 4226208472127410375}
+  chooseNeighborNameText: {fileID: 4226208472127410375}
 --- !u!1 &8433072308687379550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,4 +1699,4 @@ MonoBehaviour:
   neighborPortrait: {fileID: 3024299026045510019}
   chooseButton: {fileID: 8433072308687379550}
   cancelButton: {fileID: 3977433209832384216}
-  chooseText: {fileID: 4226208472127410375}
+  chooseNeighborNameText: {fileID: 4226208472127410375}
