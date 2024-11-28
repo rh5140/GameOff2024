@@ -50,6 +50,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     [YarnCommand("setPitifulRobotNotSelected")]
     public static void SetPitifulRobotNotSelected(bool status) {
+        Debug.Log("GOTCHA");
         pitifulRobotNotSelected = status;
     }
 
@@ -61,18 +62,38 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
         TextMeshProUGUI selectText = chooseText.GetComponent<TextMeshProUGUI>();
         selectText.text = gameObject.name;
-
+        
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);
+
+        if (gameObject.name == "Marie-Elle") {
+            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.white;
+            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+        }
+        else if (gameObject.name == "Dorian") {
+            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.white;
+            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+        }
+        else {
+            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.white;
+            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+        }
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-        GetComponentInChildren<Image>().color = new Color(255, 0, 0 );
+        // if ((gameObject.name == "Marie-Elle" && GetFashionDesignerNotSelected()) ||
+        //     (gameObject.name == "Dorian" && GetVampireNurseNotSelected()) ||
+        //     (gameObject.name == "Fern" && GetPitifulRobotNotSelected())) {
+        //     GetComponentInChildren<Image>().color = new Color(255, 0, 0 );
+        // }
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        GetComponentInChildren<Image>().color = new Color(255, 255, 255);
+        // GetComponentInChildren<Image>().color = new Color(255, 255, 255);
     }
 }

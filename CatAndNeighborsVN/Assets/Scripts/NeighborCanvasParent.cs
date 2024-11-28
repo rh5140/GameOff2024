@@ -6,7 +6,7 @@ public class NeighborCanvasParent : MonoBehaviour
     public GameObject chosenNeighbor = null;
     
     public void SetChosenNeighbor(GameObject neighbor) {
-        Debug.Log("CHOOSE");
+        Debug.Log("CHOOSE " + neighbor);
         chosenNeighbor = neighbor;
     }
 

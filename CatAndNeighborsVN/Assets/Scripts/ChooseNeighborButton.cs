@@ -20,13 +20,11 @@ public class ChooseNeighborButton : MonoBehaviour
     [SerializeField] private string pitifulRobotNode;
     
     private GameObject chosenNeighbor;
+    
 	private DialogueRunner dialogueRunner;
 
     public void Start() {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-
-        NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
-        chosenNeighbor = parentCanva.chosenNeighbor;
     }
 
     private void JumpToNeighborDialogue(GameObject neighbor) {
@@ -42,11 +40,13 @@ public class ChooseNeighborButton : MonoBehaviour
     }
 
     public void Click() {
-        chosenNeighbor.GetComponentInChildren<Image>().color = Color.grey;
+        NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
+        chosenNeighbor = parentCanva.chosenNeighbor;
+        chosenNeighbor.transform.Find(chosenNeighbor.name).gameObject.SetActive(false);
 
-        Debug.Log("OnClick");
+        // Debug.Log("OnClick");
         if (!dialogueRunner.IsDialogueRunning) {
-            Debug.Log("Jump");
+            // Debug.Log("Jump");
             JumpToNeighborDialogue(chosenNeighbor);
         }
 

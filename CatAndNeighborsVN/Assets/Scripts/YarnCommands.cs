@@ -92,7 +92,7 @@ public class YarnCommands : MonoBehaviour
 	}
 
     private void ChangeScene(string sceneName) {
-        Debug.Log("loading scene");
+        // Debug.Log("loading scene");
         SceneManager.LoadScene(sceneName);
         gameObject.SetActive(true);
     }
@@ -107,17 +107,17 @@ public class YarnCommands : MonoBehaviour
 	}
 
     private void Interact() {
-        Debug.Log("Activate item interaction canva");
+        // Debug.Log("Activate item interaction canva");
         itemInteractionCanva.SetActive(true);
     }
 
 	private void HideInteract() {
-        Debug.Log("Hide item interaction canva");
+        // Debug.Log("Hide item interaction canva");
         itemInteractionCanva.SetActive(false);
     }
 
     private void Selection() {
-        Debug.Log("Activate neighbor selection canva");
+        // Debug.Log("Activate neighbor selection canva");
         neighborSelectionCanva.SetActive(true);
     }
     // utility function to find an asset, whether it's in \Resources\
