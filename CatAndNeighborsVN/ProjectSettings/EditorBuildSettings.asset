@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Testing/TestingMenu.unity
     guid: aa5c7f47be93543479f520b2f9ba77c6
   - enabled: 1
+    path: Assets/Levels/MainMenu.unity
+    guid: c4161acf701b2fd4e8ebbe9dad7e25ab
+  - enabled: 1
     path: Assets/Levels/Beginning/Beginning.unity
     guid: 4e52b5a8150e61049bcc2801726f2819
   - enabled: 1

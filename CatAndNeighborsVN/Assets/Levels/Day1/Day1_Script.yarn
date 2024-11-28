@@ -68,7 +68,7 @@ group: mucciBag
 ---
 //1.4
 <<if getVampireNurseNotSelected()>>
-    <<Scene bg_office>> // Replace with different background
+    <<Scene dorian_apt>> 
     <<Character DORIAN true>>
     Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
     Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
@@ -89,7 +89,7 @@ group: mucciBag
 ---
 //1.5
 <<if getPitifulRobotNotSelected()>>
-    <<Scene bg_office>> // Replace with different background
+    <<Scene fern_apt>>
     <<Character feRn true>>
     Fern: This is a certified Mucci bag. My human could afford one of these, but they don’t get outside much to make use of it. 
     Rowan: Maybe it could be theirs? 
@@ -114,13 +114,14 @@ color: purple
 group: mucciBag
 ---
 //1.6
-<<Scene bg_office>> // Replace with different background
-<<Character fashiondesigner true>>
+<<Scene marie_elle_apt>>
 Rowan: Hello? Is anyone in right now?
-// Change background to the one with Marie-Elle peeking out
+<<Scene marie_apt_open>>
+<<Character fashiondesigner true>>
 Marie-Elle: I currently don’t accept visitors! Or ever really!
 Rowan: Wait! But I -
 <<Character fashiondesigner false>>
+<<Scene marie_elle_apt>>
 (<i>The door slams shut</i>)
 Rowan: …
 Rowan: That was a bit rude. They didn’t even let me finish my sentence.
@@ -132,6 +133,7 @@ Rowan: I’m sure she’ll eventually answer?
 ->Hope
 Rowan: Now I’m a bit worried.
 <<Character fashiondesigner true>>
+<<Scene marie_apt_open>>
 (<i>Someone opens the door</i>)
 Marie-Elle: Why is it that you keep insisting to pound on my door? I am baffled at your inability to take a hint when I didn’t answer the door for 5 minutes.
 Marie-Elle: I’m currently in the midst of something very important and each second here takes away another second I can be using productively elsewhere.
