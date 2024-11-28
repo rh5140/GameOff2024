@@ -16,11 +16,18 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public static bool pitifulRobotNotSelected;
     public static string currentNeighbor;
 
+    private static Vector3 buttonOriginalPosition;
+    private static Vector3 nameOriginalPosition;
+
     void Start() {
         neighborPortrait.SetActive(true);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
         chooseText.SetActive(false);
+
+        NeighborCanvasParent originalPosition = GetComponentInParent<NeighborCanvasParent>();
+        buttonOriginalPosition = originalPosition.transform.Find("CurrentSelection").position;
+        nameOriginalPosition = originalPosition.transform.Find("ChosenNeighborName").position;
     }
 
     [YarnFunction("getFashionDesignerNotSelected")]
@@ -67,9 +74,13 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         parentCanva.SetChosenNeighbor(gameObject);
 
         if (gameObject.name == "Marie-Elle") {
+            // Change color of characters
             parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.white;
             parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
             parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.grey;
+
+            // Position Name & Buttons to Left Side
+
         }
         else if (gameObject.name == "Dorian") {
             parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.white;
@@ -80,7 +91,12 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
             parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.white;
             parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
             parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-        }
+
+            // Position Name & Buttons to Right Side
+            if (parentCanva.transform.Find("CurrentSelection").position - buttonOriginalPosition == new Vector3(0,0,0)) {
+                
+            }
+        } 
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
