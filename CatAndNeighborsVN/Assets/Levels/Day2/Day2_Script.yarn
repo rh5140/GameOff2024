@@ -1,0 +1,193 @@
+﻿title: levelTwoIntro
+color: red
+group: bloodBag
+--- 
+//2.0 
+<<Character Marie-Elle true>>
+Rowan: Good morning, Marie-Elle.
+Marie-Elle: Good morning, Rowan.
+Rowan: How is your preparation for the Spring Gala?
+Marie-Elle: The preparations are going quite well now that you returned the Mucci purse to me. I can concentrate on putting together both my client and I’s outfits now.
+Rowan: I’m glad to hear that!
+Marie-Elle: Yes, it was a relief off my shoulders. I… apologize about my behavior towards you two days ago.
+Marie-Elle: It’s been hectic in my life lately with lots of nosy people who have nothing better to do, but badger me at my own home constantly.
+Marie-Elle: Unfortunately, this meant I created unfair assumptions about you at first glance so I’m very sorry about how I acted.
+Rowan: Thank you for apologizing. I really appreciate it. It definitely caught me off guard when you slammed the door in my face.
+Rowan: It was a bit rude not going to lie.
+Marie-Elle: (<i>cringes</i>) Yes, that was not my best moment for sure. You can best be reassured that won’t happen again. The door slamming without listening at least.
+Rowan: I sure hope so. Or maybe if you ever visit me I can slam the door in your face so we can be even!
+Marie-Elle: (<i>amused</i>) Feel free to do so. I won’t hold it against you.
+Rowan: Perfect. Now we can leave that behind us.
+Rowan: So what does a creative like you do for your job?
+Marie-Elle: Hmm. How do I answer this?
+Marie-Elle: I create art that combines traditional styles from my cultural roots and modern styles that we are familiar with today.
+Rowan: That sounds amazing! What do you mean by traditional styles?
+Marie-Elle: It just means I make really conscious decisions of adding certain elements into my designs that can be pointed out as coming from tradition or familiar experiences.
+Marie-Elle: For example, my models were not appreciative that I added a bunch of buttons to my latest piece in order to fasten the fabrics together.
+Marie-Elle: Nowadays people like to have zippers in <i>áo dài</i> instead, but the tiny, silver buttons are very reminiscent of my childhood frustrations.
+Rowan: Models? Fabrics? Are you in fashion?
+Marie-Elle: Good guess as you are correct. Though the answer was probably obvious.
+Marie-Elle: And what did you do before you received your…funemployed status if I recall correctly?
+Rowan: I used to work as a game designer! If you know Kugelhopf, I was a part of the team that worked on the levels before the game was launched.
+Marie-Elle: I do recall my younger sibling mentioning that title.
+Rowan: So you did hear about the game. It was really popular when it launched! 
+Rowan: I worked on the area called Biscoff that was one of the first locations players explored in the game!
+TART: <b>Next stop is Doughnut District.</b>
+Marie-Elle: My stop is coming up soon.
+Marie-Elle: Before I leave, I wanted to mention that you don’t have to worry about leaving Selina at your apartment if you ever need to visit me.
+Rowan: Eh? What about your allergies?
+Marie-Elle: I recently bought more cat allergy pills. I occasionally visit a friend of mine who owns 2 cats so I always try to have some on hand.
+Marie-Elle: With your recent move-in and the potential for Selina to be wandering around the complex it doesn’t hurt to buy more to be prepared.
+Rowan: Oh, so should I call or text you if I’m about to head over? Should we exchange numbers?
+Marie-Elle: Don’t worry about warning me. I can tell when you’re about to visit.
+Rowan: That doesn’t sound creepy at all.
+Rowan: (<i>confused</i>) But how do you —
+Marie-Elle: And here’s my stop! I can answer other questions at a later date! I must leave immediately or else I’ll barely make it 10 minutes early.
+Rowan: Wait, but —
+Marie-Elle: Ta-ta!
+<<Character Marie-Elle false>>
+(<i>Marie-Elle quickly leaves TART</i>)
+Rowan: This feels awfully familiar…
+Rowan: I wonder how she knows I’m about to knock on her door? I didn’t even get her number just in case.
+Rowan: Well, I’m sure I’ll find out eventually. I need to concentrate for my job interview now.
+<<jump levelTwoFindItem>>
+===
+
+title: levelTwoFindItem
+color: red
+group: bloodBag
+--- 
+//2.1
+<<Scene bg_office>> // living room
+
+Even though you don’t have a job, you still feel just as tired by the end of the day.
+Rowan: (<i>God, I’m exhausted. Hope Selina’s doing okay on her own…</i>)
+Rowan: Selina? Where are you?
+<<show_living_room>>
+She darts towards you and plops something at your feet.
+
+Rowan: Wait, don’t tell me you stole something again?
+<<hide_living_room>>
+<<jump levelTwoItemDescription>>
+===
+
+title: levelTwoItemDescription
+color: red
+group: bloodBag
+--- 
+//2.2 
+A plastic blood bag from the local hospital, filled with a viscous red liquid…you probably shouldn’t hold onto this for too long. 
+<<item_interaction>>
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection1
+---
+Red Liquid: It’s COLD, which would make sense if it were blood…you really hope it’s not blood.
+<<jump inspectionIncomplete>>
+===
+
+title: Inspection2
+---
+Bag Label: It’s unlabeled. No donor name, but it does say ‘Renfield Hospital.’ If this is a prop it’s extremely convincing.
+<<jump levelTwoInspectionComplete>>
+===
+
+title: levelTwoInspectionComplete
+color: red
+group: bloodBag
+--- 
+//2.3 
+Rowan: I didn’t know you had a thirst for blood. Maybe letting you eat that mouse was a mistake…
+<<hide_item>>
+<<Character Selina true>>
+Selina: (<i>innocently</i>) Meow?
+Rowan: Don’t try to play dumb now.
+Rowan: We should probably return this to the owner. The bag, not the blood I mean. 
+
+She looks up at you, annoyed you took her treat.
+
+Rowan: No, you cannot have it. We’re giving it back.
+<<Character Selina false>>
+<<jump levelTwoSelectNeighbor>>
+===
+
+title: levelTwoSelectNeighbor
+color: red
+group: bloodBag
+---
+// 2.4
+Which neighbor would you like to return this item to?
+<<neighbor_selection>>
+===
+
+title: levelTwoDorian
+color: red
+group: bloodBag
+--- 
+//2.5 
+<<Character Dorian true>>
+Rowan: Um, is this yours?
+Dorian: Why, yes it is! I’ve been looking everywhere for that. 
+Rowan: Sorry, Selina stole it. I found it this morning. 
+Dorian: Well, what a talented creature! It’s quite hard to steal from me without losing some blood.
+Rowan: Well…let’s be glad that didn’t happen. Speaking of blood though, I wanted to ask where you got that bag?
+Dorian: (<i>wink</i>) Let’s just say I borrowed it from work and leave it at that.
+Rowan: I really don’t think that’s legal or ethical…
+Dorian: Why not? It’s just juice.
+Rowan: Wait…juice?
+Dorian: A special kind you can only get at the hospital. It’s a great source of iron. Thank you for returning it, it’s quite a pain to procure. 
+Rowan: No problem… (<i>I’m scared.</i>)
+Dorian: Hm? Something the matter, Rowan?
+Rowan: Well, it’s just uh, you said you worked the night shift right?
+Dorian: Mhm. Always been more of a night owl. 
+Dorian: Plus I hate the sun. Gives me a nasty headache.
+Rowan: And your job is harvesting blood?
+Dorian: It’s what I trained for. 
+Rowan: And you drink special juice out of a blood bag?
+Dorian: Keeps it fresher longer.
+Rowan: …
+Dorian: Would you like to try some? It’s a bit of an acquired taste but I quite enjoy it.
+Rowan: NO! No, I’m good, I should probably get back home and feed Selina.
+Dorian: Suit yourself. Well, I’ll see you around then. Good night, Rowan.
+<<Character Dorian false>>
+<<change_scene Day_3>>
+// <<jump levelThreeFindItem>>
+===
+
+title: levelTwoFern
+color: red
+group: bloodBag
+--- 
+//2.6 
+<<Character Fern true>>
+Fern: Looks like human fuel. I wonder how it tastes.
+Rowan: Is your human…anemic? 
+Fern: They are fit as a fiddle, right as rain. I should hope they never run into an accident where a blood bag is needed.
+Fern: Though maybe there is someone who can help store emergency blood bags for us. 
+<<Character Fern false>>
+<<jump levelTwoSelectNeighbor>>
+===
+
+title: levelTwoMarie
+color: red
+group: bloodBag
+--- 
+//2.7 
+<<Character Marie-Elle true>>
+Marie-Elle: What’s that in your hands?
+Rowan: I think it’s tomato juice?
+Marie-Elle: Tomato juice?! Stop! Not any closer or else you might stain my clothes somehow.
+Rowan: Sorry! I didn’t realize I opened it slightly earlier.
+Marie-Elle: Hmph. What a distinctive metallic smell though. The packaging is a bit morbid looking with all the blood motifs as well.
+Marie-Elle: … Are you sure this is actually tomato juice?
+Rowan: I’m not sure actually…
+Marie-Elle: Speaking of blood, I recall somebody in this building works at a hospital.
+<<Character Marie-Elle false>>
+<<jump levelTwoSelectNeighbor>>
+===
+

@@ -1,0 +1,181 @@
+﻿title: levelFourIntro
+color: black
+group: tarotCard
+--- 
+//4.0 
+You’re dozing off in your corner seat on the TART when a familiar presence sends shivers down your spine.
+<<Character Dorian true>>
+Dorian: Hello Rowan. I wasn’t expecting to see you here today.
+Rowan: AH! Oh! Hi Dorian. I wasn’t expecting to see you out in the sun, ever. Must be something urgent.
+Dorian: I ran out of my favorite sunscreen. Hard to find one that protects my undead skin and doesn’t leave a whitecast
+Rowan: Yeah, most sunscreen’s made for skin that’s alive, so that makes sense.
+Just then, you both hear a familiar whirring and beeping near you.
+<<Character Fern true>>
+Fern: Salutations Rowan, Dorian. I see you both are also running errands today.
+Rowan: Hi Fern! What are you doing on the TART?
+Fern: I am collecting some necessary items from the store.
+Dorian: Necessary items?
+Fern: Various cleaning solutions and detergent for cloth items.
+Dorian: Fascinating…when I was younger we could barely imagine calling someone on an electric device, let alone one doing your shopping.
+Fern: Hm. According to my knowledge it is not possible for you to be that old. 
+Fern: The telephone was invented over 100 years ago, which would make you much older.
+Dorian: There are ways to bypass death other than modern medicine. 
+Fern: I am doubtful of that. 
+Fern: There is no way to gain life again after being dead, unless you are some sort of creature of the night, which is not possible since those are not real.
+Dorian: Well, isn’t that what the creatures of the night would want you to think?
+Fern: I don’t see how you would know that without direct contact with them.
+Rowan: It’s okay, Fern. He’s just messing with you. 
+Rowan: Don’t pay too much attention to what he says.
+Dorian: Hey! 
+Fern: Ah, I see. That makes sense considering the content of his words. 
+Fern: I will make sure to disregard any further speech from him.
+Dorian: (<i>sighs</i>) I can’t keep up with kids these days…
+<<Character Dorian false>>
+<<Character Fern false>>
+<<jump levelFourFindItem>>
+===
+
+
+
+title: levelFourFindItem
+color: black
+group: tarotCard
+--- 
+//4.1
+<<Scene bg_office>> // living room
+
+Evening arrives once again, and you make your way home with groceries in hand.
+Rowan: Hope Selina likes these new cat treats…can’t really afford much else right now.
+<<show_living_room>>
+Selina runs up to you with something in her mouth.
+Rowan: Well, looks like Miss Selina’s brought me another item to inspect.
+<<hide_living_room>>
+<<item_interaction>>
+<<jump levelFourItemDescription>>
+===
+
+title: levelFourItemDescription
+color: black
+group: tarotCard
+--- 
+//4.2 
+A metal box containing a set of 22 tarot cards lined with silver foil. The cards show a bit of weathering from frequent use, but are otherwise in pristine condition.
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection2
+---
+Silver Writing: There’s a note written here. It says, “Saw you looking at these and couldn’t help myself. I hope you’re always in my stars. Love, Kabir.” 
+<<jump levelFourInspectionComplete>>
+===
+
+title: levelFourInspectionComplete
+color: black
+group: tarotCard
+--- 
+//4.3 
+Rowan: I didn’t know you had a spiritual side Selina! I’d ask for a reading, but I think you need opposable thumbs to hold the cards.
+<<hide_item>>
+<<Character Selina true>>
+Selina: (<i>offended</i>) Meow…
+Rowan: Hey, not my fault you don’t! Maybe I’ll ask the owner for one…
+<<Character Selina false>>
+<<jump levelFourSelectNeighbor>>
+===
+
+title: levelFourSelectNeighbor
+color: black
+group: tarotCard
+---
+// 4.4
+Which neighbor would you like to return this item to?
+<<neighbor_selection>>
+===
+
+title: levelFourDorian
+color: black
+group: tarotCard
+--- 
+//4.5 
+<<Character Dorian true>>
+Dorian: Ah, my cards! It seems your cat has an eye for divination.
+Rowan: That, or she just likes sparkly things. 
+Dorian: Thank you for returning them. They’re very special to me.
+Rowan: Oh, yeah, I read the note on the back. Are they a gift from your boyfriend?
+Dorian: Ex-boyfriend actually. We parted some ages ago.
+Rowan: Oh…I’m sorry for asking, and for reading the note. I should’ve realized it was a personal thing…
+Rowan: Wait, how long is “ages” exactly?
+Dorian: (<i>laughs</i>) Don’t apologize. We broke up on good terms. We met just last month actually. 
+Dorian: It seems we’re meant to stay in each other’s stars after all.
+Rowan: That’s really great! I’m glad things worked out.
+Dorian: Life tends to work itself out, I’ve learned. And tarot can be a guide on the way there. Dorian: And would you look at that, we’ve got a deck right here. Care for a reading?
+Rowan: I thought you’d never ask.
+Dorian: Wonderful. Now, take the cards and shuffle them.
+Rowan: For how long?
+Dorian: Until it feels right. 
+Rowan: Okay…it feels right now.
+Dorian: Alright, now pick 3. Past, present, and future. If you have any specific questions, think of them while you choose.
+Rowan: That’s it? What if I pick wrong?
+Dorian: Like most things, with tarot, you get what you give. Approach it with sincerity and you can’t go wrong.
+Rowan: Okay… (<i>Why am I so nervous?</i>) 
+Dorian: Alright, let’s interpret your cards.
+Dorian: First, The Tower. Upheaval and sudden change. A single bolt of lightning sends the tower crashing down.
+Rowan: Yeah…that checks out. I got laid off pretty recently.
+Dorian: I’m so sorry that happened. But The Tower indicates revelation and awakenings as well. Not all bad, right?
+Dorian: Second, The Hanged Man.
+Rowan: Great. That’s probably bad right?
+Dorian: Not necessarily. True, it can indicate a lack of direction, but it also signals pausing to gain a change in perspective. 
+Rowan: So…it’s saying I need to hang out a bit before taking action?
+Dorian: (<i>laughs</i>) That’s a good way of putting it. 
+Dorian: And lastly, The Wheel of Fortune. Forever shifting and changing through good and bad. 
+Dorian: But, as the cycle of life turns, things will eventually end up where they’re meant to be.
+Rowan: I feel like you’re being very kind in your interpretations. 
+Rowan: That also means that if things are good now, they’ll cycle back to being bad again.
+Dorian: Maybe so. There’s always a darker side to any reading. 
+Dorian: But again, you get what you give, and take what you want. 
+Rowan: I guess I’ll take the kind interpretation then.
+Rowan: Thanks, Dorian. This was actually really helpful.
+Dorian: Of course. It seems the stars are in your favor, despite your current circumstances. 
+Rowan: Yeah, I hope they stay that way. 
+<<Character Dorian false>>
+<<change_scene Day_5>>
+===
+
+title: levelFourFern
+color: black
+group: tarotCard
+--- 
+//4.6
+<<Character Fern true>> 
+Fern: OoooooOOoooOOoooO mysterious objects. What are they for? 
+Rowan: They’re tarot cards. They help guide and answer questions. 
+Fern: Do they know when my next package is coming? It was supposed to arrive yesterday.
+Rowan: You usually need someone familiar with Arcana to read them. 
+Fern: Judging by the box design, I suspect it belongs to a creature of the night. 
+<<Character Fern false>>
+<<jump levelFourSelectNeighbor>>
+===
+
+title: levelFourMarie
+color: black
+group: tarotCard
+--- 
+//4.7
+<<Character Marie-Elle true>>
+Rowan: Any chance these tarot cards are yours?
+Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not.. I know a superstitious designer who likes the assurance of some guidance in their future though. 
+Rowan: Oh, does that mean you had your future read before?
+Marie-Elle: Of course, but I honestly find them creepy and it makes me feel like somebody is peering into my life.
+Marie-Elle: (<i>shivers</i>) I personally prefer to take things into my own hands without any external help. 
+Rowan: I don’t know. Having some idea of what my future could hold or a nudge in the right direction would help my indecisiveness a lot.
+Rowan: (<i>laughs</i>) Or help tell me the owner of the item Selina stole that day.
+Marie-Elle: (<i>amused</i>) That would definitely be relevant to your current life.
+Marie-Elle: Well, the tarot cards must belong to somebody who’s had a lot to consider about their life or future.
+<<Character Marie-Elle false>>
+<<jump levelFourSelectNeighbor>>
+===
+
