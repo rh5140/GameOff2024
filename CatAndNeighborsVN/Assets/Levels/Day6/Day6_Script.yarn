@@ -205,7 +205,7 @@ group: newsArticle
 <<Scene marie_open_nopeek>>
 <<Character marieelle true>>
 
-Marie-Elle: Hello, Protagonist. What brings you to my door today?
+Marie-Elle: Hello, Rowan. What brings you to my door today?
 Marie-Elle: Also, no worries about my allergies around Selina. Like I said the day earlier, I take an allergy pill whenever I sense you’re about to visit me.
 
 <<Character marieelle false>>
@@ -320,7 +320,7 @@ Marie-Elle: Thanks very much for sharing with me about what’s it like for you 
 Marie-Elle: I know how hard it is to talk about it with others or even yourself.
 Rowan: It’s no problem, Marie-Elle. This also helps me as well since I feel less alone while I struggle through this.
 Marie-Elle: I think I need some time to myself to think things through and who to talk to.
-Marie-Elle: Goodbye, Protagonist.
+Marie-Elle: Goodbye, Rowan.
 Rowan: Bye bye, Marie-Elle. Don’t be a stranger.
 
 <<Character marieelle false>>
