@@ -15,11 +15,11 @@ Selina: Meow.
 Rowan: Welcome to Tiramisu Apartments! This is gonna be our new home for the indefinite future. 
 Selina: Meow?? Meow! 
 Rowan: I know, I know. It’s not like where we used to live, but it looks pretty cozy. 
-Cat: …
+Selina: …
 Rowan:: …
 Cat: Meow!! Meow!! 
 Rowan: No need to swear at me!
-Cat: Meow (sad)
+Cat: (<i>sad</i>) Meow...
 Rowan: I’m gonna miss everyone at the co-op too. But we have new neighbors here! 
 Rowan: The landlady gave me a list of the tenants living nearby. Why don’t we take some time to introduce ourselves to them? 
 Rowan pulls out a letter. 
@@ -61,8 +61,8 @@ Rowan: Hmm, doesn’t look like anyone’s home…I’ll ring the bell just in c
 <<Character Selina true>>
 Selina senses a fearsome presence and scurries behind you.
 Selina: (<i>hisses</i>) Meow…
-<<Character Selina false>>
 Rowan: Hey, what’s the matter?
+<<Character Selina false>>
 <<Scene dorian_apt_open>>
 <<Character Dorian true>>
 Dorian: Well, who do we have here?
