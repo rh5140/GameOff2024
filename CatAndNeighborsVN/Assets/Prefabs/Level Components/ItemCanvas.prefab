@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2974245347614913807}
   - component: {fileID: 993732853861876352}
   - component: {fileID: 6947731326864065627}
-  - component: {fileID: 4080466003115811324}
   m_Layer: 5
   m_Name: Sparkle
   m_TagString: Untagged
@@ -28,8 +27,8 @@ RectTransform:
   m_GameObject: {fileID: 82444876736153634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3145528642208404394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66,9 +65,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2997f905cf55f664fbcafc1e70b1129c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -76,28 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &4080466003115811324
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82444876736153634}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 293d77747bf083d49ad1ac8a53dad7a8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1442830269268465085
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +240,6 @@ GameObject:
   - component: {fileID: 7526464906904776706}
   - component: {fileID: 524907321279551562}
   - component: {fileID: 729834217945646524}
-  - component: {fileID: 6221697405253007361}
   m_Layer: 5
   m_Name: Sparkle
   m_TagString: Untagged
@@ -280,15 +256,15 @@ RectTransform:
   m_GameObject: {fileID: 1676684556178198887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 178736011745077791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 115, y: 263}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &524907321279551562
 CanvasRenderer:
@@ -318,9 +294,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2997f905cf55f664fbcafc1e70b1129c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -328,28 +304,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &6221697405253007361
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676684556178198887}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 293d77747bf083d49ad1ac8a53dad7a8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4242686983391037789
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +395,7 @@ MonoBehaviour:
   inspectImage: {fileID: 1623107503166192145}
   changesItemState: 1
   node: Inspection1
-  cursorTexture: {fileID: 2800000, guid: e66bbdb57f307804f963e3922e3d5c99, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 7662955175de7594d82ecba6748cb9fb, type: 3}
 --- !u!1 &4456071212348345845
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,4 +590,4 @@ MonoBehaviour:
   inspectImage: {fileID: 0}
   changesItemState: 0
   node: Inspection2
-  cursorTexture: {fileID: 2800000, guid: e66bbdb57f307804f963e3922e3d5c99, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 7662955175de7594d82ecba6748cb9fb, type: 3}
