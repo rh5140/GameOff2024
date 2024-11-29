@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &573698491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9007542892037251586, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+  m_PrefabInstance: {fileID: 1117319412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1117319412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,6 +288,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1659417995, guid: 99e9db7c4456742498e8d9641f5b73df, type: 3}
+    - target: {fileID: 510787896481553419, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2160660421090409153, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: pitifulRobotNode
       value: levelThreeFern
@@ -342,6 +351,18 @@ PrefabInstance:
     - target: {fileID: 2488666744912607667, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -37.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530071273591898550, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: originalImage
+      value: 
+      objectReference: {fileID: 573698491}
+    - target: {fileID: 2530071273591898550, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: deactivateImage
+      value: 
+      objectReference: {fileID: 573698491}
+    - target: {fileID: 2530071273591898550, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: changesItemState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3562474203342899192, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: pitifulRobotNode
@@ -463,6 +484,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5752053576063998095, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: originalImage
+      value: 
+      objectReference: {fileID: 1117319413}
+    - target: {fileID: 5752053576063998095, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: deactivateImage
+      value: 
+      objectReference: {fileID: 1117319413}
     - target: {fileID: 6219596487393433062, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -475,9 +504,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 25297551, guid: 99e9db7c4456742498e8d9641f5b73df, type: 3}
+    - target: {fileID: 8713260616376569327, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9007542892037251586, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9085456031230382866, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_LocalRotation.w
@@ -516,6 +549,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+--- !u!1 &1117319413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9188083596138237358, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+  m_PrefabInstance: {fileID: 1117319412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

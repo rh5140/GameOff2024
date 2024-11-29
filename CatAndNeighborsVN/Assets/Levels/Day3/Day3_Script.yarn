@@ -35,7 +35,7 @@ I need more clues to figure out who this belongs to...
 
 title: Inspection1
 ---
-Oh, I was able to take it apart. I wonder what this is..
+Oh, I was able to take it apart. What is it?
 <<jump inspectionIncomplete>>
 ===
 
@@ -51,6 +51,7 @@ group: usb
 --- 
 //3.3 
 Rowan: I wonder what kind of data it holds. Do you think it’s important to anyone? 
+<<hide_item>>
 <<Character Selina true>>
 Selina is judging you with a face that’s asking, “How am I supposed to know?” 
 Rowan: I kinda want to check, but maybe it could have viruses…
@@ -71,59 +72,45 @@ color: tan
 group: usb
 --- 
 //3.5 
-<<if getVampireNurseNotSelected()>>
-    <<Scene dorian_apt_open>>
-    <<Character Dorian true>>
-    Dorian: Oh that’s one of those…what’s it called, a UPS drive?
-    Rowan: …It’s a USB drive.
-    Dorian: Hey, cut me some slack, we didn’t have this stuff when I was younger.
-    Rowan: What, in the 15th century?
-    Dorian: More like 17th.
-    Rowan: …Okay Grandpa. I’m gonna go now.
-    Dorian: (<i>sarcastic<i>) No respect for elders these days…
-    <<setVampireNurseNotSelected false>>
-    <<Character dorian false>>
-    <<jump Character_Select>>
-<<else>>
-    <<jump Already_Selected>>
-<<endif>>
+<<Scene dorian_apt>>
+<<wait 0.5>>
+<<Scene dorian_apt_open>>
+<<Character Dorian true>>
+Dorian: Oh that’s one of those…what’s it called, a UPS drive?
+Rowan: …It’s a USB drive.
+Dorian: Hey, cut me some slack, we didn’t have this stuff when I was younger.
+Rowan: What, in the 15th century?
+Dorian: More like 17th.
+Rowan: …Okay Grandpa. I’m gonna go now.
+Dorian: (<i>sarcastic<i>) No respect for elders these days…
+<<Character Dorian false>>
+<<jump Character_Select>>
 ===
 
-title: Already_Selected
----
-Rowan: I already checked with them.
-<<neighbor_selection>>
-===
 
 title: levelThreeMarie
 color: tan
 group: usb
 --- 
 //3.7 
-<<if getFashionDesignerNotSelected()>>
-
-    <<Scene marie_elle_apt>>
-    <<wait 0.5>>
-    <Scene marie_apt_open>>
-    <<Character Marie true>>
-    Marie-Elle: A USB drive? Who even uses USB drives anymore? What outdated technology.
-    Rowan: Maybe they prefer keeping their documents private?
-    Marie-Elle: Hmm, I guess it is cheaper to have a one-time purchase over a subscription plan for cloud storage. Although what’s the point if a single moment is all it takes to lose those files forever. 
-    Rowan: (<i>shifty eyes</i>) I definitely don’t have experience in that.
-    Marie-Elle: Oh, Rowan. I hope it wasn’t too important.
-    Rowan: Well, Selina definitely didn’t think so. 
-    Marie-Elle: Blaming Selina again are we?
-    Rowan: (<i>wink</i>) Perks of having a well-known mischievous pet!
-    Rowan: So the USB isn’t yours I’m guessing?
-    Marie-Elle: No, but one of our neighbors does seem to lose mechanical parts or tech bits here and there. I always see something laying around near the trash.
-
-    <<setVampireNurseNotSelected false>>
-    <<Character Marie false>>
-    <<jump Character_Select>>
-<<else>>
-    <<jump Already_Selected>>
-<<endif>>
+<<Scene marie_elle_apt>> 
+<<wait 0.5>>
+<<Character Marie-Elle true>>
+<<Scene marie_apt_open>>
+Marie-Elle: A USB drive? Who even uses USB drives anymore? What outdated technology.
+Rowan: Maybe they prefer keeping their documents private?
+Marie-Elle: Hmm, I guess it is cheaper to have a one-time purchase over a subscription plan for cloud storage. Although what’s the point if a single moment is all it takes to lose those files forever. 
+Rowan: (<i>shifty eyes</i>) I definitely don’t have experience in that.
+Marie-Elle: Oh, Rowan. I hope it wasn’t too important.
+Rowan: Well, Selina definitely didn’t think so. 
+Marie-Elle: Blaming Selina again are we?
+Rowan: (<i>wink</i>) Perks of having a well-known mischievous pet!
+Rowan: So the USB isn’t yours I’m guessing?
+Marie-Elle: No, but one of our neighbors does seem to lose mechanical parts or tech bits here and there. I always see something laying around near the trash.
+<<Character Marie-Elle false>>
+<<jump Character_Select>>
 ===
+
 
 title: levelThreeFern
 color: tan
