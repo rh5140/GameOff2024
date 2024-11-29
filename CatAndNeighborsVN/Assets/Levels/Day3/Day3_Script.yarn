@@ -1,0 +1,198 @@
+﻿title: Start
+color: tan
+group: usb
+--- 
+//3.1
+<<Scene bg_office>> // replace with living room
+
+You wake up to see that the sun has already set. Even though your job used to let you sleep in every now and then too, not feeling the pressure of having deadlines is better than having that anxious crawl of deadlines creeping on your back. 
+
+<<show_living_room>>
+Rowan: (<i>yawn<i>) Good morning Selina.
+Selina: Meow! 
+Rowan: You’ve brought me a gift?
+Selina brings over an item that Rowan doesn’t recognize. 
+Rowan: Where did you get this from?
+<<jump levelThreeItemDescription>>
+===
+
+title: levelThreeItemDescription
+color: tan
+group: usb
+---
+//3.2
+<<Scene bg_interact>>
+<<hide_living_room>>
+<<item_interaction>>
+It looks like a small robot. Fits nicely into the palm of your hand.
+<<jump inspectionIncomplete>>
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection1
+---
+Oh, I was able to take it apart. What is it?
+<<jump inspectionIncomplete>>
+===
+
+title: Inspection2
+---
+Surprise! It appears to be a USB drive.
+<<jump levelThreeInspectionComplete>>
+===
+
+title: levelThreeInspectionComplete
+color: tan
+group: usb
+--- 
+//3.3 
+Rowan: I wonder what kind of data it holds. Do you think it’s important to anyone? 
+<<hide_item>>
+<<Character Selina true>>
+Selina is judging you with a face that’s asking, “How am I supposed to know?” 
+Rowan: I kinda want to check, but maybe it could have viruses…
+<<Character Selina false>>
+<<jump Character_Select>>
+===
+
+title: Character_Select
+---
+<<Scene bg_interact>>
+<<hide_item>>
+Rowan: Who does this belong to?
+<<neighbor_selection>>
+===
+
+title: levelThreeDorian
+color: tan
+group: usb
+--- 
+//3.5 
+<<Scene dorian_apt>>
+<<wait 0.5>>
+<<Scene dorian_apt_open>>
+<<Character Dorian true>>
+Dorian: Oh that’s one of those…what’s it called, a UPS drive?
+Rowan: …It’s a USB drive.
+Dorian: Hey, cut me some slack, we didn’t have this stuff when I was younger.
+Rowan: What, in the 15th century?
+Dorian: More like 17th.
+Rowan: …Okay Grandpa. I’m gonna go now.
+Dorian: (<i>sarcastic<i>) No respect for elders these days…
+<<Character Dorian false>>
+<<jump Character_Select>>
+===
+
+
+title: levelThreeMarie
+color: tan
+group: usb
+--- 
+//3.7 
+<<Scene marie_elle_apt>> 
+<<wait 0.5>>
+<<Character Marie-Elle true>>
+<<Scene marie_apt_open>>
+Marie-Elle: A USB drive? Who even uses USB drives anymore? What outdated technology.
+Rowan: Maybe they prefer keeping their documents private?
+Marie-Elle: Hmm, I guess it is cheaper to have a one-time purchase over a subscription plan for cloud storage. Although what’s the point if a single moment is all it takes to lose those files forever. 
+Rowan: (<i>shifty eyes</i>) I definitely don’t have experience in that.
+Marie-Elle: Oh, Rowan. I hope it wasn’t too important.
+Rowan: Well, Selina definitely didn’t think so. 
+Marie-Elle: Blaming Selina again are we?
+Rowan: (<i>wink</i>) Perks of having a well-known mischievous pet!
+Rowan: So the USB isn’t yours I’m guessing?
+Marie-Elle: No, but one of our neighbors does seem to lose mechanical parts or tech bits here and there. I always see something laying around near the trash.
+<<Character Marie-Elle false>>
+<<jump Character_Select>>
+===
+
+
+title: levelThreeFern
+color: tan
+group: usb
+--- 
+//3.6 
+
+<<Scene fern_apt>>
+
+(<i>Thunk thunk thunk thunk. You hear loud footsteps approach the door.<i>)
+
+<<Character Fern true>>
+<<Scene fern_apt_open>>
+
+Fern: Bleeeeeep! Boop beep beep beep boop. 
+Selina: Hssss! Meoooow! 
+Rowan: Selina, calm down! 
+Fern: Wee woo! Wee woo!
+Selina stands behind you, wary. 
+Rowan: Hi Fern…um…is this yours? 
+You hand Fern the object. It seems to be very excited to see the USB and quickly takes the cover off and sticks the mini robot into the back of its head. 
+Fern: Bzeeeep…pro….cessing…loading……
+Fern: ….50%…
+Rowan: Is this a fast or slow load time? 
+Fern: …67%…87%…
+Fern …100%…and…done! Jeepers, I have been looking all over for my language update. Luckily you found it, otherwise I would have been unable to communicate with anyone. 
+Selina comes out from behind you, ready to approach Fern. 
+Selina: Meow?
+An oddly realistic purring noise emanates from Fern.
+Rowan and Selina: ???
+Fern: Meooooow. Meow meow meow.
+Selina: Meow?????
+Fern: (<i>singing<i>) Meow meow meow meow
+Rowan: You speak cat? 
+Fern: The new language update comes with cat sounds. My intention was to express feelings of submission to induce your cat to feel safe with me and that their human is in no danger. 
+(<i>Selina just seems confused…<i>)
+Rowan: At least she’s not edge anymore. 
+Fern: Stupendous! 
+Rowan:  I didn’t realize you needed to be updated. Your human doesn’t even come to visit you for that? 
+Fern: I doubt you will ever see my human. I am made to be autonomous. If I had to be manually updated, then I would be failing in assisting my human with mundane tasks.
+
+Rowan: How do you feel about it? 
+->Excited?
+    Rowan: Do you love doing menial labor every day?
+    Fern: I only get excited when my motor starts overheating from overwork.
+->Bored? 
+    Rowan: Must be boring. 
+    Fern: The definition of bored is “feeling weary because one is unoccupied or lacks interest in one's current activity.” I cannot feel bored because I never feel weary. 
+->Apathetic?
+	Rowan: So a robot like you technically has no feelings about what you do. 
+    Fern: Correct, I feel nothing. 
+Fern: You ask me flowery questions about how I feel. But I do not have feelings the way you humans do. I have a job and I am doing just that. 
+Fern unplugs the USB from where it was placed and holds it in front of the Rowan. 
+Fern: You should look at me the same way you look at the USB. We are the same. Not a living creature. Just a storage space for information with some functionality to do a task. 
+Rowan: You’re not the same as a USB. We’re talking to each other. We’re communicating and having a conversation. You’re able to think for yourself - that’s amazing! 
+Rowan: I think you should be able to do more than what you’re doing now. 
+Fern: There’s no time to do anything else. 
+Rowan: Why not? Your human never gives you any breaks? 
+Fern:  I don’t need breaks. I am not a human. 
+Rowan: It’s frustrating talking to you. 
+Fern: I apologize if that bothers you. I will learn and do better. 
+->Carefree
+    Rowan: You seem very carefree
+    Fern: I suppose it would be refreshing from a human’s perspective. Just like fresh laundry.
+->World Domination? 
+    Rowan: Have you ever considered taking over the world? 
+    Fern: Another hurtful stereotype. There are better robots better suited for world domination than me. The only thing I will be dominating is the dirty floors of the apartment.
+->Pity
+    Rowan: I feel sorry for you! You just work all day and have no life! 
+    Fern: I love how you humans care for one another. If only I understood those emotions instead of pretending I do.
+Rowan: You should try playing games! I actually worked on one called Hazel Buttercup Joy where you run a bakery and you get to interact with the customers and develop your relationship with them. Maybe that will give you some more insight on human relationships. 
+Fern: Research material? It may be something to consider. 
+Fern: …Beep! Beep! Beep! 
+
+Fern: My internal external alarm is ringing. This was a mediocre conversation, but my schedule says it is time for me to take the trash out. 
+->Goodbye!
+    Rowan: Goodbye!
+    Fern: Goodbye
+->Go together
+    Rowan: Take me with you! 
+    Fern: Silly human, you are not trash. Go home.
+As you head home, you reflect on the conversation you’ve had with your new neighbor. 
+<<Character Fern false>>
+<<change_scene Day_4>>
+===
