@@ -70,7 +70,7 @@ group: mucciBag
 <<if getVampireNurseNotSelected()>>
     <<Scene dorian_apt>> 
     <<wait 0.5>>
-    <<Scene fern_apt_open>>
+    <<Scene dorian_apt_open>>
     <<Character DORIAN true>>
     Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
     Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
