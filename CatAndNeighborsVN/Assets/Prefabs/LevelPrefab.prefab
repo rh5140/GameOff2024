@@ -916,6 +916,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6219596487393433062}
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: loadSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: neighborSelectionCanva
       value: 
       objectReference: {fileID: 7035464285539190686}
@@ -926,7 +930,7 @@ PrefabInstance:
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: 'loadSprites.Array.data[4]'
       value: 
-      objectReference: {fileID: 21300000, guid: a989e71982fa5434284db2dd30b138de, type: 3}
+      objectReference: {fileID: 21300000, guid: 59984b13d5553414694e96c70127663e, type: 3}
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: 'loadSprites.Array.data[5]'
       value: 

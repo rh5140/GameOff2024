@@ -105,7 +105,7 @@ group: tarotCard
 //4.5 
 <<Scene dorian_apt>> 
 <<wait  0.5>>
-<<Scene h4open>>
+<<Scene dorian_apt_open>> 
 <<Character Dorian true>>
 Dorian: Ah, my cards! It seems your cat has an eye for divination.
 Rowan: That, or she just likes sparkly things. 

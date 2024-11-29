@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: cursorTexture
       value: 
       objectReference: {fileID: 2800000, guid: e66bbdb57f307804f963e3922e3d5c99, type: 3}
+    - target: {fileID: 3948767143196915944, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: 'loadSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 59984b13d5553414694e96c70127663e, type: 3}
     - target: {fileID: 4810393364618128668, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -26
@@ -407,6 +411,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6534777087957556574, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: 1f2a943b711ed6f48befa01744df073a, type: 3}
     - target: {fileID: 9007542892037251586, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
       value: 0

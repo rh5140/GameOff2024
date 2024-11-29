@@ -134,7 +134,7 @@ group: bloodBag
 //2.5 
 <<Scene dorian_apt>> 
 <<wait  0.5>>
-<<Scene h4open>>
+<<Scene dorian_apt_open>> 
 <<Character Dorian true>>
 Rowan: Um, is this yours?
 Dorian: Why, yes it is! I’ve been looking everywhere for that. 
