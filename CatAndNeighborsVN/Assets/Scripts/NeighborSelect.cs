@@ -9,7 +9,10 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject neighborPortrait;
     public GameObject chooseButton;
     public GameObject cancelButton;
-    public GameObject chooseText;
+    public GameObject chooseNeighborNameText;
+
+    public GameObject otherNeighbor1;
+    public GameObject otherNeighbor2;
 
     public static bool fashionDesignerNotSelected;
     public static bool vampireNurseNotSelected;
@@ -20,7 +23,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         neighborPortrait.SetActive(true);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
-        chooseText.SetActive(false);
+        chooseNeighborNameText.SetActive(false);
     }
 
     [YarnFunction("getFashionDesignerNotSelected")]
@@ -50,29 +53,35 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     [YarnCommand("setPitifulRobotNotSelected")]
     public static void SetPitifulRobotNotSelected(bool status) {
+        Debug.Log("GOTCHA");
         pitifulRobotNotSelected = status;
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    {
+    {   
+        // Set up selection interface buttons & text
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
-        chooseText.SetActive(true);
-
-        TextMeshProUGUI selectText = chooseText.GetComponent<TextMeshProUGUI>();
-        selectText.text = gameObject.name;
-
+        chooseNeighborNameText.SetActive(true);
+        
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);
+
+        // Turn off "Which neighbor does this item belong to?"
+        parentCanva.transform.Find("ChooseText").gameObject.SetActive(false);
+
+        neighborPortrait.GetComponent<Image>().color = Color.white;
+        otherNeighbor1.GetComponent<Image>().color = Color.grey;
+        otherNeighbor2.GetComponent<Image>().color = Color.grey;
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-        GetComponentInChildren<Image>().color = new Color(255, 0, 0 );
+
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-        GetComponentInChildren<Image>().color = new Color(255, 255, 255);
+
     }
 }

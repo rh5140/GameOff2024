@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 public class ChooseNeighborButton : MonoBehaviour
@@ -19,7 +20,7 @@ public class ChooseNeighborButton : MonoBehaviour
     [SerializeField] private string pitifulRobotNode;
     
     private GameObject chosenNeighbor;
-
+    
 	private DialogueRunner dialogueRunner;
 
     public void Start() {
@@ -39,10 +40,21 @@ public class ChooseNeighborButton : MonoBehaviour
     }
 
     public void Click() {
+        // Turn the character color from grey to white - needed if selected is incorrect
+        if (fashionDesigner.activeSelf) {
+            fashionDesigner.GetComponentInChildren<Image>().color = Color.white;
+        }
+        if (vampireNurse.activeSelf) {
+            vampireNurse.GetComponentInChildren<Image>().color = Color.white;
+        }
+        if (pitifulRobot != null & pitifulRobot.activeSelf) {
+            pitifulRobot.GetComponentInChildren<Image>().color = Color.white;
+        }
+
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         chosenNeighbor = parentCanva.chosenNeighbor;
-        chosenNeighbor.transform.Find(chosenNeighbor.name).gameObject.SetActive(false);
-
+        chosenNeighbor.SetActive(false);
+        
         Debug.Log("OnClick");
         if (!dialogueRunner.IsDialogueRunning) {
             Debug.Log("Jump");
