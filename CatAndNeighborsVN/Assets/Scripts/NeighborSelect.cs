@@ -11,23 +11,19 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public GameObject cancelButton;
     public GameObject chooseNeighborNameText;
 
+    public GameObject otherNeighbor1;
+    public GameObject otherNeighbor2;
+
     public static bool fashionDesignerNotSelected;
     public static bool vampireNurseNotSelected;
     public static bool pitifulRobotNotSelected;
     public static string currentNeighbor;
-
-    private static Vector3 buttonOriginalPosition;
-    private static Vector3 nameOriginalPosition;
 
     void Start() {
         neighborPortrait.SetActive(true);
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
         chooseNeighborNameText.SetActive(false);
-
-        NeighborCanvasParent originalPosition = GetComponentInParent<NeighborCanvasParent>();
-        buttonOriginalPosition = originalPosition.transform.Find("CurrentSelection").position;
-        nameOriginalPosition = originalPosition.transform.Find("ChosenNeighborName").position;
     }
 
     [YarnFunction("getFashionDesignerNotSelected")]
@@ -74,25 +70,9 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         // Turn off "Which neighbor does this item belong to?"
         parentCanva.transform.Find("ChooseText").gameObject.SetActive(false);
 
-        if (gameObject.name == "Marie-Elle") {
-            // Change color of characters
-            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.white;
-            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-
-            // Position Name & Buttons to Left Side
-
-        }
-        else if (gameObject.name == "Dorian") {
-            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.white;
-            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-        }
-        else {
-            parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.white;
-            parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-            parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.grey;
-        } 
+        neighborPortrait.GetComponent<Image>().color = Color.white;
+        otherNeighbor1.GetComponent<Image>().color = Color.grey;
+        otherNeighbor2.GetComponent<Image>().color = Color.grey;
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)

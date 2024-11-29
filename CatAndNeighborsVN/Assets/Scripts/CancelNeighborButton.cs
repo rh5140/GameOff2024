@@ -8,13 +8,18 @@ public class CancelNeighborButton : MonoBehaviour
     public GameObject chooseButton;
     public GameObject chooseNeighborNameText;
 
+    public GameObject fashionDesigner;
+    public GameObject vampireNurse;
+    public GameObject pitifulRobot;
+
     public void Click() {
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.UnsetChosenNeighbor();
 
-        parentCanva.transform.Find("Marie-Elle").gameObject.GetComponentInChildren<Image>().color = Color.white;
-        parentCanva.transform.Find("Dorian").gameObject.GetComponentInChildren<Image>().color = Color.white;
-        parentCanva.transform.Find("Fern").gameObject.GetComponentInChildren<Image>().color = Color.white;
+        // Make characters not greyed out
+        fashionDesigner.GetComponent<Image>().color = Color.white;
+        vampireNurse.GetComponent<Image>().color = Color.white;
+        pitifulRobot.GetComponent<Image>().color = Color.white;
 
         gameObject.SetActive(false);
         chooseButton.SetActive(false);

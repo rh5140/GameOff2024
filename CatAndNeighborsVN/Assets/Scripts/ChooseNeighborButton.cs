@@ -40,13 +40,24 @@ public class ChooseNeighborButton : MonoBehaviour
     }
 
     public void Click() {
+        // Turn the character color from grey to white - needed if selected is incorrect
+        if (fashionDesigner.activeSelf) {
+            fashionDesigner.GetComponentInChildren<Image>().color = Color.white;
+        }
+        if (vampireNurse.activeSelf) {
+            vampireNurse.GetComponentInChildren<Image>().color = Color.white;
+        }
+        if (pitifulRobot != null & pitifulRobot.activeSelf) {
+            pitifulRobot.GetComponentInChildren<Image>().color = Color.white;
+        }
+
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         chosenNeighbor = parentCanva.chosenNeighbor;
-        chosenNeighbor.transform.Find(chosenNeighbor.name).gameObject.SetActive(false);
-
-        // Debug.Log("OnClick");
+        chosenNeighbor.SetActive(false);
+        
+        Debug.Log("OnClick");
         if (!dialogueRunner.IsDialogueRunning) {
-            // Debug.Log("Jump");
+            Debug.Log("Jump");
             JumpToNeighborDialogue(chosenNeighbor);
         }
 
