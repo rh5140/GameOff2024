@@ -1,0 +1,328 @@
+title: levelSixIntro
+color: grey
+group: newsArticle
+--- 
+//6.0 
+
+<<Scene tartfinal>>
+
+As you lean against the walls of the TART, listening to the familiar rumbling of the train on the tracks, you hear a familiar clicking of heels coming your way.
+
+<<Character marieelle true>>
+
+Marie-Elle: Hello Rowan. Is your thieving cat with you today?
+Rowan: Hey Marie-Elle, and nope, she’s at home. 
+Rowan: She’s been really into collecting rocks lately.
+Marie-Elle: Well, it’s good to have hobbies I suppose.
+
+Just then, a foreboding presence fills the train car.
+
+<<Character dorian true>>
+
+Dorian: Well, if it isn’t two of my three favorite neighbors.
+Rowan: Hi Dorian!
+Marie-Elle: Hello Dorian…I see you’re still wearing your dirty work uniform. 
+Dorian: I see you’re still wearing last season’s runway. 
+Marie-Elle: This isn’t even out yet! And you helped me design it!
+Rowan: Wait, he did?
+Marie-Elle: Although he is thoroughly unpleasant in every other way…I will admit he has an eye for accessories.
+Dorian: Is that a compliment I hear?
+Marie-Elle: No. I’m still convinced you’re just some weird cosplayer and not even a real nurse.
+Dorian: Maybe you should visit the emergency room and find out for yourself.
+Marie-Elle: Is that a threat I hear?
+Dorian: No, it’s an invitation. You seem a little stressed out.
+Marie-Elle: Stressed?! 
+Marie-Elle: I-I’m not stressed at all! 
+Marie-Elle: Not one bit! 
+Marie-Elle: Why would you even think that?!
+Dorian: Whatever you say.  
+Rowan: Uh, have you both known each other for a while?
+Marie-Elle: Too long. 
+Dorian: Time is something like a ghost to me. 
+Dorian: Words like “short” and “long” have lost meaning altogether.
+Marie-Elle: Oh because you’re a centuries old undead vampire?
+Dorian: Exactly.
+
+Rowan: (<i>laughs</i>) Seems like you know each other very well.
+Marie-Elle: Not by choice…
+Marie-Elle: But Dorian, let me know once you’ve gotten a chance to look over the sketches I sent you.
+Dorian: (<i>smiles</i>) Of course. 
+
+<<Character marieelle false>>
+<<Character dorian false>>
+<<jump levelSixFindItem>>
+===
+
+title: levelSixFindItem
+color: grey
+group: newsArticle
+--- 
+//6.1
+
+<<Scene bg_office>> // living room
+
+After hanging out with a university friend, Rowan returns back home with a new understanding of the relationships between their neighbors. 
+
+They slowly take off their shoes and place down the homemade meal their friend gave them on the kitchen counter.
+
+<<show_living_room>>
+
+Rowan cracks her neck and plops down on the lumpy sofa in her living room.
+Selina: Meow meow~
+Rowan: Hello, Selina. It’s so nice to see your RBF after a long day.
+Rowan: Any items for me today? Haha, I hope not.
+Selina:  (<i>haughty</i>) Me-ow.
+Rowan: Let’s see, today’s item is a newspaper?
+Rowan: (<i>Picks up newspaper by their fingertips</i>) This time that item you chose is a bit…
+Rowan: (<i>Wrinkles nose</i>) …soggy.
+Selina: (<i>delighted</i>) Meow.
+Rowan: Let’s figure out who owns this.
+
+<<hide_living_room>>
+<<jump levelSixItemDescription>>
+===
+
+title: levelSixItemDescription
+color: grey
+group: newsArticle
+--- 
+//6.2 
+
+<<Scene bg_interact>> // living room?
+
+A blurred out article clipping that’s a bit soggy from the rain. 
+
+<<item_interaction>>
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection1
+---
+“Rising Fashion Designer Disappoints Crowd With Unremarkable and Banal Designs”
+
+<<jump inspectionIncomplete>>
+===
+
+title: Inspection2
+---
+The person in the photo is unrecognizable with many lines criss-crossing across their face.
+
+<<jump levelSixInspectionComplete>>
+===
+
+title: levelSixInspectionComplete
+color: grey
+group: newsArticle
+--- 
+//6.3
+
+<<show_living_room>>
+<<hide_item>>
+
+Rowan: You want to return the item yourself, miss thief?
+Selina: HISSSSSS
+Rowan: Ok! I get it. I’ll do it.
+Rowan: Don’t do things you can’t own up to. Tsk tsk.
+Selina: …
+
+<<hide_living_room>>
+<<jump levelSixSelectNeighbor>>
+===
+
+title: levelSixSelectNeighbor
+---
+<<Scene bg_interact>>
+<<hide_item>>
+Which neighbor would you like to return this item to?
+<<neighbor_selection>>
+===
+
+title: levelSixDorian
+color: grey
+group: newsArticle
+--- 
+//6.5 
+
+<<Scene dorian_apt>>
+<<wait 0.5>>
+<<Scene dorian_apt_open>>
+<<Character dorian true>>
+
+Dorian: I’m guessing you think this is mine.
+Rowan: Is it?
+Dorian: Nope. But I feel for Marie-Elle. This article must be why she was so stressed on the TART today. 
+Dorian: And now that we’ve moved past the printing press, horrible gossip like this spreads even faster.
+Rowan: Yeah, I hope she’s okay…
+Rowan: Wait, were you alive when the printing press was in use?
+Dorian: In a manner of speaking, yes. 
+Rowan: I don’t know what that means but okay.
+
+<<Character dorian false>>
+<<jump levelSixSelectNeighbor>>
+===
+
+title: levelSixFern
+color: grey
+group: newsArticle
+--- 
+//6.6 
+
+<<Scene fern_apt>>
+<<wait 0.5>>
+<<Scene fern_apt_open>>
+<<Character fern true>>
+
+Fern: What is this?
+Rowan: A news article! 
+Fern: You want me to recycle this trash for you? . 
+Rowan: It’s not trash! At least, I don’t think it is…
+Fern: If it is an art piece, I believe this would be called “erasure poetry”, where you create meaning by erasing text in the original. A creative human may know more.  
+
+<<Character fern false>>
+<<jump levelSixSelectNeighbor>>
+===
+
+title: levelSixMarie
+color: grey
+group: newsArticle
+--- 
+//6.7 
+
+<<Scene marie_elle_apt>>
+<<wait 0.5>>
+<<Scene marie_open_nopeek>>
+<<Character marieelle true>>
+
+Marie-Elle: Hello, Protagonist. What brings you to my door today?
+Marie-Elle: Also, no worries about my allergies around Selina. Like I said the day earlier, I take an allergy pill whenever I sense you’re about to visit me.
+
+<<Character marieelle false>>
+<<Character cat true>>
+Selina: (<i>smug</i>) Meow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Rowan: How do you know when I’m about to visit?
+Marie-Elle: I hear you muttering to yourself in exasperation next door after you come back from work.
+Marie-Elle: It’s highly entertaining hearing you try to figure out how and what Selina stole.
+Rowan: (<i>alarmed</i>) You can hear me through the walls?
+Marie-Elle: No, I can’t. I hear the door to your apartment slam open and close randomly when you’re at work so I just assume Selina is continuing their nefarious deeds.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: (<i>indignant</i>) Meow. Meow. Meow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Though the walls to this apartment complex are terribly thin. 
+Rowan: (<i>Sighs</i>) Oh thank goodness. I thought you could hear everything through the walls.
+Marie-Elle: (<i>Raises an eyebrow</i>) Are you worried I’ll discover you talking unfavorably about me or the neighbors? What are you hiding, dear Protagonist?
+->Never
+    Rowan: I would never talk badly about you Marie-Elle!
+    Marie-Elle: But you would about the other neighbors?
+    Rowan: No!
+->Yeah
+    Rowan: Yeah. Whatcha going to do about it?
+    Marie-Elle: Hmph. I knew you had hidden intentions with this so-called “my cat stole your items” scheme.
+    Rowan: How can I convince you that it’s actually happening!?
+Marie-Elle: I jest. Although, you might want to find a way to prevent Selina from escaping the apartment. 
+Marie-Elle: I can’t imagine constantly having to return stolen items to your neighbor daily helps in building friendly neighbor relations.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: (<i>offended</i>) MEOW!
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: In my opinion, I find it very amusing. Maybe you use this as an excuse to start conversations with us, because you’ll be too shy otherwise.
+Rowan: (<i>Blushes</i>) If only.
+Marie-Elle: Well, no matter. What have you brought me today?
+Rowan: Is this soggy article clipping yours?
+(<i>Shows Marie-Elle the clipping</i>)
+Marie-Elle: What article? From what publication? I try not to read anything outside of my subscriptions since I know how sensational some can be.
+Marie-Elle: Some of the rags reporters write can be so dishonest. 
+Marie-Elle: The fact that people sometimes only read the title and create assumptions from that alone! How maddening!
+Marie-Elle: Let me see the article you brought, “Rising Fashion Designer Disappoints Crowd With Unremarkable and Banal Designs.”
+Marie-Elle: …
+Rowan: It was about fashion so I thought this would be yours.
+Rowan: I couldn’t read the name of the person mentioned in the article, but it seems like a sad situation overall for the creative.
+Rowan: I can sort of relate to their situation too. I wonder how they’re feeling or coping with the situation.
+Marie-Elle: I think they’re feeling quite depressed and pessimistic.
+Rowan: Oh, how would you know? Do you know the person?
+Marie-Elle: Yes. That’s because it’s about me.
+Rowan: Oh. 
+Marie-Elle: Yeah.
+Rowan: I’m sorry. Are things alright? The article made it seem like things were really bad for you.
+Marie-Elle: I’m not sure I’m comfortable talking to you about it. It’s too personal.
+Rowan: And that’s okay. I wouldn’t want to force you to be vulnerable in front of a neighbor you barely know.
+Rowan: It does give more context on why you were so hostile to me the first day I met you.
+Marie-Elle: Yes… it’s been a hard time lately for me.
+Marie-Elle: I shouldn’t have taken it out on you even if it was a stressful situation for me. I’m still apologetic about it.
+Rowan: All is good and done. You already apologized to me and I forgave you.
+Rowan: You told me it’s ok when I apologized quite a few times as well for when Selina stole your purse remember? 
+Marie-Elle: Yes, apologizing multiple times when things are already talked out is unnecessary.
+Rowan: I hope things work out for you though. It must be a tough situation to be in with so many expectations at your level.
+Rowan: If it helps, like I said earlier, I … think I can relate to your situation and how you’re feeling though. 
+Marie-Elle: How your life-long pursuit is ending and your career is over?
+Rowan: Similar. Before moving here, I got laid off from my dream job as a game designer and it’s been really rough for me.
+Rowan: All those hours putting my all into a game I wasn’t even passionate about in the hopes of being able to get to a position where I can create the game I always dreamed of.
+Rowan: I spent less time with some of my friends from university to try to network with my coworkers who've been in the industry for awhile.
+Rowan: It feels like all the work I did was wasted especially since it’s been so hard to keep in contact with the coworkers I grew close to.
+Rowan: I understand everybody is busy, but I feel left behind now.
+Rowan: I really have been questioning what it means to have my career so entwined with my love for games.
+Rowan: At what point does it become too much due to burn out from my passion being taken advantage of? Can I personally even find a balance when others could or couldn’t?
+Marie-Elle: And what happens if I end up hating what I once loved? It seems that we both are at an <i>l’impasse</i> due to our similar situation. 
+Marie-Elle: You’re right. It does help to hear that I’m not alone.
+Rowan: I’m glad that it does.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: (<i>Goes up to Marie-Elle to rub her face against Marie-Elle’s leg</i>) Meow~
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Thanks, Selina. I appreciate the comfort despite me sneezing all over you last time.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: (<i>judgemental</i>) Meow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Would you mind if I asked how you are dealing with everything? It honestly feels so hopeless and each day doesn’t get any better despite trying to ignore what people are saying about me.
+Marie-Elle: All day I hear “she’s lost her touch” or “she’s behind on the times.” As if it’s not enough that they called some of the cultural influences I put in my line like the <i>khăn đóng</i> as gaudy or uninspired!
+Marie-Elle: Not only are they insulting me, but also my ethnic roots that I’m so proud of to put in my craft.
+Marie-Elle: I even have reporters hounding me regularly which only serves to remind me how much I failed that day.
+Rowan: Well, I don’t have an answer, because I’m still learning how to deal with it as well.
+Rowan: But it does help to have somebody to talk about what’s going on and work out how you’re feeling. 
+Marie-Elle: Ah. I see. I’m glad that works for you.
+Marie-Elle: I don’t know how feasible that’ll work for me considering how I don’t currently have anybody near me that’s not in the middle of preparing for next season’s collection.
+Rowan: It still doesn’t hurt to ask your friends even if they’re long distance or have a lot in their hands.
+Rowan: Those close to you should put aside time of their day to support you no matter what’s going on in their lives.
+Rowan: And if there’s nobody like that you can find, you can always talk to me. It might even help to start with somebody who relates with you so you don’t feel as alone.
+Marie-Elle: I’ll try to ask some people I know, but I think I might also take up on your offer to talk.
+Rowan: Ask me anytime to talk. With my FUnemployed status, I have a lot of time on my hand.
+(<i>Both laugh hesitantly</i>)
+Marie-Elle: I’m… glad that we had this talk. You leave a lot for me to think about.
+Marie-Elle: Thanks very much for sharing with me about what’s it like for you currently.
+Marie-Elle: I know how hard it is to talk about it with others or even yourself.
+Rowan: It’s no problem, Marie-Elle. This also helps me as well since I feel less alone while I struggle through this.
+Marie-Elle: I think I need some time to myself to think things through and who to talk to.
+Marie-Elle: Goodbye, Protagonist.
+Rowan: Bye bye, Marie-Elle. Don’t be a stranger.
+
+<<Character marieelle false>>
+
+<<wait 0.5>>
+<<Scene marie_elle_apt>>
+(<i>Door closes</i>)
+Rowan: <i>I’m glad I got to talk to Marie-Elle and help out. I hope we can become good friends after this.</i>
+Rowan: <i>I know I said it’s been easier with people around, but have I actually been doing what I said to Marie-Elle?</i>
+Rowan: <i>Maybe I should try opening up more.</i>
+
+<<change_scene Day_7>>
+===
