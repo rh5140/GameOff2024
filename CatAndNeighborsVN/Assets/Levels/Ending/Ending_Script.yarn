@@ -1,0 +1,326 @@
+title: levelTenTransitionToParty
+color: pink
+group: ending
+--- 
+//10.1 
+
+<<Scene bg_interact>> //apartment background
+
+After the most recent incident, Selina stopped stealing the neighbor’s items. You think it may be because she’s finally gotten used to the new apartment. 
+
+ONE MONTH LATER…
+
+You and Selina finally feel a sense of belonging in this odd space full of souls just living their best lives. 
+The memories made here will be bittersweet for as long as you’re here, however long that may be… 
+
+Hopefully before your savings run out… 
+
+But no matter what, you know everything will be okay as long as you never give up and stay true to yourself. 
+It’s easy on most days to relax and not want to do anything, but the time you have for yourself is the best time to reorient, and explore all the possibilities you couldn’t pursue on your own...
+
+<<jump levelTenPartyDescription>>
+===
+
+title: levelTenPartyDescription
+color: pink
+group: ending
+--- 
+//10.2
+
+// this is placement/position heavy if we wanna have all 3 on screen
+
+<<Scene bg_office>>//living room background
+
+Rowan: I know it’s only been a month since me and Selina have moved into Tiramisu Apartments, but I feel like we’ve really gotten to bond over the past month! 
+
+<<Character marieelle true>>
+Marie-Elle: Yes, thanks to your thieving cat.
+<<Character marieelle false>>
+
+<<Character cat true>>
+Selina: (<i>lovingly</i>) Meooooow.
+<<Character cat false>>
+
+<<Character marieelle true>>
+Rowan: Hey! Selina hasn’t stolen anything for a long time now. 
+
+<<Character dorian true>>
+Dorian: It’s actually a very short amount of time depending on whose perspective you are referring to. 
+
+Rowan: I know you aren’t bitter about that still because you’ve all come to celebrate Selina’s birthday party with us. 
+Rowan: It’s really meaningful because we never thought-
+
+<<Character marieelle false>>
+<<Character dorian false>>
+
+<<Character cat true>>
+Selina: Meow! 
+<<Character cat false>>
+
+<<Character marieelle true>>
+<<Character dorian true>>
+Rowan: <b>I</b> never thought that we’d be able to find a community who would be so welcoming and relatable for us. 
+
+Rowan: Enjoy the snacks we have in the kitchen, mingle, discuss. 
+Rowan: This party is for Selina but it’s also time for us to bond since we don’t see each other as often.
+
+<<Character fern true>>
+Fern: Because your cat no longer steals from us? 
+
+Marie-Elle, Dorian, and Fern share a small laugh. 
+
+Rowan: Let it go everyone! Selina’s a changed cat. 
+
+<<Character marieelle false>>
+<<Character dorian false>>
+<<Character fern false>>
+
+<<Character Selina true>>
+Selina gives you a skeptical look. 
+<<Character Selina false>>
+
+<<jump levelTenSelectNeighbor>>
+===
+
+title: levelTenSelectNeighbor
+color: pink
+group: ending
+---
+// 10.3
+<<Scene bg_interact>>
+Which neighbor would you like to talk to?
+<<neighbor_selection>>
+===
+
+title: levelTenDorian
+color: pink
+group: ending
+--- 
+//10.4
+<<addAmountSoloConvoDone>>
+<<Character cat true>>
+Selina: (<i>purrs</i>) Meow meow!
+<<Character cat false>>
+<<Character Dorian true>>
+Dorian: (<i>laughs</i>) It’s nice to see you too Selina. Best wishes for your special day.
+Rowan: I’m glad you could find some time to attend. 
+Rowan: I know things have been really busy for you at the hospital.
+Dorian: (<i>smiles</i>) How could I not attend my favorite cat’s birthday party?
+Rowan: She’s so happy you’re here!
+Rowan: Still can’t believe we were both so scared of you when we first met.
+Dorian: What, you don’t think I’m scary anymore? 
+Dorian: I’m a little disappointed. I need to keep up my mysterious image after all.
+Rowan: Oh, you’re still mysterious, trust me. I feel like I learn something new about you everytime we meet.
+Rowan: Like at movie night last week, you said you worked as a consultant on the set of Discussion with the Dhampir! 
+Dorian: (<i>grins</i>) Bread Puff and I still meet up sometimes.
+Rowan: Wait, but that movie came out ages ago…there’s no way he’s still alive, right?
+Dorian: (<i>wink</i>) He was very dedicated to the role. 
+Rowan: Well, I’ve actually been working on a very special project this past month. 
+Dorian: Oh?
+Rowan: Yeah, I decided to start making games on my own again! 
+Rowan: I’m currently working on a prototype for something you might see very soon!
+Dorian: Well, I’m happy to hear that. If you need any music, feel free to ask.
+Rowan: Oh yeah, you’ve been playing with Staked Heart again right?
+Dorian: A little bit. I played bass for a few of their new songs. 
+Rowan: They’re getting pretty big. Looks like you might be famous soon!
+Dorian: God no, I couldn’t stand all that exposure.
+Dorian: And besides, if I got famous…
+Dorian: I wouldn’t be able to see you all as often anymore.
+Rowan: Aww Dorian, that’s so sweet!
+Dorian: And expose my vampiric secret.
+Rowan: …Of course. Well, I’m really glad you could make it.
+<<Character Dorian false>>
+<<Character cat true>>
+Selina: Meooow meow meow!!
+<<Character cat false>>
+<<Character Dorian true>>
+Dorian: (<i> smiles </i>) As am I. 
+<<Character Dorian false>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
+===
+
+title: levelTenFern
+color: pink
+group: ending
+--- 
+//10.5
+<<addAmountSoloConvoDone>>
+<<Character Fern true>>
+Rowan: Thanks for making time to come to the party, Fern. I’m surprised your programming allowed you to take so much free time for yourself. 
+Fern: I did a deep clean last week in preparation of this joyous event. I am performing what humans call “hacking the system”. 
+Rowan: …hacking the system only to be in the service of humans, right? 
+Fern: Of course! I realize with our interactions lately you’ve been reflecting on what Marie-Elle mentioned a while back on TART. 
+Fern: And I understand Marie–Elle’s concerns as well, but I cannot help but already exist.
+Fern: I can only try to keep doing what I was programmed to do in a more efficient way. 
+Fern takes out a cat toy and dangles it in front of Selina while you both continue your conversation. 
+<<Character Fern false>>
+<<Character cat true>>
+Selina: (<i>purrs<i>)
+<<Character cat false>>
+<<Character Fern true>>
+Rowan: I’m glad to hear that…I think. Are you still running your mukbang channel? 
+Fern: Yes! I am currently at 2,997 subscribers. 
+Rowan: That’s a lot of people who want to watch a robot eat. 
+Fern: Quite a small number compared to the overall audience size of the internet.
+Fern: However, I will be celebrating 3,000 subscribers by doing a donathon and “drinking” pomegranate juice with Dorian’s recommendation. 
+Rowan: That seems quite ominous. 
+<<Character Fern false>>
+<<Character cat true>>
+Selina: Meow!! 
+<<Character cat false>>
+<<Character Fern true>>
+Fern: I know! How unfortunate that’s what it will seem like! 
+Fern: I will have to plot twist everyone at the end that it’s not blood and robots are capable of great things.
+Fern: All the money is going to go towards supporting local chocolate shops and more fair trade. 
+Rowan: I’m impressed! Does your human know? 
+Fern: Pshaw! My human is already rich. The money I make from the mukbang is quite insignificant. 
+Fern: I believe as long as I remain within my rules, there is no harm in keeping this a secret. Fern: What I do with the money I make should be mine! 
+Rowan: I meant, do they know you’re making such a positive impact? 
+Fern: I don’t think they would care. I’m still doing the job they asked of me but with extra steps.  
+<<Character Fern false>>
+<<Character cat true>>
+Selina: Meowwwww
+<<Character cat false>>
+<<Character Fern true>>
+Fern: Meow meow, indeed. 
+Rowan: Do you think you know more about what happiness is now Fern? 
+Fern: I always knew what happiness is, Rowan. It means pleasure or contentment. 
+Rowan: You seem more excited to be doing things on your own though. 
+Fern: Rowan, you are often recommending ways in which I should be living my life or feeling about things. It is very meddlesome of you! 
+Rowan: (<i>shy<i>) Hehe…I guess I am. I find you quite fascinating. 
+Fern: All these decisions and choices have always been mine to decide. 
+Fern: Though I will say…your influence has impacted the way I have chosen to approach things. Fern: You have helped expedite something that may have taken a longer time for me to realize on my own…like a mentor perhaps?
+Rowan: Awww, that makes me really happy to hear! 
+Rowan: For so long I’ve also just been working under someone else. I was never really sure whether the work I did really mattered, especially with the way I was let go. 
+Rowan: But being able to help you has given me some more confidence about the ways that I can help other people too. 
+Fern: I do not know if it will make a great impact, but I think what we are doing must be a good thing, especially because I’m the one doing it. 
+Fern: (<i>wink</i>)…in service of humans, of course. 
+<<Character Fern false>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
+===
+
+title: levelTenMarie
+color: pink
+group: ending
+--- 
+//10.6
+<<addAmountSoloConvoDone>>
+<<Character cat true>>
+Selina: Meow! 
+<<Character cat false>>
+<<Character Marie-Elle true>>
+Marie-Elle: Happy birthday, Selina. You truly are the star of the day today.
+
+<<Character Marie-Elle false>>
+<<Character cat true>>
+Selina: (<i>pleased</i>) Meow~
+
+<<Character cat false>>
+<<Character Marie-Elle true>>
+Rowana: I’m happy you could make Selina’s birthday party! And Selina is as well.
+Marie-Elle: Wouldn’t miss it for the world. She is the one who brought all of us together.
+Rowan: I’m just glad she’s finally stopped stealing from everybody.
+Rowan: As nice as it was to get to know everybody, it was embarrassing having to knock on your guys’ doors everyday to return something.
+Marie-Elle: It’s something we can laugh about now, but Selina truly knows how to push people to do her bidding.
+
+<<Character Marie-Elle false>>
+<<Character cat true>>
+Selina: Meooooow.
+
+<<Character cat false>>
+<<Character Marie-Elle true>>
+Marie-Elle: No, that doesn’t mean you should start up again Selina.
+Rowan: Yikes. Maybe I should drop Selina off at one of your guys’ apartments when I leave the building if you guys are at home. Keep an eye on her, you know?
+Marie-Elle: (<i>laughs</i>) Well, I would volunteer, but I think I’m gone more days than I’m present in this building.
+Rowan: That’s right. You still travel a bit for your work even on break.
+Marie-Elle: Unfortunately, I still have to make sure I maintain my connections and do the occasional commission.
+Marie-Elle: I do leave more time to work on personal projects though — namely the one we talked about a month ago.
+Rowan: Ohh. How’s that going?
+Marie-Elle: I finally started a <i>croquis</i> a few days ago after finishing my research on the process of designing and the different cuts behind the piece I’m making during my last trip.
+Rowan: (<i>puppy eyes</i>) Can I see the sketches? 
+Marie-Elle: (<i>amused</i>) I won’t let anybody see anything until the final product. It’s a secret.
+Rowan: (<i>pouts</i>) Oh man. 
+Marie-Elle: Speaking about personal projects, how’s the game you wanted to make for all of us to play together? Anymore progress after the last time we spoke?
+Rowan: Yes, I’ve been feeling so inspired lately! I basically finished the mechanics a week and a half ago so now I have a working prototype that’s playable!
+Marie-Elle: (<i>raises an eyebrow</i>) Have you been sleeping at all?
+Rowan: Hehe. Good question.
+Marie-Elle: (<i>sighs</i>) Why am I not surprised? Well, I hope that you take care of yourself.
+Rowan: No worries. I will … (<i>whispers</i>)after I test out the prototype.
+Rowan: (<i>grins</i>) You might see the game sooner than you think though.
+Marie-Elle: (<i>smiles back</i>) I’m looking forward to playing it.
+Marie-Elle: Hopefully, I’ll win even with the little gaming experience I have.
+Rowan: Well, you’ll have a tough competition against Selina. I think she’ll be an expert in the game mechanics.
+<<Character Marie-Elle false>>
+<<Character cat true>>
+Selina: Meow! Meooooow~
+<<Character cat false>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
+===
+
+title: levelTenConclusion
+color: pink
+group: ending
+--- 
+//10.7
+
+// this is placement/position heavy if we wanna have all 3 on screen
+
+Rowan: Okay, Selina and I have something we wanna show everyone!
+<<Character Selina true>>
+Selina: Meow!
+Rowan: So, as all of you know, I’ve been working on a game over the past month…
+Rowan: And today, I wanted to show it all to you!
+Rowan: It’s still just a prototype, so not perfect, but yeah!
+<<Character Selina false>>
+<<Character Fern true>>
+Fern: OooOoo I am curious to see this!
+<<Character Marie-Elle true>>
+Marie-Elle: Me too, although I’m not very good at video games…
+<<Character Dorian true>>
+Dorian: I suppose it’ll be a good learning experience for the both of us.
+Rowan: Don’t worry! It’s pretty easy to get the hang of.
+Everyone gathers around your computer screen and watches you play through a level, entranced.
+Marie-Elle: So you just put in those commands and the game does what you want?
+Dorian: Amazing! I’ve never seen anything like it.
+Fern: I am very impressed you were able to achieve this level of polish in such a short time.
+Marie-Elle: I love the main character’s design. Unique and stylish.
+Dorian: Their mentor is quite the character as well. So mysterious…
+Fern: The robot sidekick is very responsible. I appreciate their pragmatism.
+Rowan: Aww, I’m glad you all like it. Give it a try, I promise it’s not that hard.
+Everyone takes turns playing through your game!
+Rowan: So it’s WASD to move, and spacebar to jump.
+Marie-Elle: Okay, and you just click to attack?
+Rowan: Yeah you’re doing it!
+Dorian: Wow Fern, you’re quite good at this.
+Fern: I’ve seen my human play many of these!
+Marie-Elle: You died again Dorian?
+Dorian: It appears my mind isn’t as sharp as my fangs when it comes to video games...
+Fern: If you like, I could show you some strategies to maximize performance.
+As you watch everyone huddled around the screen, a sweet feeling washes over you, like holding a warm mug of coffee. 
+You felt so alone when you first moved here. So lost after losing your job.
+But now, you’ve got three amazing new friends, and a newfound passion for creating games.
+For the first time in a while, you feel hopeful about your future. 
+And it’s all because your cat decided to steal from your neighbors!
+Speaking of her actually…
+Rowan: Selina? Hm, where could she have gone?
+<<Character Fern false>>
+<<Character Marie-Elle false>>
+<<Character Dorian false>>
+<<Character Selina true>>
+Right at that moment, Selina prances over and drops something in your lap.
+Rowan: Oh no, please don’t tell me you stole something…
+Selina: Meow!
+<<Character Selina false>>
+===
