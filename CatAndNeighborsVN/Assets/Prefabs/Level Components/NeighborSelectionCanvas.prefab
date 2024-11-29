@@ -244,9 +244,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseButton: {fileID: 8780837514262909548}
   chooseNeighborNameText: {fileID: 9205590137462140359}
-  fashionDesigner: {fileID: 0}
-  vampireNurse: {fileID: 0}
-  pitifulRobot: {fileID: 0}
+  fashionDesigner: {fileID: 7701637131781794603}
+  vampireNurse: {fileID: 158889091326448219}
+  pitifulRobot: {fileID: 9094301073164101031}
 --- !u!1 &183177455766381750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,9 +1058,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseButton: {fileID: 7702942533696273686}
   chooseNeighborNameText: {fileID: 1745353055422701971}
-  fashionDesigner: {fileID: 0}
-  vampireNurse: {fileID: 0}
-  pitifulRobot: {fileID: 0}
+  fashionDesigner: {fileID: 7701637131781794603}
+  vampireNurse: {fileID: 158889091326448219}
+  pitifulRobot: {fileID: 9094301073164101031}
 --- !u!1 &2144360639364463546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,9 +1481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseButton: {fileID: 8433072308687379550}
   chooseNeighborNameText: {fileID: 4226208472127410375}
-  fashionDesigner: {fileID: 0}
-  vampireNurse: {fileID: 0}
-  pitifulRobot: {fileID: 0}
+  fashionDesigner: {fileID: 7701637131781794603}
+  vampireNurse: {fileID: 158889091326448219}
+  pitifulRobot: {fileID: 9094301073164101031}
 --- !u!1 &4008796152898303836
 GameObject:
   m_ObjectHideFlags: 0
