@@ -1,0 +1,300 @@
+title: levelNineFindItem
+color: yellow
+group: tailorTape
+--- 
+//9.1
+
+<<Scene bg_office>> // living room only, no selina
+
+With nothing planned for the day, Rowan allows herself to take a break and lounge around her apartment while doing small tasks. 
+
+She cooks a nice vodka pasta for lunch and attempts to get Selina to play with the new mouse toy they bought online the other day.
+
+<<show_living_room>>
+
+They go outside to throw out the trash and come back to a shiny new item on their coffee table.
+
+Rowan: Good afternoon, my lovely thieving cat.
+Selina: M-e-o-w.
+Rowan: You seem very proud of yourself today. That’s usually not a good sign nowadays.
+Selina: (<i>huffy</i>) Hisssss.
+Rowan: Woah woah. Okay, I’ll stop teasing you.
+Rowan: And I see there’s something on the table again.
+Rowan: What’s this? An animal-shaped toy?
+Rowan: (<i>shocked</i>) Did you steal from a child?!
+Selina: (<i>offended</i>) <b>Meow</b>.
+
+<<hide_living_room>>
+<<jump levelNineItemDescription>>
+===
+
+title: levelNineItemDescription
+color: yellow
+group: tailorTape
+--- 
+//9.2 
+
+<<Scene bg_interact>> // living room?
+
+A slightly worn out and well-loved tailor’s tape that depicts a cartoon kitten. The size of the item seems to fit perfectly in a pair of small hands.
+
+<<item_interaction>>
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection1
+---
+“**R**” Years of use has faded out the name of the person who owns this item.
+
+<<jump inspectionIncomplete>>
+===
+
+title: Inspection2
+---
+The tape ruler doesn’t roll back up into the holder anymore.
+
+<<jump levelNineInspectionComplete>>
+===
+
+title: levelNineInspectionComplete
+color: yellow
+group: tailorTape
+--- 
+//9.3 
+
+<<show_living_room>>
+<<hide_item>>
+
+Rowan: You probably saw the cat motif and felt the urge to nab it.
+Rowan: It is very cute though. 
+Rowan: Gosh, I really hope Selina didn’t steal from a child.
+Selina: Meow! Meooooow!
+
+<<hide_living_room>>
+<<jump levelNineSelectNeighbor>>
+===
+
+title: levelNineSelectNeighbor
+---
+<<Scene bg_interact>>
+<<hide_item>>
+Which neighbor would you like to return this item to?
+<<neighbor_selection>>
+===
+
+title: levelNineDorian
+color: yellow
+group: tailorTape
+--- 
+//9.5 
+
+<<Scene dorian_apt>>
+<<wait 0.5>>
+<<Scene dorian_apt_open>>
+<<Character dorian true>>
+
+Dorian: That’s a cute measuring tape. Doesn’t belong to me though. Seems like something Marie-Elle would use.
+Rowan: Yeah you’d probably like it better if it was decorated with dismembered body parts.
+Dorian: (<i>wink</i>) You know me very well.
+
+<<Character dorian false>>
+<<jump levelNineSelectNeighbor>>
+===
+
+title: levelNineFern
+color: yellow
+group: tailorTape
+--- 
+//9.6 
+
+<<Scene fern_apt>>
+<<wait 0.5>>
+<<Scene fern_apt_open>>
+<<Character fern true>>
+
+Rowan: Ever need to measure your packages? 
+Fern: The weight of a package is often more important than the size. 
+Rowan: I guess this tape isn’t yours then. 
+Fern: I know you would like me to be sentimental, but I should never replace human companionship. I trust you know who it really belongs to.
+
+<<Character fern false>>
+<<jump levelNineSelectNeighbor>>
+===
+
+title: levelNineMarie
+color: yellow
+group: tailorTape
+--- 
+//9.7 
+
+<<Scene marie_elle_apt>>
+<<wait 0.5>>
+<<Scene marie_open_nopeek>>
+<<Character marieelle true>>
+
+Marie-Elle: Ah. You’re here again, Protagonist?
+Rowan: …
+Marie-Elle: Cat’s stole your tongue? No worries I’m doing much better than the last time you were at my doorstep.
+Rowan: Haha if only that was the only thing Selina stole lately.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meow? Meow!
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: I listened to your advice and reached out to the few people I trust. It was as you said. They were willing to listen to me.
+Rowan: I’m glad you’re feeling better and found people who you trust to support you. I was getting worried about you.
+Marie-Elle: Thanks for your concern. It’s a comfort to know there is somebody near me who cares.
+Marie-Elle: I would also like to say, that if you’re also ever in need of a person to talk to that can relate to you. I’m also here to lend an ear.
+Marie-Elle: It shouldn’t just be you offering to help out when I also can do something to help out a person in need that I know. At least, somebody I have positive feelings about.
+Rowan: Oh, I would really appreciate that. Maybe we can find some time to hang out sometimes as well? I would really try to get to know you better.
+Marie-Elle: Of course. Your presence is much more tolerable than a lot of the people I see regularly in my profession. I wouldn’t mind the company.
+Rowan: Thanks? I guess?
+Marie-Elle: As much as I love talking about feelings and friendship, now that the elephant in the room has been addressed, what brings you here today Protagonist? I hope it’s not what I think it is.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meow! Meow! Meow!
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Rowan: Whoops?
+Marie-Elle: (<i>sighs</i>) Third time's the charm I suppose. I sure hope this is the LAST time, Selina.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Hmph. Meow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Whatever will we do with you, Selina. What is the item you’re presenting to me this time?
+Rowan: Would this tailor’s tape happen to be yours?
+Marie-Elle: Oh my. I didn’t even know this was missing. I can’t believe Selina found this.
+Marie-Elle: It should’ve been in a box in my closet. I’m starting to think Selina is a shapeshifter of some kind.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meooooooow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: (<i>softly</i>) It’s been so long since I’ve taken this out though. How nostalgic.
+Rowan: It’s quite small for a tailor’s tape.
+Marie-Elle: The tailor’s tape was made for kids. I’ve had it since I was young.
+Rowan: Wow. You've been making clothes for a long time then.
+Marie-Elle: Ever since I got measured in Vietnam for my first tailored <i>áo dài</i> when I was 8 years old, I became super enthusiastic to make my own <i>áo dài</i>.
+Mari-Elle: My parents had to drag me away from bothering the tailor with my questions. 
+Marie-Elle: After that, my parents bought me this tailor’s tape for my 9th birthday and my mother let me borrow her sewing machine while teaching me some of the basics. 
+Marie-Elle: I started off with mending holes in my socks with patterned fabrics and now here I am creating whole pieces for models to wear down runways in front of other maestros.
+Marie-Elle: I was lucky that my parents didn’t mind that I spent so much time sewing rather than studying for exams.
+Marie-Elle: Although, I made sure to have at least semi-decent grades to not worry them.
+Rowan: I feel that. The delicate balance between concentrating on your hobbies and keeping up with your grades in high school.
+(<i>Both laugh</i>)
+Rowan: Your parents are really supportive about your career then.
+Marie-Elle: Yes, I wouldn’t have made it this far without my parents. Things were so much simpler back then too.
+Marie-Elle: Back then I made clothes that I thought were really pretty and made me feel good wearing. Adventures with my friends at home as the princess of <i>Nha Trang</i>. 
+Marie-Elle: I haven’t made clothes for myself in a long time.
+Marie-Elle: How about you? Did you also start young?
+Rowan: My love for games started when I was young! My friend introduced me to a simple role-playing game named Eggette and I was sucked in.
+Rowan: Once I 100%-ed the game, I immediately asked my family for a handheld console for Christmas at 7 years old. Then, I used up all my money every holiday to buy games across different genres.
+Rowan: I didn’t design my own games until middle school though. I had a teacher who suggested I learn how to make my own after they overheard me raving about Eggette.
+Rowan: They actually helped me research on how to go about making one and I learned so much from MeTube. After I successfully finished my first game in high school, I was determined to pursue game design.
+Rowan: I will admit that there was a bit of tension when I applied to universities to pursue game design though. 
+Rowan: It was hard for my parents to understand that game design to me wasn’t just a hobby I wanted to pursue on the side.
+Rowan: But once I got into a AAA studio, they finally started to believe that it can be an actual career. I put my life and soul into the company.
+Rowan: Sorry… I spoke so much. I tend to go on and on if it’s about game design.
+Marie-Elle: There is no need to worry. I understand. Being able to pursue our dreams is something to be passionate about since so little people have or are given the means to.
+Marie-Elle: However, it seems that trying to do well in our careers to advance further into higher levels  eventually led us to stray from our original paths we set out when we first started.
+Marie-Elle: Perhaps this stumbling block is actually a blessing in disguise. It’s forcing us to take a step back to reevaluate what we’re doing with our lives.
+Rowan: You think so? That’s a nice way to look at it. 
+Rowan: I never really thought about it that way.
+Marie-Elle: Haha. Me too, but conversing with you brings out the contemplative nature in me.
+Marie-Elle: As much as I love wowing the masses with my abilities each season, I think I need to remind myself of the original purpose I pursued fashion - creating pieces that bring me joy and fulfillment.
+Marie-Elle: To look at something I designed and think, “I did that!”
+Marie-Elle: All my recent pieces only had a sprinkle here and there that referenced traditional Vietnamese styles.
+Marie-Elle: But I always wanted to make clothing that was drenched in cultural influences instead of reneging on certain stylistic choices that I feared would not please the audience.
+Marie-Elle: Maybe it’s something you should think about as well. Why did you want to pursue game design in the beginning? 
+Rowan: And does that still resonate with me? It’s definitely something to think about.
+Marie-Elle: <i>Exactement</i>!
+Rowan: I really wanted to do game design, because I wanted to have fun and create experiences people would enjoy! Fun for both me and the users.
+Rowan: It’s such a simple goal too – to have fun. 
+Rowan: But why was it so easy to forget?
+Rowan: I stopped having fun once I let it get into my head that I’ll only be happy if I pushed myself to get promotions or worked on certain projects that others told me was what it meant to be successful.
+Rowan: At first, I felt a sense of accomplishment when I was told I was doing well by my coworkers. 
+Rowan: Then, when I overworked myself day and night and spent less time with my loved ones due to constantly crunching, I became miserable.
+Rowan: I learned a lot, but I feel like I wasted so much of my life worrying and stressing. I even felt resentful. But is that something I should be feeling? Is that not my own fault?
+Marie-Elle: I personally don’t think it’s your fault, and there’s still time to think about what we both experienced. Answers won’t come right away as much as we want it to.
+Rowan: You’re right! Maybe we have more time than we think we have. Life isn’t going to end if we take our time to recover from our creative burnouts.
+Rowan: How about this? Let’s tell each other one thing we want to accomplish that we personally want to do instead of what others say we should do to advance our lives.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meow~
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Of course, Selina. You too.
+Rowan: Eh? You understand Selina?
+Marie-Elle: You don’t? I been talking to Selina since our last conversation
+->Settings
+    Rowan: To me, Selina has two settings - neutral and judgemental.
+    Marie-Elle: Hmph, and you call yourself Selina’s owner. Selina has much more nuance than that. 
+->Years
+    Rowan: It’s been years since Selina last spoke to me directly.
+    Marie-Elle: You can admit that I understand your cat more than you.
+Marie-Elle: Right now, she is amused at your foolishness.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meow!
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Marie-Elle: Mhmm, I agree.
+Rowan: Right … Well to go back to my suggestion, I want to create a game that I can play with all the people I met here at Tiramisu Apartments! Something that I feel like everybody can enjoy.
+Marie-Elle: I want to create a <i>Nhật Bình</i>-inspired outfit for myself as a bit of a nostalgia for my younger days when I pretended to be royalty. Something colorful and powerful!
+Marie-Elle: (<i>Laughs</i>) Your goal is definitely much less self-absorbed than mine.
+Rowan: Not really since it’s still about my happiness in the end! And that’s what matters.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: Meow? Meow meow. Meow!
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Rowan: What’s Selina saying?
+Marie-Elle: That she wants to live the rest of their life in luxury and comfort.
+(<i>Both laugh</i>)
+Marie-Elle: Also, that she’s hungry.
+Rowan: (<i>Sighs</i>) You’re embarrassing me, Selina. This was such an emotional final scene at the end of a cutscene and you had to interrupt it.
+
+<<Character fashiondesigner false>>
+<<Character cat true>>
+Selina: (<i>insistent</i>) Meow.
+
+<<Character cat false>>
+<<Character fashiondesigner true>>
+Rowan: Guess I should get going to feed Selina then. I’ll see you later, Marie-Elle!
+Marie-Elle: Well, I wouldn’t want to take more time away from you so it’s a goodbye for now.
+
+<<Character marieelle false>>
+
+<<wait 0.5>>
+<<Scene marie_elle_apt>>
+
+Rowan: <i>Wow, now I’m so pumped to create something again.</i>
+Rowan: <i>Maybe I can make a cat translation game?</i>
+
+<<Character cat true>>
+Selina: Meow?
+Rowan: Does that mean, “I love Rowan?”
+Selina: (<i>judgemental</i>) …
+
+<<Character cat false>>
+<<change_scene Ending>>
+===
