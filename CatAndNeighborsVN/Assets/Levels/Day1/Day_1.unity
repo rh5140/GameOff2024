@@ -267,9 +267,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 284862371548424209, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 189
+      objectReference: {fileID: 0}
+    - target: {fileID: 284862371548424209, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 303
+      objectReference: {fileID: 0}
     - target: {fileID: 509216409129191555, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_Name
       value: LevelPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530071273591898550, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: e66bbdb57f307804f963e3922e3d5c99, type: 3}
+    - target: {fileID: 4810393364618128668, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810393364618128668, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -99
       objectReference: {fileID: 0}
     - target: {fileID: 5092580282871553250, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_SizeDelta.y
@@ -363,6 +383,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5752053576063998095, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: e66bbdb57f307804f963e3922e3d5c99, type: 3}
     - target: {fileID: 5904372323476255659, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -379,9 +403,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6534777087957556574, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
-      propertyPath: startNode
-      value: Start
+    - target: {fileID: 6219596487393433062, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007542892037251586, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
