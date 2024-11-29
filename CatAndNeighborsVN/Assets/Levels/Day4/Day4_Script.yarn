@@ -103,8 +103,10 @@ color: black
 group: tarotCard
 --- 
 //4.5 
-<<Character Dorian true>>
 <<Scene dorian_apt>> 
+<<wait  0.5>>
+<<Scene h4open>>
+<<Character Dorian true>>
 Dorian: Ah, my cards! It seems your cat has an eye for divination.
 Rowan: That, or she just likes sparkly things. 
 Dorian: Thank you for returning them. They’re very special to me.
@@ -154,8 +156,10 @@ color: black
 group: tarotCard
 --- 
 //4.6
-<<Character Fern true>> 
 <<Scene fern_apt>> 
+<<wait  0.5>>
+<<Scene fern_open>>
+<<Character Fern true>> 
 Fern: OoooooOOoooOOoooO mysterious objects. What are they for? 
 Rowan: They’re tarot cards. They help guide and answer questions. 
 Fern: Do they know when my next package is coming? It was supposed to arrive yesterday.
@@ -170,8 +174,10 @@ color: black
 group: tarotCard
 --- 
 //4.7
-<<Character Marie-Elle true>>
 <<Scene marie_elle_apt>>
+<<wait  0.5>>
+<<Scene marie_apt_open>>
+<<Character Marie-Elle true>>
 Rowan: Any chance these tarot cards are yours?
 Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not… I know a superstitious designer who likes the assurance of some guidance in their future though. 
 Rowan: Oh, does that mean you had your future read before?

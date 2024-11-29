@@ -132,8 +132,10 @@ color: red
 group: bloodBag
 --- 
 //2.5 
-<<Character Dorian true>>
 <<Scene dorian_apt>> 
+<<wait  0.5>>
+<<Scene h4open>>
+<<Character Dorian true>>
 Rowan: Um, is this yours?
 Dorian: Why, yes it is! I’ve been looking everywhere for that. 
 Rowan: Sorry, Selina stole it. I found it this morning. 
@@ -167,8 +169,10 @@ color: red
 group: bloodBag
 --- 
 //2.6 
-<<Character Fern true>>
 <<Scene fern_apt>> 
+<<wait  0.5>>
+<<Scene fern_apt_open>>
+<<Character Fern true>>
 Fern: Looks like human fuel. I wonder how it tastes.
 Rowan: Is your human… anemic? 
 Fern: They are fit as a fiddle, right as rain. I should hope they never run into an accident where a blood bag is needed.
@@ -182,8 +186,10 @@ color: red
 group: bloodBag
 --- 
 //2.7 
-<<Character Marie-Elle true>>
 <<Scene marie_elle_apt>>
+<<wait  0.5>>
+<<Scene marie_apt_open>>
+<<Character Marie-Elle true>>
 Marie-Elle: What’s that in your hands?
 Rowan: I think it’s tomato juice?
 Marie-Elle: Tomato juice?! Stop! Not any closer or else you might stain my clothes somehow.
