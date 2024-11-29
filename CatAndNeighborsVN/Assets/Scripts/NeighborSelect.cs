@@ -18,6 +18,8 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public static bool vampireNurseNotSelected;
     public static bool pitifulRobotNotSelected;
     public static string currentNeighbor;
+    
+    public bool clickable = true;
 
     void Start() {
         neighborPortrait.SetActive(true);
@@ -59,6 +61,7 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public void OnPointerClick(PointerEventData eventData)
     {   
+        if (!clickable) return;
         // Set up selection interface buttons & text
         chooseButton.SetActive(true);
         cancelButton.SetActive(true);
@@ -67,21 +70,22 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         NeighborCanvasParent parentCanva = GetComponentInParent<NeighborCanvasParent>();
         parentCanva.SetChosenNeighbor(gameObject);
 
-        // Turn off "Which neighbor does this item belong to?"
-        parentCanva.transform.Find("ChooseText").gameObject.SetActive(false);
-
         neighborPortrait.GetComponent<Image>().color = Color.white;
         otherNeighbor1.GetComponent<Image>().color = Color.grey;
         otherNeighbor2.GetComponent<Image>().color = Color.grey;
+        otherNeighbor1.GetComponent<NeighborSelect>().clickable = false;
+        otherNeighbor2.GetComponent<NeighborSelect>().clickable = false;
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
+        if (!clickable) return;
         neighborPortrait.GetComponent<Image>().color = Color.white;
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)
     {
+        if (chooseButton.activeSelf) return;
         neighborPortrait.GetComponent<Image>().color = Color.grey;
     }
 }
