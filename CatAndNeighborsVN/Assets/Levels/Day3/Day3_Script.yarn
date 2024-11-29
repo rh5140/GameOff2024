@@ -5,7 +5,7 @@ group: usb
 //3.1
 <<Scene bg_office>> // replace with living room
 
-You wake up to see that the sun has already set. Even though your job used to let you sleep in every now and then too, not feeling the pressure of having deadlines is better than having that anxious crawl of deadlines creeping on your back. 
+Rowan wakes up to see that the sun has already set. Even though her job used to let her sleep in every now and then, not feeling the pressure of having deadlines is better than having that anxious crawl creeping on her back. 
 
 <<show_living_room>>
 Rowan: (<i>yawn<i>) Good morning Selina.
@@ -53,7 +53,7 @@ group: usb
 Rowan: I wonder what kind of data it holds. Do you think it’s important to anyone? 
 <<hide_item>>
 <<Character Selina true>>
-Selina is judging you with a face that’s asking, “How am I supposed to know?” 
+Selina judges Rowan with a face that’s asking, “How am I supposed to know?” 
 Rowan: I kinda want to check, but maybe it could have viruses…
 <<Character Selina false>>
 <<jump Character_Select>>
@@ -192,7 +192,7 @@ Fern: My internal external alarm is ringing. This was a mediocre conversation, b
 ->Go together
     Rowan: Take me with you! 
     Fern: Silly human, you are not trash. Go home.
-As you head home, you reflect on the conversation you’ve had with your new neighbor. 
+As Rowan head home, they reflect on the conversation they've had with their new neighbor. 
 <<Character Fern false>>
 <<change_scene Day_4>>
 ===
