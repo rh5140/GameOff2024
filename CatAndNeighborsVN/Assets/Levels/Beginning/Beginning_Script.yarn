@@ -59,7 +59,7 @@ group: opening
 <<Scene dorian_apt>> // Dorian’s apartment
 Rowan: Hmm, doesn’t look like anyone’s home…I’ll ring the bell just in case.
 <<Character Selina true>>
-Selina senses a fearsome presence and scurries behind you.
+Selina senses a fearsome presence and scurries behind Rowan.
 Selina: (<i>hisses</i>) Meow…
 Rowan: Hey, what’s the matter?
 <<Character Selina false>>
@@ -115,7 +115,7 @@ group: opening
 //0.4
 <<Scene fern_apt>>
 (<i>Knock knock<i>)
-(<i>Thunk thunk thunk thunk. You hear loud footsteps approach the door.<i>)
+(<i>Thunk thunk thunk thunk. Rowan hears loud footsteps approach the door.<i>)
 Rowan: This neighbor’s a bit loud. 
 The door opens and you see a robot appear.
 <<Scene fern_apt_open>>
@@ -165,7 +165,7 @@ group: opening
 ---
 //0.5
 <<Scene marie_elle_apt>>
-You knock the door, but no one appears to be home.
+Rowan knocks the door, but no one appears to be home.
 
 <<if $neighborsMet < 3>>
     <<jump levelZeroSelectNeighbor>>
