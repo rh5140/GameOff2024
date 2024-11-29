@@ -9,7 +9,6 @@ public class ChooseNeighborButton : MonoBehaviour
     [Header("Set up neighbor selection UI")]
     [SerializeField] private GameObject neighborSelectionCanva;
     [SerializeField] private GameObject cancelButton;
-    [SerializeField] private GameObject chooseText;
     [SerializeField] private GameObject fashionDesigner;
     [SerializeField] private GameObject vampireNurse;
     [SerializeField] private GameObject pitifulRobot;
@@ -61,9 +60,12 @@ public class ChooseNeighborButton : MonoBehaviour
             JumpToNeighborDialogue(chosenNeighbor);
         }
 
+        fashionDesigner.GetComponent<NeighborSelect>().clickable = true;
+        vampireNurse.GetComponent<NeighborSelect>().clickable = true;
+        pitifulRobot.GetComponent<NeighborSelect>().clickable = true;
+
         gameObject.SetActive(false);
         cancelButton.SetActive(false);
         neighborSelectionCanva.SetActive(false);
-        chooseText.SetActive(false);
     }
 }
