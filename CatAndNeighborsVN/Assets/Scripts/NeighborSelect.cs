@@ -13,11 +13,6 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public GameObject otherNeighbor1;
     public GameObject otherNeighbor2;
-
-    public static bool fashionDesignerNotSelected;
-    public static bool vampireNurseNotSelected;
-    public static bool pitifulRobotNotSelected;
-    public static string currentNeighbor;
     
     public bool clickable = true;
 
@@ -26,37 +21,6 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
         chooseButton.SetActive(false);
         cancelButton.SetActive(false);
         chooseNeighborNameText.SetActive(false);
-    }
-
-    [YarnFunction("getFashionDesignerNotSelected")]
-    public static bool GetFashionDesignerNotSelected() {
-        return fashionDesignerNotSelected;
-    }
-
-    [YarnFunction("getVampireNurseNotSelected")]
-    public static bool GetVampireNurseNotSelected() {
-        return vampireNurseNotSelected;
-    }
-
-    [YarnFunction("getPitifulRobotNotSelected")]
-    public static bool GetPitifulRobotNotSelected() {
-        return pitifulRobotNotSelected;
-    }
-
-    [YarnCommand("setFashionDesignerNotSelected")]
-    public static void SetFashionDesignerNotSelected(bool status) {
-        fashionDesignerNotSelected = status;
-    }
-
-    [YarnCommand("setVampireNurseNotSelected")]
-    public static void SetVampireNurseNotSelected(bool status) {
-        vampireNurseNotSelected = status;
-    }
-
-    [YarnCommand("setPitifulRobotNotSelected")]
-    public static void SetPitifulRobotNotSelected(bool status) {
-        Debug.Log("GOTCHA");
-        pitifulRobotNotSelected = status;
     }
 
     public void OnPointerClick(PointerEventData eventData)
