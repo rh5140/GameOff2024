@@ -303,6 +303,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1826176560, guid: d33ff79d451096142a80d874d32b2b00, type: 3}
+    - target: {fileID: 510787896481553419, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2160660421090409153, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: pitifulRobotNode
       value: levelNineFern
@@ -385,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4620832338134322105, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -63
+      value: -69
       objectReference: {fileID: 0}
     - target: {fileID: 4620832338134322105, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -481,7 +485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6219596487393433062, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6534777087957556574, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: startNode
@@ -511,6 +515,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1243036167, guid: d33ff79d451096142a80d874d32b2b00, type: 3}
+    - target: {fileID: 8713260616376569327, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9007542892037251586, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
       value: 0
