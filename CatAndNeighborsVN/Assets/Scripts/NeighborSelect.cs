@@ -77,11 +77,11 @@ public class NeighborSelect : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-
+        neighborPortrait.GetComponent<Image>().color = Color.white;
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)
     {
-
+        neighborPortrait.GetComponent<Image>().color = Color.grey;
     }
 }

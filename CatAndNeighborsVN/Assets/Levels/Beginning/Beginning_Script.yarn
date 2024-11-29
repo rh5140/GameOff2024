@@ -1,0 +1,171 @@
+﻿title: Start
+color: lightpink
+group: opening
+--- 
+//0.1
+<<set $metMarie to false>>
+<<set $metDorian to false>>
+<<set $metFern to false>>
+<<set $neighborsMet to 0>>
+
+<<Scene bg_office>> // replace with living room 
+Rowan: Okay Selina, you can come out now.
+<<Character Selina true>>
+Selina: Meow.
+Rowan: Welcome to Tiramisu Apartments! This is gonna be our new home for the indefinite future. 
+Selina: Meow?? Meow! 
+Rowan: I know, I know. It’s not like where we used to live, but it looks pretty cozy. 
+Cat: …
+Rowan:: …
+Cat: Meow!! Meow!! 
+Rowan: No need to swear at me!
+Cat: Meow (sad)
+Rowan: I’m gonna miss everyone at the co-op too. But we have new neighbors here! 
+Rowan: The landlady gave me a list of the tenants living nearby. Why don’t we take some time to introduce ourselves to them? 
+Rowan pulls out a letter. 
+<<Character Selina false>>
+<<jump levelZeroSelectNeighbor>>
+===
+
+title: levelZeroSelectNeighbor
+color: lightpink
+group: opening
+---
+// 0.2
+<<Scene bg_office>> // replace with apartment complex?
+
+Which neighbor would you like to meet?
+->Marie-Elle <<if $metMarie is false>>
+    <<set $metMarie to true>>
+    <<set $neighborsMet = $neighborsMet + 1>>
+	<<jump levelZeroMarie>>
+->Dorian <<if $metDorian is false>>
+    <<set $metDorian to true>>
+    <<set $neighborsMet = $neighborsMet + 1>>
+	<<jump levelZeroDorian>>
+->Fern <<if $metFern is false>>
+    <<set $metFern to true>>
+    <<set $neighborsMet = $neighborsMet + 1>>
+	<<jump levelZeroFern>>
+
+===
+
+
+title: levelZeroDorian
+color: lightpink
+group: opening
+---
+//0.3
+<<Scene dorian_apt>> // Dorian’s apartment
+Rowan: Hmm, doesn’t look like anyone’s home…I’ll ring the bell just in case.
+<<Character Selina true>>
+Selina senses a fearsome presence and scurries behind you.
+Selina: (<i>hisses</i>) Meow…
+<<Character Selina false>>
+Rowan: Hey, what’s the matter?
+<<Scene dorian_apt_open>>
+<<Character Dorian true>>
+Dorian: Well, who do we have here?
+Rowan: AHHH!! Oh, sorry, I didn’t hear you approach.
+Rowan: My name’s Rowan, I just moved in next door, and this is my cat, Selina. Is this your apartment
+Dorian: My apologies. Yes, it is. I'm Dorian Vayne. 
+Dorian: I have to hand it to you, not many dare to venture upon my doorstep past sundown. 
+Dorian: You must be very brave.
+Rowan: Oh, uh, I wouldn’t say that necessarily, I just thought I should make the rounds and introduce myself.
+Dorian: Well, pleased to meet you both. Although your cat doesn’t seem to share that opinion.
+Rowan: Oh I’m sure it’s nothing, she’s usually very friendly. 
+Rowan: I think she’s just a bit stressed out from the move.
+Dorian: Well, that makes two of us. 
+Dorian: I just got back from a particularly long night shift at the hospital.
+Rowan: Yeah, I figured you were a nurse. What department do you work in?
+Dorian: Blood harvesting.
+Rowan: …Uh, what?
+Dorian: (<i>laughs</i>) I harvest blood from hospital patients. It’s a very difficult job, especially when they resist.
+Rowan: (<i>Wait, did I just see fangs in that smile? No…there’s no way. Right?</i>)
+Dorian: (<i>grins</i>) Would you like to come inside? I know some people need to be invited.
+Rowan: Ummm no thanks, I should probably head home anyways.
+Dorian: Shame. Well, be careful on your way back.
+Rowan: Yeah, I’ll make sure no monsters get me on my walk down the hallway…
+Dorian: You never know where danger might be lurking. Best not to let your guard down.
+<<Character Dorian false>>
+<<Scene dorian_apt>>
+He leaves, and Selina finally relaxes.
+
+<<Character Selina true>>
+Selina: Meow…
+Rowan: I’m sure he’s just messing with me. Right, Selina?
+<<Character Selina false>>
+
+<<if $neighborsMet < 3>>
+    <<jump levelZeroSelectNeighbor>>
+<<else>>
+    <<change_scene Day_1>>
+<<endif>>
+===
+
+title: levelZeroFern
+color: lightpink
+group: opening
+---
+//0.4
+<<Scene fern_apt>>
+(<i>Knock knock<i>)
+(<i>Thunk thunk thunk thunk. You hear loud footsteps approach the door.<i>)
+Rowan: This neighbor’s a bit loud. 
+The door opens and you see a robot appear.
+<<Scene fern_apt_open>>
+<<Character Fern true>>
+Robot: Hello. 
+Rowan: Aaah!! 
+Cat: Meow!!! 
+Rowan: (<i>steps back<i>) Please don’t blast us!! 
+Robot: That is a common but harmful trope. I am not here to hurt anyone. 
+Robot: I am a good robot working in the service of people. 
+Robot: I am here to help my human with housekeeping. 
+Robot: …
+Robot: …I am not planning to destroy all humans. 
+Rowan: Um ok...so, your human, are they here? I’m the new neighbor next door and wanted to introduce myself. I’m Rowan and I go by she/they. 
+Robot: No, my human is not here. 
+Robot: They rent this apartment, but I am living here in their place. My day is busy with managing the packages which arrive here every day and cleaning the apartment which continuously gathers dust and dirt and accumulates much trash. 
+Rowan: (<i>mutters<i>) Technology really has gotten quite advanced hasn’t it Selina…
+Selina seems shocked but is cautiously judging the robot. 
+Rowan: …Ok, well I’ll be in apartment T8 if you need anything. Maybe I’ll see you around…um…do you have a name? 
+Robot: I am called whatever you would like to call me. Though many just refer to me by the plant on my head. 
+->Fern
+    Rowan: Is it a fern? 
+    Fern: Correct! Perhaps you are a botanist? 
+->Eucalyptus
+    Rowan: It smells like eucalyptus.
+    Robot: You should get your nose checked.  
+->Succulent 
+    Rowan: It looks like it could be a succulent.
+    Robot: Close guess, but still zero points. 
+	
+Fern: This fern on my head was given to me by my human. I think they were amused at the additional work it would cost me to take care of it but the plant makes a good talking point. 
+Rowan: Cute! Okay. I’ll call you Fern then. See you around. 
+<<Character Selina true>>
+Selina: Meow!  
+<<Character Selina false>>
+<<Character Fern false>>
+<<if $neighborsMet < 3>>
+    <<jump levelZeroSelectNeighbor>>
+<<else>>
+    <<change_scene Day_1>>
+<<endif>>
+===
+
+title: levelZeroMarie
+color: lightpink
+group: opening
+---
+//0.5
+<<Scene marie_elle_apt>>
+You knock the door, but no one appears to be home.
+
+<<if $neighborsMet < 3>>
+    <<jump levelZeroSelectNeighbor>>
+<<else>>
+    <<change_scene Day_1>>
+<<endif>>
+===
+
