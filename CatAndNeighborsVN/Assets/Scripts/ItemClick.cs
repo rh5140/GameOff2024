@@ -21,9 +21,13 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         dialogueRunner.StartDialogue(node);
 
         // replace current image with new image
-        if (changesItemState) inspectImage.SetActive(true);
+        if (changesItemState) {
+            inspectImage.SetActive(true);
+            transform.parent.gameObject.SetActive(false);
+        }
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         gameObject.SetActive(false);
+        // deactivateImage.SetActive(false);
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
