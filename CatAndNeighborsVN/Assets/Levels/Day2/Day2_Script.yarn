@@ -60,7 +60,7 @@ group: bloodBag
 //2.1
 <<Scene bg_office>> // living room
 
-Even though you don’t have a job, you still feel just as tired by the end of the day.
+Even though Rowan doesn't have a job, they still feel just as tired by the end of the day.
 Rowan: (<i>God, I’m exhausted. Hope Selina’s doing okay on her own…</i>)
 Rowan: Selina? Where are you?
 <<show_living_room>>
