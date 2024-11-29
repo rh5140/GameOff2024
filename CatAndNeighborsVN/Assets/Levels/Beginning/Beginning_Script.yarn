@@ -73,6 +73,11 @@ Dorian: I have to hand it to you, not many dare to venture upon my doorstep past
 Dorian: You must be very brave.
 Rowan: Oh, uh, I wouldn’t say that necessarily, I just thought I should make the rounds and introduce myself.
 Dorian: Well, pleased to meet you both. Although your cat doesn’t seem to share that opinion.
+<<Character Dorian false>>
+<<Character Selina true>>
+Selina: (<i>suspicious</i>) Meow...
+<<Character Selina false>>
+<<Character Dorian true>>
 Rowan: Oh I’m sure it’s nothing, she’s usually very friendly. 
 Rowan: I think she’s just a bit stressed out from the move.
 Dorian: Well, that makes two of us. 
