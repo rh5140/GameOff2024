@@ -2,9 +2,6 @@ title: Start
 tags:
 ---
 <<Scene bg_interact>>
-<<setFashionDesignerNotSelected true>>
-<<setVampireNurseNotSelected true>>
-<<setPitifulRobotNotSelected true>>
 Day 9
 <<jump levelNineFindItem>>
 ===

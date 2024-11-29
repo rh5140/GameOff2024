@@ -2,9 +2,6 @@ title: Start
 tags:
 ---
 <<Scene bg_interact>>
-<<setFashionDesignerNotSelected true>>
-<<setVampireNurseNotSelected true>>
-<<setPitifulRobotNotSelected true>>
 Day 6
 <<jump levelSixIntro>>
 ===
@@ -15,9 +12,6 @@ group: newsArticle
 --- 
 //6.0 
 
-<<setFashionDesignerNotSelected true>>
-<<setVampireNurseNotSelected true>>
-<<setPitifulRobotNotSelected true>>
 <<Scene tartfinal>>
 
 As you lean against the walls of the TART, listening to the familiar rumbling of the train on the tracks, you hear a familiar clicking of heels coming your way.
