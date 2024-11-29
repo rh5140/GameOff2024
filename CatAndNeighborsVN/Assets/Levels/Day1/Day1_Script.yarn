@@ -68,7 +68,7 @@ group: mucciBag
 ---
 //1.4
 <<if getVampireNurseNotSelected()>>
-    <<Scene bg_office>> // Replace with different background
+    <<Scene dorian_apt>> 
     <<Character DORIAN true>>
     Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
     Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
@@ -89,7 +89,7 @@ group: mucciBag
 ---
 //1.5
 <<if getPitifulRobotNotSelected()>>
-    <<Scene bg_office>> // Replace with different background
+    <<Scene fern_apt>>
     <<Character feRn true>>
     Fern: This is a certified Mucci bag. My human could afford one of these, but they don’t get outside much to make use of it. 
     Rowan: Maybe it could be theirs? 
@@ -114,14 +114,15 @@ color: purple
 group: mucciBag
 ---
 //1.6
-<<Scene bg_office>> // Replace with different background
-<<Character fashiondesigner true>>
+<<Scene marie_elle_apt>>
 Rowan: Hello? Is anyone in right now?
-(DOOR SLIGHTLY OPENS W/ ONLY HALF OF FASHION DESIGNER’S FACE PEEKING OUT)
+<<Scene marie_apt_open>>
+<<Character fashiondesigner true>>
 Marie-Elle: I currently don’t accept visitors! Or ever really!
 Rowan: Wait! But I -
 <<Character fashiondesigner false>>
-(SLAMS DOOR)
+<<Scene marie_elle_apt>>
+(<i>The door slams shut</i>)
 Rowan: …
 Rowan: That was a bit rude. They didn’t even let me finish my sentence.
 Rowan: This bag is too expensive to leave my neighbor alone though. Maybe I should try knocking again?
@@ -132,11 +133,12 @@ Rowan: I’m sure she’ll eventually answer?
 ->Hope
 Rowan: Now I’m a bit worried.
 <<Character fashiondesigner true>>
-(Marie-Elle OPENS DOOR)
+<<Scene marie_apt_open>>
+(<i>Someone opens the door</i>)
 Marie-Elle: Why is it that you keep insisting to pound on my door? I am baffled at your inability to take a hint when I didn’t answer the door for 5 minutes.
 Marie-Elle: I’m currently in the midst of something very important and each second here takes away another second I can be using productively elsewhere.
 Marie-Elle: Come on! Tell me quickly so we can get this over with. 
-Rowan: Hi, I’m Rowan and I recently moved in next door in Apartment H8. I found a bag and I’m looking for the bag’s owner so that I can return it ASAP.
+Rowan: Hi, I’m Rowan, and I recently moved in next door in Apartment H8. I found a bag, and I’m looking for the bag’s owner so that I can return it ASAP.
 Marie-Elle: A bag? Would it happen to a Mucci purse?
 Rowan: Ah yes! It is a Mucci purse. A pink Mucci purse?
 Marie-Elle: I believe I may be the owner of the purse you claim to have found. Your visit is now very much welcomed.
@@ -155,28 +157,28 @@ Marie-Elle: … Your cat stole the purse and you found it lying in your living r
 Marie-Elle: Do you seriously think I’ll believe that your cat somehow stole a designer bag without a scratch or without bite marks to indicate how it apparently carried the purse to your apartment?
 Rowan: When you say it that way, it does seem far-fetched … but I swear it’s the truth!
 Rowan: Look! I even brought my cat to apologize!
-(PICKS UP SELINA AND SHOVES SELINA INTO FASHION DESIGNER’S FACE)
-Selina: (UNIMPRESSED) Meow.
+(<i>Rowan picks up Selina and shoves her in their neighbor's face<i>)
+Selina: (<i>unimpressed</i>) Meow.
 Marie-Elle: A CAT? HERE? Oh no no no.
 Marie-Elle: Do not bring that cat near me or else I’ll-
 Marie-Elle: AH CHOO!
-Selina: (CONFUSED) Meow?
+Selina: (<i>confused</i>) Meow?
 Rowan: Bless you! Are you okay? 
 Marie-Elle: Please bring your - AH CHOO - cat away from me! My - AH CHOO - allergies will start acting up!
 Rowan: You’re allergic to cats? Oh no! I’m so sorry!
 Rowan: I’ll leave Selina in my apartment for now!
-Selina: (OUTRAGED) MEOW?!
-(ROWAN RUNS OVER TO APARTMENT TO PUT SOME DISTANCE)
+Selina: (<i>outraged</i>) MEOW?!
+(<i>Rowan runs over the apartment to put some distance</i>)
 Rowan: I’m sorry about that! If I knew you were allergic, I wouldn’t have brought Selina with me to return the purse.
 Marie-Elle: I was starting to wonder why my nose was starting to get stuffy out of the blue. AH CHOO!
 Rowan: How bad is your cat allergy? If you need to get any medicine, I’ll compensate you!
-Marie-Elle: (SNIFF) Nothing too serious thankfully, but enough for me to have a stuffy nose and rashes for a few days. Can’t say I won’t be irritated the whole time though.
+Marie-Elle: (<i>sniff</i>) Nothing too serious thankfully, but enough for me to have a stuffy nose and rashes for a few days. Can’t say I won’t be irritated the whole time though.
 Marie-Elle: I also have something at home to take care of my allergies so no need for compensation. 
 Marie-Elle: But I believe you have a purse to return to me.
 Rowan: Yes! Here you go. I grabbed the purse from the apartment on my way back.
-(BAG IS GIVEN BACK)
+(<i>Rowan returns the bag</i>)
 Rowan: I hope this is the right one you’re looking for.
-Marie-Elle: (MUTTERS) Muted fuchsia with an eggplant frame. Spotted like a cheetah. Clasps open like those Japanese kindergarten backpacks.
+Marie-Elle: (<i>mutters</i>) Muted fuchsia with an eggplant frame. Spotted like a cheetah. Clasps open like those Japanese kindergarten backpacks.
 Marie-Elle: Yes, this is the one. 
 Rowan: I’m sorry again that my cat stole your purse.
 Marie-Elle: You still are saying that the cat stole it? I admire your stubbornness.
@@ -189,14 +191,14 @@ Marie-Elle: For this purse in particular? I am expected to wear this purse in ne
 Marie-Elle: You’ll be surprised at the kind of things they ask me to do. 
 Marie-Elle: Of course, I only complete requests that are within my boundaries as I still have dignity.
 Marie-Elle: This is a small request in comparison no matter how I feel about the purse personally. 
-(BOTH STARE AT THE PURSE)
+(<i>Both stare at the purse</i>)
 ->Interesting
     Rowan: Your client has a very uhhhh … interesting taste in fashion.
     Marie-Elle: You don’t have to mince it.
     Marie-Elle: Even I am a bit skeptical and I believe all fashion should be appreciated in its own way.
 ->Haute couture.
     Rowan: I love the design of the purse! Very haute couture.
-    Marie-Elle: (DOUBTFUL) Ah… You do?
+    Marie-Elle: (<i>doubtful</i>) Ah… You do?
     Marie-Elle: Well, taste is subjective and varies by person.
 Marie-Elle: Every style has its own admirers since if somebody can think of a creation surely there will be someone in this world who can admire the piece.
 Rowan: Well, I’m glad that I was able to return the purse to you. 
@@ -209,8 +211,8 @@ Marie-Elle: I am Marie-Elle, tenant of Apartment H7, owner of the Mucci purse yo
 Rowan: You’re never going to let me live that down are you?
 Marie-Elle: It is a memorable first impression I must say.
 Rowan: And if it’s not too much to ask, what do you do for a living to have high profile clients? 
-Rowan: I’m … FUnemployed if that makes you more comfortable.
-Marie-Elle:  Let’s just say for now that I am a … creative. 
+Rowan: I’m… funemployed if that makes you more comfortable.
+Marie-Elle:  Let’s just say for now that I am a… creative. 
 Marie-Elle: Well, I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. I still have a lot of work to do to stay at the caliber that I am known for.
 Rowan: I’m sorry again! Bye and thanks for answering the door the second time.
 Marie-Elle: No need to apologize more about the same thing multiple times. When I say it’s fine, I really mean it.
