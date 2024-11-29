@@ -35,11 +35,13 @@ Rowan: I know it’s only been a month since me and Selina have moved into Tiram
 
 <<Character marieelle true>>
 Marie-Elle: Yes, thanks to your thieving cat.
+<<Character marieelle false>>
 
 <<Character cat true>>
 Selina: (<i>lovingly</i>) Meooooow.
 <<Character cat false>>
 
+<<Character marieelle true>>
 Rowan: Hey! Selina hasn’t stolen anything for a long time now. 
 
 <<Character dorian true>>
@@ -48,10 +50,15 @@ Dorian: It’s actually a very short amount of time depending on whose perspecti
 Rowan: I know you aren’t bitter about that still because you’ve all come to celebrate Selina’s birthday party with us. 
 Rowan: It’s really meaningful because we never thought-
 
+<<Character marieelle false>>
+<<Character dorian false>>
+
 <<Character cat true>>
 Selina: Meow! 
 <<Character cat false>>
 
+<<Character marieelle true>>
+<<Character dorian true>>
 Rowan: <b>I</b> never thought that we’d be able to find a community who would be so welcoming and relatable for us. 
 
 Rowan: Enjoy the snacks we have in the kitchen, mingle, discuss. 
@@ -80,7 +87,9 @@ color: pink
 group: ending
 ---
 // 10.3
+<<Scene bg_interact>>
 Which neighbor would you like to talk to?
+<<neighbor_selection>>
 ===
 
 title: levelTenDorian
@@ -88,11 +97,14 @@ color: pink
 group: ending
 --- 
 //10.4
-<<Character Dorian true>>
+<<addAmountSoloConvoDone>>
+<<Character cat true>>
 Selina: (<i>purrs</i>) Meow meow!
+<<Character cat false>>
+<<Character Dorian true>>
 Dorian: (<i>laughs</i>) It’s nice to see you too Selina. Best wishes for your special day.
 Rowan: I’m glad you could find some time to attend. 
-Rowan I know things have been really busy for you at the hospital.
+Rowan: I know things have been really busy for you at the hospital.
 Dorian: (<i>smiles</i>) How could I not attend my favorite cat’s birthday party?
 Rowan: She’s so happy you’re here!
 Rowan: Still can’t believe we were both so scared of you when we first met.
@@ -107,7 +119,7 @@ Rowan: Well, I’ve actually been working on a very special project this past mo
 Dorian: Oh?
 Rowan: Yeah, I decided to start making games on my own again! 
 Rowan: I’m currently working on a prototype for something you might see very soon!
-Dorian; Well, I’m happy to hear that. If you need any music, feel free to ask.
+Dorian: Well, I’m happy to hear that. If you need any music, feel free to ask.
 Rowan: Oh yeah, you’ve been playing with Staked Heart again right?
 Dorian: A little bit. I played bass for a few of their new songs. 
 Rowan: They’re getting pretty big. Looks like you might be famous soon!
@@ -117,10 +129,18 @@ Dorian: I wouldn’t be able to see you all as often anymore.
 Rowan: Aww Dorian, that’s so sweet!
 Dorian: And expose my vampiric secret.
 Rowan: …Of course. Well, I’m really glad you could make it.
+<<Character Dorian false>>
+<<Character cat true>>
 Selina: Meooow meow meow!!
+<<Character cat false>>
+<<Character Dorian true>>
 Dorian: (<i> smiles </i>) As am I. 
 <<Character Dorian false>>
-<<jump levelTenSelectNeighbor>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
 ===
 
 title: levelTenFern
@@ -128,6 +148,7 @@ color: pink
 group: ending
 --- 
 //10.5
+<<addAmountSoloConvoDone>>
 <<Character Fern true>>
 Rowan: Thanks for making time to come to the party, Fern. I’m surprised your programming allowed you to take so much free time for yourself. 
 Fern: I did a deep clean last week in preparation of this joyous event. I am performing what humans call “hacking the system”. 
@@ -136,14 +157,22 @@ Fern: Of course! I realize with our interactions lately you’ve been reflecting
 Fern: And I understand Marie–Elle’s concerns as well, but I cannot help but already exist.
 Fern: I can only try to keep doing what I was programmed to do in a more efficient way. 
 Fern takes out a cat toy and dangles it in front of Selina while you both continue your conversation. 
+<<Character Fern false>>
+<<Character cat true>>
 Selina: (<i>purrs<i>)
+<<Character cat false>>
+<<Character Fern true>>
 Rowan: I’m glad to hear that…I think. Are you still running your mukbang channel? 
 Fern: Yes! I am currently at 2,997 subscribers. 
 Rowan: That’s a lot of people who want to watch a robot eat. 
 Fern: Quite a small number compared to the overall audience size of the internet.
 Fern: However, I will be celebrating 3,000 subscribers by doing a donathon and “drinking” pomegranate juice with Dorian’s recommendation. 
 Rowan: That seems quite ominous. 
+<<Character Fern false>>
+<<Character cat true>>
 Selina: Meow!! 
+<<Character cat false>>
+<<Character Fern true>>
 Fern: I know! How unfortunate that’s what it will seem like! 
 Fern: I will have to plot twist everyone at the end that it’s not blood and robots are capable of great things.
 Fern: All the money is going to go towards supporting local chocolate shops and more fair trade. 
@@ -152,7 +181,11 @@ Fern: Pshaw! My human is already rich. The money I make from the mukbang is quit
 Fern: I believe as long as I remain within my rules, there is no harm in keeping this a secret. Fern: What I do with the money I make should be mine! 
 Rowan: I meant, do they know you’re making such a positive impact? 
 Fern: I don’t think they would care. I’m still doing the job they asked of me but with extra steps.  
+<<Character Fern false>>
+<<Character cat true>>
 Selina: Meowwwww
+<<Character cat false>>
+<<Character Fern true>>
 Fern: Meow meow, indeed. 
 Rowan: Do you think you know more about what happiness is now Fern? 
 Fern: I always knew what happiness is, Rowan. It means pleasure or contentment. 
@@ -167,7 +200,11 @@ Rowan: But being able to help you has given me some more confidence about the wa
 Fern: I do not know if it will make a great impact, but I think what we are doing must be a good thing, especially because I’m the one doing it. 
 Fern: (<i>wink</i>)…in service of humans, of course. 
 <<Character Fern false>>
-<<jump levelTenSelectNeighbor>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
 ===
 
 title: levelTenMarie
@@ -175,16 +212,31 @@ color: pink
 group: ending
 --- 
 //10.6
+<<addAmountSoloConvoDone>>
+<<Character cat true>>
+Selina: Meow! 
+<<Character cat false>>
 <<Character Marie-Elle true>>
-Selina: Meow!
 Marie-Elle: Happy birthday, Selina. You truly are the star of the day today.
+
+<<Character Marie-Elle false>>
+<<Character cat true>>
 Selina: (<i>pleased</i>) Meow~
+
+<<Character cat false>>
+<<Character Marie-Elle true>>
 Rowana: I’m happy you could make Selina’s birthday party! And Selina is as well.
 Marie-Elle: Wouldn’t miss it for the world. She is the one who brought all of us together.
 Rowan: I’m just glad she’s finally stopped stealing from everybody.
 Rowan: As nice as it was to get to know everybody, it was embarrassing having to knock on your guys’ doors everyday to return something.
 Marie-Elle: It’s something we can laugh about now, but Selina truly knows how to push people to do her bidding.
+
+<<Character Marie-Elle false>>
+<<Character cat true>>
 Selina: Meooooow.
+
+<<Character cat false>>
+<<Character Marie-Elle true>>
 Marie-Elle: No, that doesn’t mean you should start up again Selina.
 Rowan: Yikes. Maybe I should drop Selina off at one of your guys’ apartments when I leave the building if you guys are at home. Keep an eye on her, you know?
 Marie-Elle: (<i>laughs</i>) Well, I would volunteer, but I think I’m gone more days than I’m present in this building.
@@ -206,9 +258,15 @@ Rowan: (<i>grins</i>) You might see the game sooner than you think though.
 Marie-Elle: (<i>smiles back</i>) I’m looking forward to playing it.
 Marie-Elle: Hopefully, I’ll win even with the little gaming experience I have.
 Rowan: Well, you’ll have a tough competition against Selina. I think she’ll be an expert in the game mechanics.
-Selina: Meow! Meooooow~
 <<Character Marie-Elle false>>
-<<jump levelTenSelectNeighbor>>
+<<Character cat true>>
+Selina: Meow! Meooooow~
+<<Character cat false>>
+<<if getAmountSoloConvoDone() != 3>>
+    <<jump levelTenSelectNeighbor>>
+<<else>>
+    <<jump levelTenConclusion>>
+<<endif>>
 ===
 
 title: levelTenConclusion
