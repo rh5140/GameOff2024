@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1248818142, guid: f83f52daf19f51f4a8b9a6b5900d9396, type: 3}
+    - target: {fileID: 610235597893677294, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_text
+      value: Day 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2160660421090409153, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: correctNeighbor
       value: 0

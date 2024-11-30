@@ -114,6 +114,7 @@ public class YarnCommands : MonoBehaviour
 
     private void ChangeScene(string sceneName) {
         // Debug.Log("loading scene");
+		GetComponentInChildren<TransitionFade>().FadeOut();
         SceneManager.LoadScene(sceneName);
         gameObject.SetActive(true);
     }
