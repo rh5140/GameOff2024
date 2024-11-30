@@ -227,7 +227,7 @@ Well-Dressed Woman: Of course, I only complete requests that are within my bound
 Well-Dressed Woman: This is a small request in comparison no matter how I feel about the purse personally. 
 (<i>Both stare at the purse</i>)
 ->Interesting
-    Rowan: Your client has a very uhhhh … interesting taste in fashion.
+    Rowan: Your client has a very uhhhh… interesting taste in fashion.
     Well-Dressed Woman: You don’t have to mince it.
     Well-Dressed Woman: Even I am a bit skeptical and I believe all fashion should be appreciated in its own way.
 -><i>Haute couture.</i>
@@ -241,12 +241,12 @@ Well-Dressed Woman: Is there anything else you need now that you’re lingering 
 Rowan: Ah… I introduced myself earlier, but still don’t know your name yet so I was hoping you’ll introduce yourself?
 Well-Dressed Woman: Why do you sound so uncertain that you want to know who I am? Either you do or you don’t. Ask again, but this time be more confident.
 Rowan: May I please know your name? I would like to get to know my neighbors that I’ll be seeing in the future.
-Well-Dressed Woman: I am Marie-Elle, tenant of Apartment H7, owner of the Mucci purse your cat, Selina, “stole.” 
+Well-Dressed Woman: I am Marie-Elle, tenant of Apartment T7, owner of the Mucci purse your cat, Selina, “stole.” 
 Rowan: You’re never going to let me live that down are you?
 Marie-Elle: It is a memorable first impression I must say.
 Rowan: And if it’s not too much to ask, what do you do for a living to have high profile clients? 
-Rowan: I’m … FUnemployed if that makes you more comfortable.
-Marie-Elle:  Let’s just say for now that I am a … creative. 
+Rowan: I’m… funemployed if that makes you more comfortable.
+Marie-Elle:  Let’s just say for now that I am a… creative. 
 Marie-Elle: I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. I still have a lot of work to do to stay at my level of caliber.
 Rowan: I’m sorry again! Bye and thanks for answering the door the second time.
 Marie-Elle: No need to apologize more about the same thing multiple times. When I say it’s fine, I really mean it.
@@ -256,6 +256,7 @@ Marie-Elle: I hope our next meeting is on better terms. Goodbye, Rowan.
 
 Rowan: <i>What a strange neighbor.</i>
 Rowan: <i>Wait. If she has high profile clientele, how come she lives in this no-name apartment complex?</i>
+Rowan: <i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>
 Rowan: <i>Suspicious…</i>
 
 <<change_scene Day_2>>
