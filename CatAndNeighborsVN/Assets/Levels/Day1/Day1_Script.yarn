@@ -65,7 +65,7 @@ group: mucciBag
 <<hide_item>>
 
 Selina: Purrrrrrr.
-Rowan: Oh, you like this purse?
+Rowan: Oh, you like this bag?
 Rowan: Well, you can’t have it. It’s too expensive to keep.
 Rowan: Plus it’s not even ours! You had to steal it in the first place.
 Selina: (<i>disgruntled</i>) Meow.
@@ -154,7 +154,7 @@ Well-Dressed Woman: Why is it that you keep insisting to pound on my door? I am 
 Well-Dressed Woman: I’m currently in the midst of something very important and each second here takes away another second I can be using productively elsewhere.
 Well-Dressed Woman: Come on! Tell me quickly so we can get this over with. 
 Rowan: Hi, I’m Rowan and I recently moved in next door in Apartment H8. I found a bag and I’m looking for the bag’s owner so that I can return it ASAP.
-Well-Dressed Woman: A bag? Would it happen to a Mucci purse?
+Well-Dressed Woman: A bag? Would it happen to be a Mucci <b><i>purse</i></b>?
 Rowan: Ah yes! It is a Mucci purse. A pink Mucci purse?
 Well-Dressed Woman: I believe I may be the owner of the purse you claim to have found. Your visit is now very much welcomed.
 Well-Dressed Woman: Tell me again how and where you came upon my missing Mucci purse?
@@ -169,7 +169,7 @@ Well-Dressed Woman: … Your cat stole the purse and you found it lying in your 
     Rowan: My cat has a hidden talent in thievery it seems.
     Well-Dressed Woman: I’m not sure that’s something to be proud of as the owner of the cat.
     Well-Dressed Woman: It does not bode well for you in the future if you get implicated in a crime.
-Well-Dressed Woman: Do you seriously think I’ll believe that your cat somehow stole a designer bag without a scratch or without bite marks to indicate how it apparently carried the purse to your apartment?
+Well-Dressed Woman: Do you seriously think I’ll believe that your cat somehow stole a designer purse without a scratch or without bite marks to indicate how it apparently carried the purse to your apartment?
 Rowan: When you say it that way, it does seem far-fetched … but I swear it’s the truth!
 Rowan: Look! I even brought my cat to apologize!
 
@@ -215,7 +215,7 @@ Well-Dressed Woman: Yes, this is the one.
 Rowan: I’m sorry again that my cat stole your purse.
 Well-Dressed Woman: You still are saying that the cat stole it? I admire your stubbornness.
 Rowan: I can’t say anything else, because it’s the truth. :(
-Well-Dressed Woman: No matter how you acquired the purse, I must thank you either way for returning this Mucci bag to me. 
+Well-Dressed Woman: No matter how you acquired the purse, I must thank you either way for returning this Mucci purse to me. 
 Well-Dressed Woman: It’s definitely saved me a day of non-productivity and the pain of explaining to my client why their gift is not in my possession.
 Rowan: Client?
 Well-Dressed Woman: Yes, my profession requires me to work with high profile clientele on a regular basis.
@@ -227,7 +227,7 @@ Well-Dressed Woman: Of course, I only complete requests that are within my bound
 Well-Dressed Woman: This is a small request in comparison no matter how I feel about the purse personally. 
 (<i>Both stare at the purse</i>)
 ->Interesting
-    Rowan: Your client has a very uhhhh … interesting taste in fashion.
+    Rowan: Your client has a very uhhhh… interesting taste in fashion.
     Well-Dressed Woman: You don’t have to mince it.
     Well-Dressed Woman: Even I am a bit skeptical and I believe all fashion should be appreciated in its own way.
 -><i>Haute couture.</i>
@@ -241,12 +241,12 @@ Well-Dressed Woman: Is there anything else you need now that you’re lingering 
 Rowan: Ah… I introduced myself earlier, but still don’t know your name yet so I was hoping you’ll introduce yourself?
 Well-Dressed Woman: Why do you sound so uncertain that you want to know who I am? Either you do or you don’t. Ask again, but this time be more confident.
 Rowan: May I please know your name? I would like to get to know my neighbors that I’ll be seeing in the future.
-Well-Dressed Woman: I am Marie-Elle, tenant of Apartment H7, owner of the Mucci purse your cat, Selina, “stole.” 
+Well-Dressed Woman: I am Marie-Elle, tenant of Apartment T7, owner of the Mucci purse your cat, Selina, “stole.” 
 Rowan: You’re never going to let me live that down are you?
 Marie-Elle: It is a memorable first impression I must say.
 Rowan: And if it’s not too much to ask, what do you do for a living to have high profile clients? 
-Rowan: I’m … FUnemployed if that makes you more comfortable.
-Marie-Elle:  Let’s just say for now that I am a … creative. 
+Rowan: I’m… funemployed if that makes you more comfortable.
+Marie-Elle:  Let’s just say for now that I am a… creative. 
 Marie-Elle: I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. I still have a lot of work to do to stay at my level of caliber.
 Rowan: I’m sorry again! Bye and thanks for answering the door the second time.
 Marie-Elle: No need to apologize more about the same thing multiple times. When I say it’s fine, I really mean it.
@@ -256,6 +256,7 @@ Marie-Elle: I hope our next meeting is on better terms. Goodbye, Rowan.
 
 Rowan: <i>What a strange neighbor.</i>
 Rowan: <i>Wait. If she has high profile clientele, how come she lives in this no-name apartment complex?</i>
+Rowan: <i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>
 Rowan: <i>Suspicious…</i>
 
 <<change_scene Day_2>>
