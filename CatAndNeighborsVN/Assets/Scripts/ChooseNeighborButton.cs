@@ -17,6 +17,10 @@ public class ChooseNeighborButton : MonoBehaviour
     [SerializeField] private string fashionDesignerNode;
     [SerializeField] private string vampireNurseNode;
     [SerializeField] private string pitifulRobotNode;
+
+    [Header("Set up audio source")]
+    [SerializeField] private AudioSource correctAnswer;
+    [SerializeField] private bool correctNeighbor;
     
     private GameObject chosenNeighbor;
     
@@ -55,6 +59,11 @@ public class ChooseNeighborButton : MonoBehaviour
         chosenNeighbor.SetActive(false);
         
         Debug.Log("OnClick");
+        // play correct answer audio if i'm the correct neighbor
+        if (correctNeighbor) {
+            Debug.Log("Playing correct answer sound");
+            correctAnswer.Play();
+        }
         if (!dialogueRunner.IsDialogueRunning) {
             Debug.Log("Jump");
             JumpToNeighborDialogue(chosenNeighbor);
