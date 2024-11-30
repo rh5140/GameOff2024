@@ -809,7 +809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -362.14282}
+  m_AnchoredPosition: {x: 24.285767, y: -362.1428}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1117382351647327566
@@ -842,8 +842,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fern
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
-  m_sharedMaterial: {fileID: 7914170207558942578, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
+  m_sharedMaterial: {fileID: 7914170207558942578, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1616,8 +1616,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dorian
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
-  m_sharedMaterial: {fileID: 7914170207558942578, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
+  m_sharedMaterial: {fileID: 7914170207558942578, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1856,7 +1856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 142.85715}
+  m_AnchoredPosition: {x: 24.285767, y: 142.85715}
   m_SizeDelta: {x: 300, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7115225799908241241
@@ -2136,6 +2136,10 @@ MonoBehaviour:
   fashionDesignerNode: levelOneMarie
   vampireNurseNode: levelOneDorian
   pitifulRobotNode: levelOneFern
+  audioSource: {fileID: 0}
+  correctNeighbor: 0
+  correctAnswer: {fileID: 0}
+  wrongAnswer: {fileID: 0}
 --- !u!1 &7952271350636023354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,6 +2358,10 @@ MonoBehaviour:
   fashionDesignerNode: levelOneMarie
   vampireNurseNode: levelOneDorian
   pitifulRobotNode: levelOneFern
+  audioSource: {fileID: 0}
+  correctNeighbor: 0
+  correctAnswer: {fileID: 0}
+  wrongAnswer: {fileID: 0}
 --- !u!1 &8486141041818728819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,6 +2652,10 @@ MonoBehaviour:
   fashionDesignerNode: levelOneMarie
   vampireNurseNode: levelOneDorian
   pitifulRobotNode: levelOneFern
+  audioSource: {fileID: 0}
+  correctNeighbor: 0
+  correctAnswer: {fileID: 0}
+  wrongAnswer: {fileID: 0}
 --- !u!1 &9094301073164101031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +2693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 550, y: 756}
+  m_AnchoredPosition: {x: 516, y: 756}
   m_SizeDelta: {x: 720, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770559654349210688
@@ -2808,8 +2820,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Marie-Elle
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
-  m_sharedMaterial: {fileID: 7914170207558942578, guid: 21555f58b4a6b094e9396e04e17ee9b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
+  m_sharedMaterial: {fileID: 7914170207558942578, guid: b244674d0c31d064bb6845c850f81a18, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
