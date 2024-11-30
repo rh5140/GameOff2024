@@ -1,7 +1,7 @@
 title: Start
 tags:
 ---
-<<Scene bg_interact>>
+<<Scene livingroom_days789>>
 Day 9
 <<jump levelNineFindItem>>
 ===
@@ -12,7 +12,6 @@ group: tailorTape
 --- 
 //9.1
 
-<<Scene livingroom_days789>>
 
 With nothing planned for the day, Rowan allows herself to take a break and lounge around her apartment while doing small tasks. 
 
