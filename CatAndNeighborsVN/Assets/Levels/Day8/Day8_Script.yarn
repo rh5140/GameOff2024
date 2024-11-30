@@ -100,7 +100,8 @@ group: videoCamera
 Rowan: This is quite nostalgic. Whoever it belongs to, maybe we could all film some memories together. I feel like the neighborhood has started to really grow on me. 
 Selina seems apathetic to your sentimentality.
 Rowan: Hey! I know they’re starting to grow on you too. 
-Selina: Hsss! (she’d never admit it) 
+Selina: Hsss!
+She’d never admit it.
 <<Character Selina false>>
 <<jump levelEightSelectNeighbor>>
 ===
@@ -122,9 +123,9 @@ group: videoCamera
 //8.5
 <<Scene dorian_apt_open>>
 <<Character Dorian true>>
-Dorian: “Wait, hold on, let me strike a cool pose.”
-Rowan: “For what?”
-Dorian: “For your movie of course! In which I’m the star.”
+Dorian: Wait, hold on, let me strike a cool pose.
+Rowan: For what?
+Dorian: For your movie of course! In which I’m the star.
 Rowan: …More like the creepy side character who turns out to be the villain.
 Dorian: Hey, nothing beats a good villain.
 Rowan: I’m guessing this isn’t yours then?
@@ -145,7 +146,7 @@ Marie-Elle: I don’t own the camera, but this looks pretty expensive. Whoever l
 Rowan: Why does Selina always steal the expensive items? Why not something less expensive or important like napkins?
 Rowan: Though it would be harder to figure out who owns the napkin unless there's embroidery with the owner’s name on it or something.
 Marie-Elle: Selina just has an eye for spotting what’s valuable, nothing wrong with that.
-Rowan: (<i>Sardonic</i>) Oh really? So when she steals your items, it’s okay?
+Rowan: (<i>sardonic</i>) Oh really? So when she steals your items, it’s okay?
 Marie-Elle: Hmph, at least she knows the value in my items. Also, you always return it to me anyways.
 <<Character Marie-Elle false>>
 <<jump levelEightSelectNeighbor>>
