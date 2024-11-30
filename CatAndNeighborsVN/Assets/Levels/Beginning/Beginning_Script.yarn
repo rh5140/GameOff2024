@@ -164,7 +164,7 @@ color: lightpink
 group: opening
 ---
 //0.5
-<<Scene marie_elle_apt>>
+<<Scene marie_apt_note>>
 There's a note on the door written a few days ago. It reads, "On a business trip to Italy. Will be back in one week."
 Rowan: Looks like they'll be back tomorrow. I wish I was on a beach in Italy right now...
 
