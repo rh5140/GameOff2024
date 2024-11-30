@@ -771,6 +771,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356521364075070429}
     m_Modifications:
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 186439811231999691, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 370109524486379220, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -897,7 +921,7 @@ PrefabInstance:
       objectReference: {fileID: 6219596487393433062}
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: loadSprites.Array.size
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: neighborSelectionCanva
@@ -922,7 +946,27 @@ PrefabInstance:
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: 'loadSprites.Array.data[9]'
       value: 
-      objectReference: {fileID: 8939580860666975743, guid: 0848b27c55dbd574597713facdebe958, type: 3}
+      objectReference: {fileID: 21300000, guid: 0848b27c55dbd574597713facdebe958, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[10]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a04a23daee4d09c4783ea8af84ec56fc, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[11]'
+      value: 
+      objectReference: {fileID: 21300000, guid: b1fa4065d4c8be448acb1987cb524517, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[12]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d4ea9e0aca971845ba9bf85d5db09f6, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[13]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 0da8e20411d413c4aa79dfd0b5df7f45, type: 3}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: 'loadSprites.Array.data[14]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a651a9df65aab0478701e03abf6f158, type: 3}
     - target: {fileID: 6769243049087633965, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: m_Name
       value: YarnCommands

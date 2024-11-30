@@ -8,7 +8,7 @@ group: opening
 <<set $metFern to false>>
 <<set $neighborsMet to 0>>
 
-<<Scene bg_office>> // replace with living room 
+<<Scene livingroom_empty>> 
 Rowan: Okay Selina, you can come out now.
 <<Character Selina true>>
 Selina: Meow.
@@ -32,7 +32,7 @@ color: lightpink
 group: opening
 ---
 // 0.2
-<<Scene bg_office>> // replace with apartment complex?
+<<Scene livingroom_empty>> 
 
 Which neighbor would you like to meet?
 ->Marie-Elle <<if $metMarie is false>>
