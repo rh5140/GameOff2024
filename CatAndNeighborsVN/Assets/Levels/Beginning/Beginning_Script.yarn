@@ -165,7 +165,8 @@ group: opening
 ---
 //0.5
 <<Scene marie_elle_apt>>
-Rowan knocks the door, but no one appears to be home.
+There's a note on the door written a few days ago. It reads, "On a business trip to Italy. Will be back in one week."
+Rowan: Looks like they'll be back tomorrow. I wish I was on a beach in Italy right now...
 
 <<if $neighborsMet < 3>>
     <<jump levelZeroSelectNeighbor>>
