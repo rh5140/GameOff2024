@@ -217,7 +217,7 @@ Rowan: How do you know when I’m about to visit?
 Marie-Elle: I hear you muttering to yourself in exasperation next door after you come back from work.
 Marie-Elle: It’s highly entertaining hearing you try to figure out how and what Selina stole.
 Rowan: (<i>alarmed</i>) You can hear me through the walls?
-Marie-Elle: No, I can’t. I hear the door to your apartment slam open and close randomly when you’re at work so I just assume Selina is continuing their nefarious deeds.
+Marie-Elle: No, I can’t. I hear the door to your apartment slam open and close randomly when you’re at work, so I just assume Selina is continuing their nefarious deeds.
 
 <<Character fashiondesigner false>>
 <<Character cat true>>
@@ -249,7 +249,7 @@ Marie-Elle: In my opinion, I find it very amusing. Maybe you use this as an excu
 Rowan: (<i>Blushes</i>) If only.
 Marie-Elle: Well, no matter. What have you brought me today?
 Rowan: Is this soggy article clipping yours?
-(<i>Shows Marie-Elle the clipping</i>)
+She shows Marie-Elle the clipping.
 Marie-Elle: What article? From what publication? I try not to read anything outside of my subscriptions since I know how sensational some can be.
 Marie-Elle: Some of the rags reporters write can be so dishonest. 
 Marie-Elle: The fact that people sometimes only read the title and create assumptions from that alone! How maddening!
@@ -273,12 +273,12 @@ Rowan: All is good and done. You already apologized to me and I forgave you.
 Rowan: You told me it’s ok when I apologized quite a few times as well for when Selina stole your purse remember? 
 Marie-Elle: Yes, apologizing multiple times when things are already talked out is unnecessary.
 Rowan: I hope things work out for you though. It must be a tough situation to be in with so many expectations at your level.
-Rowan: If it helps, like I said earlier, I … think I can relate to your situation and how you’re feeling though. 
+Rowan: If it helps, like I said earlier, I...think I can relate to your situation and how you’re feeling though. 
 Marie-Elle: How your life-long pursuit is ending and your career is over?
 Rowan: Similar. Before moving here, I got laid off from my dream job as a game designer and it’s been really rough for me.
 Rowan: All those hours putting my all into a game I wasn’t even passionate about in the hopes of being able to get to a position where I can create the game I always dreamed of.
 Rowan: I spent less time with some of my friends from university to try to network with my coworkers who've been in the industry for awhile.
-Rowan: It feels like all the work I did was wasted especially since it’s been so hard to keep in contact with the coworkers I grew close to.
+Rowan: It feels like all the work I did was wasted, especially since it’s been so hard to keep in contact with the coworkers I grew close to.
 Rowan: I understand everybody is busy, but I feel left behind now.
 Rowan: I really have been questioning what it means to have my career so entwined with my love for games.
 Rowan: At what point does it become too much due to burn out from my passion being taken advantage of? Can I personally even find a balance when others could or couldn’t?
@@ -288,7 +288,8 @@ Rowan: I’m glad that it does.
 
 <<Character fashiondesigner false>>
 <<Character cat true>>
-Selina: (<i>Goes up to Marie-Elle to rub her face against Marie-Elle’s leg</i>) Meow~
+Selina goes up to Marie-Elle to rub her face against her leg. 
+Selina: Meow~
 
 <<Character cat false>>
 <<Character fashiondesigner true>>
@@ -300,8 +301,10 @@ Selina: (<i>judgemental</i>) Meow.
 
 <<Character cat false>>
 <<Character fashiondesigner true>>
-Marie-Elle: Would you mind if I asked how you are dealing with everything? It honestly feels so hopeless and each day doesn’t get any better despite trying to ignore what people are saying about me.
-Marie-Elle: All day I hear “she’s lost her touch” or “she’s behind on the times.” As if it’s not enough that they called some of the cultural influences I put in my line like the <i>khăn đóng</i> as gaudy or uninspired!
+Marie-Elle: Would you mind if I asked how you are dealing with everything? 
+Marie-Elle: It honestly feels so hopeless and each day doesn’t get any better despite trying to ignore what people are saying about me.
+Marie-Elle: All day I hear “she’s lost her touch” or “she’s behind on the times.” 
+Marie-Elle: As if it’s not enough that they called some of the cultural influences I put in my line like the <i>khăn đóng</i> as gaudy or uninspired!
 Marie-Elle: Not only are they insulting me, but also my ethnic roots that I’m so proud of to put in my craft.
 Marie-Elle: I even have reporters hounding me regularly which only serves to remind me how much I failed that day.
 Rowan: Well, I don’t have an answer, because I’m still learning how to deal with it as well.
@@ -312,8 +315,8 @@ Rowan: It still doesn’t hurt to ask your friends even if they’re long distan
 Rowan: Those close to you should put aside time of their day to support you no matter what’s going on in their lives.
 Rowan: And if there’s nobody like that you can find, you can always talk to me. It might even help to start with somebody who relates with you so you don’t feel as alone.
 Marie-Elle: I’ll try to ask some people I know, but I think I might also take up on your offer to talk.
-Rowan: Ask me anytime to talk. With my FUnemployed status, I have a lot of time on my hand.
-(<i>Both laugh hesitantly</i>)
+Rowan: Ask me anytime to talk. With my funemployed status, I have a lot of time on my hand.
+They both laugh hesitantly.
 Marie-Elle: I’m… glad that we had this talk. You leave a lot for me to think about.
 Marie-Elle: Thanks very much for sharing with me about what’s it like for you currently.
 Marie-Elle: I know how hard it is to talk about it with others or even yourself.
