@@ -97,7 +97,8 @@ group: videoCamera
 <<Scene livingroom_days789>>
 <<Character Selina true>>
 <<hide_item>>
-Rowan: This is quite nostalgic. Whoever it belongs to, maybe we could all film some memories together. I feel like the neighborhood has started to really grow on me. 
+Rowan: This is quite nostalgic. Whoever it belongs to, maybe we could all film some memories together. 
+Rowan: I feel like the neighborhood has started to really grow on me. 
 Selina seems apathetic to your sentimentality.
 Rowan: Hey! I know they’re starting to grow on you too. 
 Selina: Hsss!
@@ -126,7 +127,7 @@ group: videoCamera
 Dorian: Wait, hold on, let me strike a cool pose.
 Rowan: For what?
 Dorian: For your movie of course! In which I’m the star.
-Rowan: …More like the creepy side character who turns out to be the villain.
+Rowan: More like the creepy side character who turns out to be the villain.
 Dorian: Hey, nothing beats a good villain.
 Rowan: I’m guessing this isn’t yours then?
 Dorian: Nope. But it might belong to Fern. One of their tech gadgets? 
@@ -185,11 +186,15 @@ Fern: Meow meow meow meow. Meow meow, meow meow meow.
 Selina: Meoooooooooow. 
 Fern: Meow. 
 Rowan: Sounds like a good conversation.
-Fern: I think she just called me a vending machine. No matter though, that is accurate to my new attempt at redefining myself! I know it may seem uncharacteristic, but I’ve decided to start a mukbang channel. 
+Fern: I think she just called me a vending machine. No matter though, that is accurate to my new attempt at redefining myself!
+Fern: I know it may seem uncharacteristic, but I’ve decided to start a mukbang channel. 
 Rowan: Mukbang??? Like the videos of people eating tons of food?
-Fern: I realized after our last conversation that human food is overrated. But humans don’t understand what robot taste buds are like. There is practically no content about robots who eat food! 
+Fern: I realized after our last conversation that human food is overrated. 
+Fern: But humans don’t understand what robot taste buds are like. There is practically no content about robots who eat food! 
 Rowan: You said robots don’t eat food. 
-Fern: Yes, but I’m sure humans would enjoy learning about what makes a robot happy. This is something only I can do. I realize I can bring more value to the world by creating content. Even working on this one hour a day will produce many bolts of labor. 
+Fern: Yes, but I’m sure humans would enjoy learning about what makes a robot happy. 
+Fern: This is something only I can do. I realize I can bring more value to the world by creating content. 
+Fern: Even working on this one hour a day will produce many bolts of labor. 
 Fern: My first episode will be about all the electricity I eat up during my rest period. It will be very productive with my time. 
 Fern: Why don’t you guess what electricity tastes like to a robot? 
 -> Sharp
@@ -201,14 +206,20 @@ Fern: Why don’t you guess what electricity tastes like to a robot?
 -> Nothing
     Rowan: Robots don’t taste anything, that’s a trick question
     Fern: Correct! But I’m sure you would appreciate it if I told you something fun based on your perception of what you think robots should be. 
-Fern: I would say electricity tastes like cat litter. It’s not delicious at all! I don’t recommend anyone try eating it, especially children. I have to eat it because I’m a robot, but I wish I could eat broccoli and grow bigger from it. 
+Fern: I would say electricity tastes like cat litter. It’s not delicious at all! 
+Fern: I don’t recommend anyone try eating it, especially children. I have to eat it because I’m a robot, but I wish I could eat broccoli and grow bigger from it. 
 Fern: Ta da! How is it? Have you ever heard of such novelty? 
 Rowan: It certainly is different. I also like the lesson that you put into it. I’m glad you feel-
 Fern: No. I don’t feel. I’m learning. 
-Rowan: I’m glad you’re learning to find ways to express your individuality. I think I’ve been so stuck in myself lately that I’ve forgotten how refreshing it is to just be who you are and stick to it. It’s about perseverance and never giving up. You are inspiring me, Fern.   
+Rowan: I’m glad you’re learning to find ways to express your individuality. 
+Rowan: I think I’ve been so stuck in myself lately that I’ve forgotten how refreshing it is to just be who you are and stick to it. 
+Rowan: It’s about perseverance and never giving up. You are inspiring me, Fern.   
 Fern: …Good. You should feel free to do what you want. 
 Rowan: Maybe you’ll get as popular as Marie-Elle!
-Fern: …Marie-Elle and I do not usually get along as we disagree on the meaning of art. However, I will have to reconsider now that I am also dabbling in creative work. Who knows what the impact of one person’s art is to others. I learned something from the chocolate you shared with me. Now you might learn more about robots from what I eat too. 
+Fern: …Marie-Elle and I do not usually get along as we disagree on the meaning of art. 
+Fern: However, I will have to reconsider now that I am also dabbling in creative work. 
+Fern: Who knows what the impact of one person’s art is to others. 
+Fern: I learned something from the chocolate you shared with me. Now you might learn more about robots from what I eat too. 
 Fern: …Beep! Beep! Beep! 
 Fern: My internal external alarm is ringing. This was a passable conversation, but my schedule says it is time for me to take the trash out. 
 Rowan: It was more than passable to me. 
