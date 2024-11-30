@@ -163,7 +163,7 @@ group: tarotCard
 Fern: OoooooOOoooOOoooO mysterious objects. What are they for? 
 Rowan: They’re tarot cards. They help guide and answer questions. 
 Fern: Do they know when my next package is coming? It was supposed to arrive yesterday.
-Rowan: You usually need someone familiar with Arcana to read them. 
+Rowan: You usually need someone familiar with the Arcana to read them. 
 Fern: Judging by the box design, I suspect it belongs to a creature of the night. 
 <<Character Fern false>>
 <<jump levelFourSelectNeighbor>>
