@@ -57,7 +57,7 @@ group: opening
 ---
 //0.3
 <<Scene dorian_apt>> // Dorian’s apartment
-Rowan: Hmm, doesn’t look like anyone’s home…I’ll ring the bell just in case.
+Rowan: Hmm, doesn’t look like anyone’s home...I'll knock just in case.
 <<Character Selina true>>
 Selina senses a fearsome presence and scurries behind Rowan.
 Selina: (<i>hisses</i>) Meow…
