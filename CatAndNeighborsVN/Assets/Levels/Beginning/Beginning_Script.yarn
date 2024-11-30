@@ -17,9 +17,9 @@ Selina: Meow?? Meow!
 Rowan: I know, I know. It’s not like where we used to live, but it looks pretty cozy. 
 Selina: …
 Rowan: …
-Cat: Meow!! Meow!! 
+Selina: Meow!! Meow!! 
 Rowan: No need to swear at me!
-Cat: (<i>sad</i>) Meow...
+Selina: (<i>sad</i>) Meow...
 Rowan: I’m gonna miss everyone at the co-op too. But we have new neighbors here! 
 Rowan: The landlady gave me a list of the tenants living nearby. Why don’t we take some time to introduce ourselves to them? 
 Rowan pulls out a letter. 
@@ -65,7 +65,7 @@ Rowan: Hey, what’s the matter?
 <<Character Selina false>>
 <<Scene dorian_apt_open>>
 <<Character Dorian true>>
-Dorian: Well, who do we have here?
+???: Well, who do we have here?
 Rowan: AHHH!! Oh, sorry, I didn’t hear you approach.
 Rowan: My name’s Rowan, I just moved in next door, and this is my cat, Selina. Is this your apartment?
 Dorian: My apologies. Yes, it is. I'm Dorian Vayne. 
@@ -122,7 +122,7 @@ The door opens and you see a robot appear.
 <<Character Fern true>>
 Robot: Hello. 
 Rowan: Aaah!! 
-Cat: Meow!!! 
+Selina: Meow!!! 
 Rowan: (<i>steps back</i>) Please don’t blast us!! 
 Robot: That is a common but harmful trope. I am not here to hurt anyone. 
 Robot: I am a good robot working in the service of people. 
