@@ -1,7 +1,7 @@
 ﻿title: Start
 tags:
 ---
-<<Scene bg_interact>>
+<<Scene livingroom_days123>>
 Day 1
 <<jump levelOneFindItem>>
 ===
@@ -11,7 +11,7 @@ color: purple
 group: mucciBag
 ---
 //1.1
-<<Scene bg_office>>
+<<Scene livingroom_days123>>
 With the chaos and stress of moving in mostly finished, Rowan decides to relax the rest of the day. 
 She heads over to her bedroom to finally finish that visual novel she started a year ago.
 
@@ -31,11 +31,9 @@ color: green
 group: mucciBag
 ---
 //1.2
-<<Scene bg_interact>>
-
-A designer purse with lots of embellishments and a hefty price tag. The bag looks to be in pristine condition with some personal effects still inside the purse.
-
+<<Scene livingroom_days123>>
 <<item_interaction>>
+A designer purse with lots of embellishments and a hefty price tag. The bag looks to be in pristine condition with some personal effects still inside the purse.
 ===
 
 title: inspectionIncomplete
@@ -78,7 +76,7 @@ Selina: (<i>disgruntled</i>) Meow.
 
 title: levelOneSelectNeighbor
 ---
-<<Scene bg_interact>>
+<<Scene livingroom_days123>>
 <<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>

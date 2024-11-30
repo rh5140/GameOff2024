@@ -67,7 +67,7 @@ group: newsArticle
 --- 
 //6.1
 
-<<Scene bg_office>> // living room
+<<Scene livingroom_days456>>
 
 After hanging out with a university friend, Rowan returns back home with a new understanding of the relationships between their neighbors. 
 
@@ -96,11 +96,10 @@ group: newsArticle
 --- 
 //6.2 
 
-<<Scene bg_interact>> // living room?
-
+<<Scene livingroom_days456>>
+<<item_interaction>>
 A blurred out article clipping that’s a bit soggy from the rain. 
 
-<<item_interaction>>
 ===
 
 title: inspectionIncomplete
@@ -143,7 +142,7 @@ Selina: …
 
 title: levelSixSelectNeighbor
 ---
-<<Scene bg_interact>>
+<<Scene livingroom_days456>>
 <<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>

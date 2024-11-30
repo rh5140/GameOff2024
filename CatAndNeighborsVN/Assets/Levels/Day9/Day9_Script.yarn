@@ -12,7 +12,7 @@ group: tailorTape
 --- 
 //9.1
 
-<<Scene bg_office>> // living room only, no selina
+<<Scene livingroom_days789>>
 
 With nothing planned for the day, Rowan allows herself to take a break and lounge around her apartment while doing small tasks. 
 
@@ -41,12 +41,9 @@ color: yellow
 group: tailorTape
 --- 
 //9.2 
-
-<<Scene bg_interact>> // living room?
-
-A slightly worn out and well-loved tailor’s tape that depicts a cartoon kitten. The size of the item seems to fit perfectly in a pair of small hands.
-
+<<Scene livingroom_days789>>
 <<item_interaction>>
+A slightly worn out and well-loved tailor’s tape that depicts a cartoon kitten. The size of the item seems to fit perfectly in a pair of small hands.
 ===
 
 title: inspectionIncomplete
@@ -88,7 +85,7 @@ Selina: Meow! Meooooow!
 
 title: levelNineSelectNeighbor
 ---
-<<Scene bg_interact>>
+<<Scene livingroom_days789>>
 <<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>

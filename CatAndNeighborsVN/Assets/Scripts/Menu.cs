@@ -5,6 +5,6 @@ public class Menu : MonoBehaviour
 {
     public void OnStartButton()
     {
-        SceneManager.LoadScene("Day_1");
+        SceneManager.LoadScene("Beginning");
     }
 }

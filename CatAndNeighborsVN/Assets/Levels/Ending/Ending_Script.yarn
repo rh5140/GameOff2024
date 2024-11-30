@@ -4,7 +4,7 @@ group: ending
 --- 
 //10.1 
 
-<<Scene bg_interact>> //apartment background
+<<Scene livingroom_days789>>
 
 After the most recent incident, Selina stopped stealing the neighbor’s items. Maybe she’s finally gotten used to the new apartment. 
 
@@ -29,7 +29,7 @@ group: ending
 
 // this is placement/position heavy if we wanna have all 3 on screen
 
-<<Scene bg_office>>//living room background
+<<Scene livingroom_bday>>
 
 Rowan: I know it’s only been a month since me and Selina have moved into Tiramisu Apartments, but I feel like we’ve really gotten to bond over the past month! 
 
@@ -87,7 +87,7 @@ color: pink
 group: ending
 ---
 // 10.3
-<<Scene bg_interact>>
+<<Scene livingroom_bday>>
 Which neighbor would you like to talk to?
 <<neighbor_selection>>
 ===

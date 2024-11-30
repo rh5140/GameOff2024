@@ -42,7 +42,7 @@ color: black
 group: tarotCard
 --- 
 //4.1
-<<Scene bg_office>> // living room
+<<Scene livingroom_days456>>
 
 Evening arrives once again, and Rowan makes their way home with groceries in hand.
 Rowan: Hope Selina likes these new cat treats…can’t really afford much else right now.
@@ -92,7 +92,7 @@ color: black
 group: tarotCard
 ---
 // 4.4
-<<Scene bg_interact>>
+<<Scene livingroom_days456>>
 <<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>
@@ -158,7 +158,7 @@ group: tarotCard
 //4.6
 <<Scene fern_apt>> 
 <<wait  0.5>>
-<<Scene fern_open>>
+<<Scene fern_apt_open>>
 <<Character Fern true>> 
 Fern: OoooooOOoooOOoooO mysterious objects. What are they for? 
 Rowan: They’re tarot cards. They help guide and answer questions. 
@@ -176,7 +176,7 @@ group: tarotCard
 //4.7
 <<Scene marie_elle_apt>>
 <<wait  0.5>>
-<<Scene marie_apt_open>>
+<<Scene marie_open_nopeek>>
 <<Character Marie-Elle true>>
 Rowan: Any chance these tarot cards are yours?
 Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not… I know a superstitious designer who likes the assurance of some guidance in their future though. 

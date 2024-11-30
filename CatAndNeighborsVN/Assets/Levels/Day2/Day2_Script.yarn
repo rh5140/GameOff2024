@@ -58,7 +58,7 @@ color: red
 group: bloodBag
 --- 
 //2.1
-<<Scene bg_office>> // living room
+<<Scene livingroom_days123>> // living room
 
 Even though Rowan doesn't have a job, they still feel just as tired by the end of the day.
 Rowan: (<i>God, I’m exhausted. Hope Selina’s doing okay on her own…</i>)
@@ -76,8 +76,8 @@ color: red
 group: bloodBag
 --- 
 //2.2 
-A plastic blood bag from the local hospital, filled with a viscous red liquid…you probably shouldn’t hold onto this for too long. 
 <<item_interaction>>
+A plastic blood bag from the local hospital, filled with a viscous red liquid…you probably shouldn’t hold onto this for too long. 
 ===
 
 title: inspectionIncomplete
@@ -121,7 +121,7 @@ color: red
 group: bloodBag
 ---
 // 2.4
-<<Scene bg_interact>>
+<<Scene livingroom_days123>>
 <<hide_item>>
 Which neighbor would you like to return this item to?
 <<neighbor_selection>>
@@ -188,7 +188,7 @@ group: bloodBag
 //2.7 
 <<Scene marie_elle_apt>>
 <<wait  0.5>>
-<<Scene marie_apt_open>>
+<<Scene marie_open_nopeek>>
 <<Character Marie-Elle true>>
 Marie-Elle: What’s that in your hands?
 Rowan: I think it’s tomato juice?
