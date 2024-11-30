@@ -19,8 +19,10 @@ public class ChooseNeighborButton : MonoBehaviour
     [SerializeField] private string pitifulRobotNode;
 
     [Header("Set up audio source")]
-    [SerializeField] private AudioSource correctAnswer;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private bool correctNeighbor;
+    [SerializeField] public AudioClip correctAnswer;
+    [SerializeField] public AudioClip wrongAnswer;
     
     private GameObject chosenNeighbor;
     
@@ -62,7 +64,13 @@ public class ChooseNeighborButton : MonoBehaviour
         // play correct answer audio if i'm the correct neighbor
         if (correctNeighbor) {
             Debug.Log("Playing correct answer sound");
-            correctAnswer.Play();
+            audioSource.clip = correctAnswer;
+            audioSource.Play();
+        } else {
+            audioSource.volume = 0.85f;
+            audioSource.clip = wrongAnswer;
+            audioSource.Play();
+            audioSource.volume = 1f;
         }
         if (!dialogueRunner.IsDialogueRunning) {
             Debug.Log("Jump");
