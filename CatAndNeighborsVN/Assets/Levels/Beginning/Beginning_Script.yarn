@@ -34,16 +34,16 @@ group: opening
 // 0.2
 <<Scene livingroom_empty>> 
 
-Which neighbor would you like to meet?
-->Marie-Elle <<if $metMarie is false>>
+Where would you like to go?
+->Apartment T7 <<if $metMarie is false>>
     <<set $metMarie to true>>
     <<set $neighborsMet = $neighborsMet + 1>>
 	<<jump levelZeroMarie>>
-->Dorian <<if $metDorian is false>>
+->Apartment T4 <<if $metDorian is false>>
     <<set $metDorian to true>>
     <<set $neighborsMet = $neighborsMet + 1>>
 	<<jump levelZeroDorian>>
-->Fern <<if $metFern is false>>
+->Apartment T9 <<if $metFern is false>>
     <<set $metFern to true>>
     <<set $neighborsMet = $neighborsMet + 1>>
 	<<jump levelZeroFern>>
