@@ -296,8 +296,8 @@ Marie-Elle: Well, I wouldn’t want to take more time away from you so it’s a 
 <<wait 0.5>>
 <<Scene marie_elle_apt>>
 
-Rowan: <i>Wow, now I’m so pumped to create something again.</i>
-Rowan: <i>Maybe I can make a cat translation game?</i>
+Rowan: (<i>Wow, now I’m so pumped to create something again.</i>)
+Rowan: (<i>Maybe I can make a cat translation game?</i>)
 
 <<Character cat true>>
 Selina: Meow?

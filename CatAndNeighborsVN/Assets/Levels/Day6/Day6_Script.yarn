@@ -327,9 +327,9 @@ Rowan: Bye bye, Marie-Elle. Don’t be a stranger.
 <<wait 0.5>>
 <<Scene marie_elle_apt>>
 
-Rowan: <i>I’m glad I got to talk to Marie-Elle and help out. I hope we can become good friends after this.</i>
-Rowan: <i>I know I said it’s been easier with people around, but have I actually been doing what I said to Marie-Elle?</i>
-Rowan: <i>Maybe I should try opening up more.</i>
+Rowan: (<i>I’m glad I got to talk to Marie-Elle and help out. I hope we can become good friends after this.</i>)
+Rowan: (<i>I know I said it’s been easier with people around, but have I actually been doing what I said to Marie-Elle?</i>)
+Rowan: (<i>Maybe I should try opening up more.</i>)
 
 <<change_scene Day_7>>
 ===

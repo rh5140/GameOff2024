@@ -95,7 +95,7 @@ group: mucciBag
 
 Dorian: Wow, Rowan, I didn’t know you had such luxurious taste.
 Rowan: Oh, no this isn’t mine, I found it this morning and thought it might belong to you?
-Dorian: I’m flattered, but no, this isn't mine. Although, it looks like something Marie-Elle might own. 
+Dorian: I’m flattered, but no, this isn't mine. 
 Dorian: But I’ll gladly take it off your hands.
 Rowan: Nice try, but no. 
 
@@ -139,7 +139,7 @@ Rowan: Wait! But I -
 
 Rowan: …
 Rowan: That was a bit rude. They didn’t even let me finish my sentence.
-Rowan: This bag is too expensive to leave my neighbor alone though. Maybe I should try knocking again?
+Rowan: This bag is too expensive to leave alone though. Maybe I should try knocking again?
 ->Knock
 Rowan: She probably didn’t hear me knocking.
 ->Again
@@ -170,7 +170,7 @@ Well-Dressed Woman: … Your cat stole the purse and you found it lying in your 
     Well-Dressed Woman: I’m not sure that’s something to be proud of as the owner of the cat.
     Well-Dressed Woman: It does not bode well for you in the future if you get implicated in a crime.
 Well-Dressed Woman: Do you seriously think I’ll believe that your cat somehow stole a designer purse without a scratch or without bite marks to indicate how it apparently carried the purse to your apartment?
-Rowan: When you say it that way, it does seem far-fetched … but I swear it’s the truth!
+Rowan: When you say it that way, it does seem far-fetched...but I swear it’s the truth!
 Rowan: Look! I even brought my cat to apologize!
 
 <<Character marieelle false>>
@@ -225,8 +225,8 @@ Well-Dressed Woman: For this purse in particular? I am expected to wear this pur
 Well-Dressed Woman: You’ll be surprised at the kind of things they ask me to do. 
 Well-Dressed Woman: Of course, I only complete requests that are within my boundaries as I still have dignity.
 Well-Dressed Woman: This is a small request in comparison no matter how I feel about the purse personally. 
-(<i>Both stare at the purse</i>)
-->Interesting
+(<i>Both of them stare at the purse.</i>)
+->Interesting.
     Rowan: Your client has a very uhhhh… interesting taste in fashion.
     Well-Dressed Woman: You don’t have to mince it.
     Well-Dressed Woman: Even I am a bit skeptical and I believe all fashion should be appreciated in its own way.
@@ -238,14 +238,14 @@ Well-Dressed Woman: Every style has its own admirers since if somebody can think
 Rowan: Well, I’m glad that I was able to return the purse to you. 
 Well-Dressed Woman: Yes, thank you again.
 Well-Dressed Woman: Is there anything else you need now that you’re lingering at my doorstep?
-Rowan: Ah… I introduced myself earlier, but still don’t know your name yet so I was hoping you’ll introduce yourself?
+Rowan: Ah… I introduced myself earlier, but still don’t know your name yet, so I was hoping you’ll introduce yourself?
 Well-Dressed Woman: Why do you sound so uncertain that you want to know who I am? Either you do or you don’t. Ask again, but this time be more confident.
 Rowan: May I please know your name? I would like to get to know my neighbors that I’ll be seeing in the future.
 Well-Dressed Woman: I am Marie-Elle, tenant of Apartment T7, owner of the Mucci purse your cat, Selina, “stole.” 
 Rowan: You’re never going to let me live that down are you?
 Marie-Elle: It is a memorable first impression I must say.
 Rowan: And if it’s not too much to ask, what do you do for a living to have high profile clients? 
-Rowan: I’m… funemployed if that makes you more comfortable.
+Rowan: I’m...funemployed if that makes you more comfortable.
 Marie-Elle:  Let’s just say for now that I am a… creative. 
 Marie-Elle: I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. I still have a lot of work to do to stay at my level of caliber.
 Rowan: I’m sorry again! Bye and thanks for answering the door the second time.
@@ -254,10 +254,10 @@ Marie-Elle: I hope our next meeting is on better terms. Goodbye, Rowan.
 
 <<Character fashiondesigner false>>
 
-Rowan: <i>What a strange neighbor.</i>
-Rowan: <i>Wait. If she has high profile clientele, how come she lives in this no-name apartment complex?</i>
-Rowan: <i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>
-Rowan: <i>Suspicious…</i>
+Rowan: (<i>What a strange neighbor.</i>)
+Rowan: (<i>Wait. If she has high profile clientele, how come she lives in this no-name apartment complex?</i>)
+Rowan: (<i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>)
+Rowan: (<i>Suspicious…</i>)
 
 <<change_scene Day_2>>
 ===
