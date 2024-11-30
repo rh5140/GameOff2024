@@ -256,6 +256,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d3df86a6e965c124f84735e0c7076e5d, type: 3}
     - target: {fileID: 2160660421090409153, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: correctNeighbor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160660421090409153, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: pitifulRobotNode
       value: levelSevenFern
       objectReference: {fileID: 0}
@@ -306,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 2488666744912607667, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -53.819
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562474203342899192, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: correctNeighbor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3562474203342899192, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: pitifulRobotNode
