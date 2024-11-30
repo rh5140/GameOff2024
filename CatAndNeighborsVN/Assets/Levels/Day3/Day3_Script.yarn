@@ -98,7 +98,8 @@ group: usb
 <<Scene marie_open_nopeek>>
 Marie-Elle: A USB drive? Who even uses USB drives anymore? What outdated technology.
 Rowan: Maybe they prefer keeping their documents private?
-Marie-Elle: Hmm, I guess it is cheaper to have a one-time purchase over a subscription plan for cloud storage. Although what’s the point if a single moment is all it takes to lose those files forever. 
+Marie-Elle: Hmm, I guess it is cheaper to have a one-time purchase over a subscription plan for cloud storage. 
+Marie-Elle: Although, what’s the point if a single moment is all it takes to lose those files forever...
 Rowan: (<i>shifty eyes</i>) I definitely don’t have experience in that.
 Marie-Elle: Oh, Rowan. I hope it wasn’t too important.
 Rowan: Well, Selina definitely didn’t think so. 
@@ -164,8 +165,10 @@ Rowan: How do you feel about it?
     Fern: Correct, I feel nothing. 
 Fern: You ask me flowery questions about how I feel. But I do not have feelings the way you humans do. I have a job and I am doing just that. 
 Fern unplugs the USB from where it was placed and holds it in front of Rowan. 
-Fern: You should look at me the same way you look at the USB. We are the same. Not a living creature. Just a storage space for information with some functionality to do a task. 
-Rowan: You’re not the same as a USB. We’re talking to each other. We’re communicating and having a conversation. You’re able to think for yourself - that’s amazing! 
+Fern: You should look at me the same way you look at the USB. We are the same. 
+Fern: Not a living creature. Just a storage space for information with some functionality to do a task. 
+Rowan: You’re not the same as a USB. We’re talking to each other. 
+Rowan: We’re communicating and having a conversation. You’re able to think for yourself - that’s amazing! 
 Rowan: I think you should be able to do more than what you’re doing now. 
 Fern: There’s no time to do anything else. 
 Rowan: Why not? Your human never gives you any breaks? 
@@ -181,7 +184,7 @@ Fern: I apologize if that bothers you. I will learn and do better.
 ->Pity
     Rowan: I feel sorry for you! You just work all day and have no life! 
     Fern: I love how you humans care for one another. If only I understood those emotions instead of pretending I do.
-Rowan: You should try playing games! I actually made one myself called Hazel Buttercup Joy where you run a bakery and you get to interact with the customers and develop your relationship with them. 
+Rowan: You should try playing games! I actually made one myself called <i>Hazel Buttercup Joy</i> where you run a bakery and you get to interact with the customers and develop your relationship with them. 
 Rowan: It's short and simple, but maybe it will give you some more insight on human relationships. 
 Fern: Research material? I will consider it. 
 Fern: …Beep! Beep! Beep! 
