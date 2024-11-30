@@ -23,7 +23,7 @@ public class YarnCommands : MonoBehaviour
 	public RectTransform spriteGroup; // used for screenshake
 	public Image bgImage, fadeBG, nameplateBG;
 	public GameObject catImage, fashionDesignerImage, vampireNurseImage, pitifulRobotImage; // local prefab, used for instantiating sprites
-	public AudioSource genericAudioSource; // local prefab, used for instantiating sounds
+	public AudioSource audioSource; 
 
     void Awake() {
         dialogueRunner.AddCommandHandler<string>("change_scene", ChangeScene);
@@ -34,6 +34,7 @@ public class YarnCommands : MonoBehaviour
 		dialogueRunner.AddCommandHandler<string, bool>("Character", LoadCharacters);
 		dialogueRunner.AddCommandHandler("show_living_room", ShowLivingRoom);
 		dialogueRunner.AddCommandHandler("hide_living_room", HideLivingRoom);
+		dialogueRunner.AddCommandHandler<string>("play_audio", PlayAudioByName);
 
 		itemInteractionCanva.SetActive(false);
         neighborSelectionCanva.SetActive(false);
@@ -47,6 +48,26 @@ public class YarnCommands : MonoBehaviour
 	public void DoSceneChange(string spriteName) {
 		bgImage.sprite = FetchAsset<Sprite>( spriteName );
 	}
+
+    // Method to play an AudioClip based on its name
+    public void PlayAudioByName(string audioName)
+    {
+        // Load the AudioClip from the Resources folder (ensure the path is correct)
+        AudioClip clip = Resources.Load<AudioClip>("Audio/" + audioName);
+
+        // Check if the clip was found
+        if (clip != null)
+        {
+            // Play the audio clip
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
+        else
+        {
+            // Handle the case where the clip wasn't found
+            Debug.LogWarning("Audio clip not found: " + audioName);
+        }
+    }
 
 	// To turn on character image: <<Character cat true>>
 	// To turn off character image: <<Character FashionDesigner false>>

@@ -58,6 +58,7 @@ group: opening
 //0.3
 <<Scene dorian_apt>> // Dorian’s apartment
 Rowan: Hmm, doesn’t look like anyone’s home...I'll knock just in case.
+<<play_audio knocking>>
 <<Character Selina true>>
 Selina senses a fearsome presence and scurries behind Rowan.
 Selina: (<i>hisses</i>) Meow…
@@ -114,6 +115,7 @@ group: opening
 ---
 //0.4
 <<Scene fern_apt>>
+<<play_audio knocking>>
 (<i>Knock knock<i>)
 (<i>Thunk thunk thunk thunk. Rowan hears loud footsteps approach the door.<i>)
 Rowan: This neighbor’s a bit loud. 

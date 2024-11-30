@@ -128,21 +128,26 @@ group: mucciBag
 ---
 //1.6
 <<Scene marie_elle_apt>>
+<<play_audio knocking>>
 Rowan: Hello? Is anyone in right now?
+<<wait 0.5>>
 
 <<Scene marie_apt_open>>
 Well-Dressed Woman: I currently don’t accept visitors! Or ever really!
 Rowan: Wait! But I -
 
 <<Scene marie_elle_apt>>
+<<play_audio door_slam>>
 (<i>The door slams shut</i>)
 
 Rowan: …
 Rowan: That was a bit rude. They didn’t even let me finish my sentence.
 Rowan: This bag is too expensive to leave alone though. Maybe I should try knocking again?
 ->Knock
+<<play_audio knocking>>
 Rowan: She probably didn’t hear me knocking.
 ->Again
+<<play_audio knocking>>
 Rowan: I’m sure she’ll eventually answer?
 ->Hope
 Rowan: Now I’m a bit worried.
