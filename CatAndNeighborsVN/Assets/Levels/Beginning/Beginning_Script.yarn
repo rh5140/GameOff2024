@@ -34,7 +34,7 @@ group: opening
 // 0.2
 <<Scene livingroom_empty>> 
 
-Where would you like to go?
+We're currently in apartment T8. Where would you like to go?
 ->Apartment T7 <<if $metMarie is false>>
     <<set $metMarie to true>>
     <<set $neighborsMet = $neighborsMet + 1>>
@@ -58,6 +58,7 @@ group: opening
 //0.3
 <<Scene dorian_apt>> // Dorian’s apartment
 Rowan: Hmm, doesn’t look like anyone’s home...I'll knock just in case.
+<<play_audio knocking>>
 <<Character Selina true>>
 Selina senses a fearsome presence and scurries behind Rowan.
 Selina: (<i>hisses</i>) Meow…
@@ -114,6 +115,7 @@ group: opening
 ---
 //0.4
 <<Scene fern_apt>>
+<<play_audio knocking>>
 (<i>Knock knock<i>)
 (<i>Thunk thunk thunk thunk. Rowan hears loud footsteps approach the door.<i>)
 Rowan: This neighbor’s a bit loud. 
@@ -135,7 +137,7 @@ Robot: They rent this apartment, but I am living here in their place. My day is 
 Rowan: (<i>mutters<i>) Technology really has gotten quite advanced hasn’t it Selina…
 Selina seems shocked but is cautiously judging the robot. 
 Rowan: …Ok, well I’ll be in apartment T8 if you need anything. Maybe I’ll see you around…um…do you have a name? 
-Robot: I am called whatever you would like to call me. Though many just refer to me by the plant on my head. 
+Robot: I am whatever you would like to call me. Though many just refer to me by the plant on my head. 
 ->Fern
     Rowan: Is it a fern? 
     Fern: Correct! Perhaps you are a botanist? 
@@ -165,7 +167,7 @@ group: opening
 ---
 //0.5
 <<Scene marie_apt_note>>
-There's a note on the door written a few days ago. It reads, "On a business trip to Italy. Will be back in one week."
+There's a dated note on the door. It reads, "On a business trip to Italy. Will be back in one week."
 Rowan: Looks like they'll be back tomorrow. I wish I was on a beach in Italy right now...
 
 <<if $neighborsMet < 3>>

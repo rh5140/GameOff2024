@@ -81,7 +81,7 @@ Rowan: Hello, Selina. It’s so nice to see your RBF after a long day.
 Rowan: Any items for me today? Haha, I hope not.
 Selina:  (<i>haughty</i>) Me-ow.
 Rowan: Let’s see, today’s item is a newspaper?
-Rowan: (<i>Picks up newspaper by their fingertips</i>) This time that item you chose is a bit…
+Rowan: (<i>Picks up newspaper by their fingertips</i>) This time the item you chose is a bit…
 Rowan: (<i>Wrinkles nose</i>) …soggy.
 Selina: (<i>delighted</i>) Meow.
 Rowan: Let’s figure out who owns this.
@@ -109,7 +109,7 @@ I need more clues to figure out who this belongs to...
 
 title: Inspection1
 ---
-“Rising Fashion Designer Disappoints Crowd With Unremarkable and Banal Designs”
+“Rising Fashion Designer Disappoints Crowd with Unremarkable and Banal Designs”
 
 <<jump inspectionIncomplete>>
 ===
