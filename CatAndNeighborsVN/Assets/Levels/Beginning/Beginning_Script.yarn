@@ -146,7 +146,7 @@ Robot: I am called whatever you would like to call me. Though many just refer to
     Rowan: It looks like it could be a succulent.
     Robot: Close guess, but still zero points. 
 	
-Fern: This fern on my head was given to me by my human. I think they were amused at the additional work it would cost me to take care of it but the plant makes a good talking point. 
+Fern: This fern on my head was given to me by my human. I think they were amused at the additional work it would cost me to take care of it, but the plant makes a good talking point. 
 Rowan: Cute! Okay. I’ll call you Fern then. See you around. 
 <<Character Fern false>>
 <<Character Selina true>>
