@@ -3,6 +3,7 @@ color: black
 group: tarotCard
 --- 
 //4.0 
+<<wait  2>>
 Rowan is dozing off in her corner seat on the TART, when a familiar presence sends shivers down her spine.
 <<Character Dorian true>>
 Dorian: Hello Rowan. I wasn’t expecting to see you here today.
@@ -59,7 +60,7 @@ color: black
 group: tarotCard
 --- 
 //4.2 
-A metal box containing a set of 22 tarot cards lined with silver foil. The cards show a bit of weathering from frequent use, but are otherwise in pristine condition.
+A red and black coffin-shaped metal box. It feels heavy in your hands.
 ===
 
 title: inspectionIncomplete
@@ -67,9 +68,14 @@ title: inspectionIncomplete
 I need more clues to figure out who this belongs to...
 ===
 
+title: Inspection1
+---
+Inside are 22 silver-lined tarot cards, weathered from frequent use.
+===
+
 title: Inspection2
 ---
-Silver Writing: There’s a note written here. It says, “Saw you looking at these and couldn’t help myself. I hope you’re always in my stars. Love, Kabir.” 
+There’s a note inside. It reads, “Saw you looking at these and couldn’t help myself. I hope you’re always in my stars. Love, Kabir.” 
 <<jump levelFourInspectionComplete>>
 ===
 

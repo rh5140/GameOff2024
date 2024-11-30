@@ -4,8 +4,7 @@ group: idCard
 --- 
 //7.1
 <<Scene livingroom_days789>> // living room
-
-Day 7
+<<wait  2>>
 <<jump levelSevenFindItem>>
 ===
 

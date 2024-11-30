@@ -3,6 +3,7 @@ color: red
 group: bloodBag
 --- 
 //2.0 
+<<wait  1.5>>
 Rowan is sitting on the TART, scrolling through PikPok when she hears someone coming her way.
 <<Character Marie-Elle true>>
 Rowan perks up and enters a compartment once TART rolls to a stop at the station with a huge screech. 
@@ -53,6 +54,8 @@ Marie-Elle: Ta-ta!
 Rowan: This feels awfully familiar…
 Rowan: I wonder how she knows I’m about to knock on her door? I didn’t even get her number just in case.
 Rowan: Well, I’m sure I’ll find out eventually. I need to concentrate for my job interview now.
+<<commute_to_home "Later that day,\nat Apartment T8...">>
+<<wait 2.5>>
 <<jump levelTwoFindItem>>
 ===
 
@@ -62,6 +65,8 @@ group: bloodBag
 --- 
 //2.1
 <<Scene livingroom_days123>> // living room
+<<home_from_tart>>
+<<wait  1.5>>
 
 Even though Rowan doesn't have a job, they still feel just as tired by the end of the day.
 Rowan: (<i>God, I’m exhausted. Hope Selina’s doing okay on her own…</i>)
@@ -163,6 +168,7 @@ Dorian: Would you like to try some? It’s a bit of an acquired taste, but I qui
 Rowan: NO! No, I’m good, I should probably get back home and feed Selina.
 Dorian: Suit yourself. Well, I’ll see you around then. Good night, Rowan.
 <<Character Dorian false>>
+<<update_card "Day 3">>
 <<change_scene Day_3>>
 // <<jump levelThreeFindItem>>
 ===

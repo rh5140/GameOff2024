@@ -2,7 +2,7 @@ title: Start
 tags:
 ---
 <<Scene livingroom_days789>>
-Day 9
+<<wait  2>>
 <<jump levelNineFindItem>>
 ===
 

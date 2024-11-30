@@ -2,7 +2,7 @@
 tags:
 ---
 <<Scene livingroom_days123>>
-Day 1
+<<wait  1.5>>
 <<jump levelOneFindItem>>
 ===
 
@@ -264,5 +264,6 @@ Rowan: (<i>Wait. If she has high profile clientele, how come she lives in this n
 Rowan: (<i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>)
 Rowan: (<i>Suspicious…</i>)
 
+<<update_card "Day 2">>
 <<change_scene Day_2>>
 ===

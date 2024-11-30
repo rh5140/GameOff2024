@@ -1,8 +1,8 @@
 title: Start
 tags:
 ---
-<<Scene bg_interact>>
-Day 6
+<<Scene tartfinal>>
+<<wait  2>>
 <<jump levelSixIntro>>
 ===
 

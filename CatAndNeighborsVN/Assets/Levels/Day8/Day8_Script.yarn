@@ -4,6 +4,7 @@ group: videoCamera
 --- 
 //8.0 
 <<Scene tartfinal>>
+<<wait  2>>
 As Rowan sits on the TART scrolling through PikPok for fashion tips, they hear two of their neighbors approaching.
 <<Character Marie-Elle true>>
 <<Character Fern true>>

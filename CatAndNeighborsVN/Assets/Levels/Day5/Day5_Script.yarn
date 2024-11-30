@@ -4,6 +4,7 @@ group: chocolateBox
 --- 
 //5.1
 <<Scene livingroom_days456>>
+<<wait  2>>
 Today a new season of Criminal Sweetness was out. Rowan couldn’t help but stay home all day, binging the adventures of a detective that worked part time as a bakery owner. 
 The world is so full of mystery!
 <<show_living_room>>

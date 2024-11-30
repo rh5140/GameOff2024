@@ -5,7 +5,7 @@ group: ending
 //10.1 
 
 <<Scene livingroom_days789>>
-
+<<wait  2>>
 After the most recent incident, Selina stopped stealing the neighbor’s items. Maybe she’s finally gotten used to the new apartment. 
 
 ONE MEOWNTH LATER…
