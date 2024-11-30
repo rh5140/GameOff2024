@@ -6,17 +6,17 @@ group: ending
 
 <<Scene bg_interact>> //apartment background
 
-After the most recent incident, Selina stopped stealing the neighbor’s items. You think it may be because she’s finally gotten used to the new apartment. 
+After the most recent incident, Selina stopped stealing the neighbor’s items. Maybe she’s finally gotten used to the new apartment. 
 
 ONE MONTH LATER…
 
-You and Selina finally feel a sense of belonging in this odd space full of souls just living their best lives. 
-The memories made here will be bittersweet for as long as you’re here, however long that may be… 
+Rowan and Selina finally feel a sense of belonging in this odd space full of souls just living their best lives. 
+The memories made here will be bittersweet for as long as they’re here, however long that may be… 
 
-Hopefully before your savings run out… 
+Hopefully before savings run out… 
 
-But no matter what, you know everything will be okay as long as you never give up and stay true to yourself. 
-It’s easy on most days to relax and not want to do anything, but the time you have for yourself is the best time to reorient, and explore all the possibilities you couldn’t pursue on your own...
+But no matter what, Rowan knows everything will be okay as long as she never gives up, and stays true to herself. 
+It’s easy on most days to relax and not want to do anything, but the time they have now is the best time to reorient, and explore all the possibilities she couldn’t pursue on her own...
 
 <<jump levelTenPartyDescription>>
 ===
@@ -291,7 +291,7 @@ Marie-Elle: Me too, although I’m not very good at video games…
 <<Character Dorian true>>
 Dorian: I suppose it’ll be a good learning experience for the both of us.
 Rowan: Don’t worry! It’s pretty easy to get the hang of.
-Everyone gathers around your computer screen and watches you play through a level, entranced.
+Everyone gathers around your computer screen and watches Rowan play through a level, entranced.
 Marie-Elle: So you just put in those commands and the game does what you want?
 Dorian: Amazing! I’ve never seen anything like it.
 Fern: I am very impressed you were able to achieve this level of polish in such a short time.
@@ -299,7 +299,7 @@ Marie-Elle: I love the main character’s design. Unique and stylish.
 Dorian: Their mentor is quite the character as well. So mysterious…
 Fern: The robot sidekick is very responsible. I appreciate their pragmatism.
 Rowan: Aww, I’m glad you all like it. Give it a try, I promise it’s not that hard.
-Everyone takes turns playing through your game!
+Everyone takes turns playing through the game!
 Rowan: So it’s WASD to move, and spacebar to jump.
 Marie-Elle: Okay, and you just click to attack?
 Rowan: Yeah you’re doing it!
@@ -308,18 +308,18 @@ Fern: I’ve seen my human play many of these!
 Marie-Elle: You died again Dorian?
 Dorian: It appears my mind isn’t as sharp as my fangs when it comes to video games...
 Fern: If you like, I could show you some strategies to maximize performance.
-As you watch everyone huddled around the screen, a sweet feeling washes over you, like holding a warm mug of coffee. 
-You felt so alone when you first moved here. So lost after losing your job.
-But now, you’ve got three amazing new friends, and a newfound passion for creating games.
-For the first time in a while, you feel hopeful about your future. 
-And it’s all because your cat decided to steal from your neighbors!
-Speaking of her actually…
+As Rowan watches everyone huddled around the screen, a sweet feeling washes over her, like holding a warm mug of coffee. 
+She felt so alone when she first moved here. So lost after losing her job.
+But now, they've got three amazing new friends, and a newfound passion for creating games.
+For the first time in a while, they feel hopeful about the future. 
+And it’s all because her cat decided to steal from her neighbors!
+Speaking of that cat actually…
 Rowan: Selina? Hm, where could she have gone?
 <<Character Fern false>>
 <<Character Marie-Elle false>>
 <<Character Dorian false>>
 <<Character Selina true>>
-Right at that moment, Selina prances over and drops something in your lap.
+Right at that moment, Selina prances over and drops something in Rowan's lap.
 Rowan: Oh no, please don’t tell me you stole something…
 Selina: Meow!
 <<Character Selina false>>
