@@ -1,0 +1,183 @@
+﻿title: Start
+color: brown
+group: chocolateBox
+--- 
+//5.1
+<<Scene livingroom_days456>>
+Today a new season of Criminal Sweetness was out. Rowan couldn’t help but stay home all day bingeing the adventures of a detective that worked part time as a bakery owner. 
+The world was so full of mystery!
+<<show_living_room>>
+Selina: Meow meow! Meow Meow! 
+Rowan: Not now, Selina. I already fed you. The story’s getting to the good part. 
+Selina pawed at Rowan’s blankets to get the attention she craved.
+Rowan: Selina, stop I-
+Rowan: OH MY GOSH. What is that?
+A large shadow loomed over Rowan. 
+<<hide_living_room>>
+<<jump levelFiveItemDescription>>
+===
+
+
+title: levelFiveItemDescription
+color: brown
+group: chocolateBox
+--- 
+//5.2 
+<<item_interaction>>
+It’s a HUGE box! Who knows what’s inside? 
+===
+
+title: inspectionIncomplete
+---
+I need more clues to figure out who this belongs to...
+===
+
+title: Inspection1
+---
+The box design is decorated with plants and trees. Something earthy, perhaps. 
+<<jump inspectionIncomplete>>
+===
+
+title: Inspection2
+---
+Fair Trade Certified, good to know. 
+<<jump levelFiveInspectionComplete>>
+===
+
+title: levelFiveInspectionComplete
+color: brown
+group: chocolateBox
+--- 
+//5.3 
+<<Scene livingroom_days456>>
+<<hide_item>>
+<<Character Selina true>>
+Rowan: Did you…steal this???
+Selina: (<i>purrs</i>)
+Rowan: I’ve been lacking some sleep lately. Maybe…did I sleepwalk steal this? No no no, I couldn’t have…could I?
+<<Character Selina false>>
+<<jump levelFiveSelectNeighbor>>
+===
+
+title: levelFiveSelectNeighbor
+color: brown
+group: chocolateBox
+---
+// 5.4
+<<Scene livingroom_days456>>
+Which neighbor would you like to return this item to?
+<<neighbor_selection>>
+===
+
+title: levelFiveDorian
+color: brown
+group: chocolateBox
+--- 
+//5.5 
+<<Scene dorian_apt_open>>
+<<Character Dorian true>>
+Dorian: Not really a fan of chocolate, but how could I refuse a gift from a precious neighbor?
+Rowan: Okay so this isn’t yours?
+Dorian: No, but maybe it belongs to Fern? Don’t see what they’d do with it though.
+<<Character Dorian false>>
+<<jump levelFiveSelectNeighbor>>
+===
+
+title: levelFiveMarie
+color: brown
+group: chocolateBox
+--- 
+//5.7 
+<<Scene marie_open_nopeek>>
+<<Character Marie-Elle true>>
+Marie-Elle: Wow, what great taste in chocolate! Are you gifting me these? 
+Marie-Elle: I’ve seen reviews online about how this particular brand is not only tasty, but also sourced ethically.
+Rowan: Sadly, Selina stole these so it’s not mine to give out. I never even heard of this brand of chocolate.
+Marie-Elle: Well, it’s not a well known brand here in this country so somebody must’ve scoured extensively online to even find where to buy this.
+Rowan: Oh no. It must be pretty expensive then. 
+Marie-Elle: Not particularly. Though I must admit that since starting my profession, my understanding of expensive things has changed immensely.
+Marie-Elle: … How did a cat steal a whole box of chocolate though? Are you sure it’s your Selina stealing the items and not a hidden kleptomaniac tendency you have that you refuse to acknowledge?
+Rowan: I think my apartment would be a lot less empty if I did have a kleptomaniac tendency.
+Rowan: Now I’m craving some chocolate. Do you think the owner would be willing to share some with me? 
+Marie-Elle: (<i>Amused</i>) If you ask very nicely, then it’s a possibility.
+<<Character Marie-Elle false>>
+<<jump levelFiveSelectNeighbor>>
+===
+
+title: levelFiveFern
+color: brown
+group: chocolateBox
+--- 
+//5.6 
+
+<<Scene fern_apt>>
+(<i>Thunk thunk thunk thunk.</i>)
+<<Scene fern_apt_open>>
+<<Character Fern true>>
+Rowan is panting from carrying the heavy object.
+Rowan: Is this box yours? 
+Fern easily takes the box from Rowan with its muscular robot arms. 
+Fern: Yes, thank you. I didn’t realize you also worked part-time as a delivery man. I must say, you are quite late with this package. 
+Rowan: Oh no, I’m sorry, my cat accidentally stole it. 
+Fern: Your cat…stole it? That’s a funny joke. 
+Fern: It’s more realistic to admit you wanted a piece of chocolate…
+->Chocolate
+    Rowan: Is that what's in the box? 
+    Fern: Correct! Good deduction skills.
+->Hungry
+    Rowan: Are you eating the food in the box? 
+    Fern: I don’t need to eat, I run on electricity.  
+->Plants
+	Rowan: Is that fertilizer for your plant head?
+    Fern: I have no money to spoil the plant. 
+Fern: This box of chocolate is for my human. There is a local snack company in this city which makes novelty goods. My human loves these snacks, but they don’t ship them in bulk internationally. This apartment works as a go-between.
+Fern:…
+Fern: The game you recommended last time. It was not difficult to bake hazel butternut joy cakes, but being a listener is very difficult. Every time the customers wanted to talk to me, I just wanted to give them advice! Or sell them cakes and make them go away. 
+Rowan: So you felt emotions and were annoyed! 
+Fern: No, I do not see them as real people. They are digital assets that are obstacles to making money in the game. They were inefficient to my job.
+Rowan: (<i>mutters</i>) I guess that didn’t work…
+Rowan: ..but I thought you were a hard working robot. How did you make time to play my game? 
+Fern: Whoops, you caught me! I do have more free time than my human realizes. This apartment was so messy when I first arrived here, but now that I am cleaning it all day every day, there is what you would call “free time” in my day. 
+Fern: I usually sit in the corner until the dust starts to accumulate again, but the truth is I think I could be doing more. Taking an hour to myself isn’t too big of a crime, is it? 
+Rowan: It’s not, it’s important to learn how to enjoy your time. 
+Fern: Enjoy is a strong word. But I am curious about your human experience. 
+Fern looks at the box of chocolate.
+Fern: Like this chocolate, for example. Every week I am sending a new box of snacks to my human, but I do not understand what it tastes like. Do you? 
+Rowan: I don’t. 
+Fern: Here. Try some and tell me what you think.
+Selina: Mreow! 
+Fern: Silly cat, chocolate is for humans. 
+Rowan: I’ll give you a treat when we get home, Selina. 
+Rowan opens the chocolate bar and takes a bite. 
+Fern: How is it?
+->Sweet
+    Rowan: It’s very sweet and sugary. 
+    Fern: That should be obvious. One bar has 237% of the recommended daily intake. 
+->Bitter
+    Rowan: It’s got a smooth, robust flavor. A bit bitter, not too sweet.  
+    Fern: I see you have fancy taste buds.
+->Disgusting
+    Rowan: It’s expired…
+    Fern:Hm, I did pick this one off the ground a while ago….
+Fern: Your feedback is appreciated.
+Rowan: What are you going to do with this information? 
+Fern: I will use it to learn how to be of better use to humans since I cannot relate to them. 
+Rowan: What if you pretended you are one? 
+Fern: Pretend? But I am not a human.  
+Rowan: You’re so lifelike, I think you could pass if you tried. 
+Fern: Ha. Ha. Ha. 
+Rowan: There! Like that. Would any machine normally be able to respond like that? 
+Fern: It’s a response to your inputs. 
+Rowan: If you tried, you could fit in much better. 
+Fern: My human did mention something similar…but I think their priority is for me to just focus on delivering packages and cleaning this apartment. Keeping things simple is the way to go. I will leave being human to the humans. 
+Fern: …Beep! Beep! Beep! 
+Fern: Speaking of which, my alarm is ringing. This was a satisfactory conversation, but my schedule says it is time for me to take the trash out. 
+Rowan: I’ll see you later Fern. 
+Fern: Goodbye, Rowan. 
+<<Character Fern false>>
+<<Scene fern_apt>>
+As she heads home, Rowan reflects on the conversation she had with her new neighbor. 
+
+<<change_scene Day_6>>
+===
+
