@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3948767143196915944, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 469523135}
     - target: {fileID: 4113571702786066417, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -539,6 +543,30 @@ PrefabInstance:
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: aea04d48a9b02a049b5d3f5d37de3262, type: 3}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7637445610213667340, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_SizeDelta.x
       value: 800
@@ -628,6 +656,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+--- !u!82 &469523135 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 401230274071427641, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+  m_PrefabInstance: {fileID: 469523134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

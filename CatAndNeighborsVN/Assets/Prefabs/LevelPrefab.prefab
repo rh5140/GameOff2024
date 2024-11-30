@@ -1094,6 +1094,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8470561316525124078}
     - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 401230274071427641}
+    - target: {fileID: 4731606417321724072, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: livingRoomCanva
       value: 
       objectReference: {fileID: 4362159561719733914}
