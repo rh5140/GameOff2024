@@ -121,7 +121,7 @@ group: usb
 
 <<Scene fern_apt>>
 
-(<i>Thunk thunk thunk thunk.<i>) You hear loud footsteps approach the door.
+(<i>Thunk thunk thunk thunk.<i>) Rowan hears loud footsteps approach the door.
 
 <<Character Fern true>>
 <<Scene fern_apt_open>>
