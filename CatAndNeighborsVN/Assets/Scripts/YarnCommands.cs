@@ -35,6 +35,9 @@ public class YarnCommands : MonoBehaviour
 		dialogueRunner.AddCommandHandler("show_living_room", ShowLivingRoom);
 		dialogueRunner.AddCommandHandler("hide_living_room", HideLivingRoom);
 		dialogueRunner.AddCommandHandler<string>("play_audio", PlayAudioByName);
+		dialogueRunner.AddCommandHandler<string>("update_card", UpdateTransitionCard);
+		dialogueRunner.AddCommandHandler<string>("commute_to_home", CommuteToHome);
+		dialogueRunner.AddCommandHandler("home_from_tart", HomeFromTart);
 
 		itemInteractionCanva.SetActive(false);
         neighborSelectionCanva.SetActive(false);
@@ -114,10 +117,26 @@ public class YarnCommands : MonoBehaviour
 
     private void ChangeScene(string sceneName) {
         // Debug.Log("loading scene");
-		GetComponentInChildren<TransitionFade>().FadeOut();
-        SceneManager.LoadScene(sceneName);
+		GetComponentInChildren<TransitionFade>().FadeIn();
+        StartCoroutine(WaitToChangeScene(1f, sceneName));
         gameObject.SetActive(true);
     }
+
+	private void UpdateTransitionCard(string text)
+	{
+		GetComponentInChildren<TransitionFade>().UpdateText(text);
+	}
+
+	private void CommuteToHome(string text)
+	{
+		GetComponentInChildren<TransitionFade>().UpdateText(text);
+		GetComponentInChildren<TransitionFade>().FadeIn();
+	}
+
+	private void HomeFromTart()
+	{
+		GetComponentInChildren<TransitionFade>().FadeOut();
+	}
 
 	private void ShowLivingRoom()
 	{
@@ -175,5 +194,11 @@ public class YarnCommands : MonoBehaviour
 
 		Debug.LogErrorFormat(this, "VN Manager can't find asset [{0}]... maybe it is misspelled, or isn't imported as {1}?", assetName, typeof(T).ToString() );
 		return null; // didn't find any matching asset
+	}
+
+	IEnumerator WaitToChangeScene(float seconds, string sceneName)
+	{
+		yield return new WaitForSeconds(seconds);
+		SceneManager.LoadScene(sceneName);
 	}
 }

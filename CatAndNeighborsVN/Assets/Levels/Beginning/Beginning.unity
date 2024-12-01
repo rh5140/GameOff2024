@@ -277,7 +277,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 610235597893677294, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_text
-      value: So it begins...
+      value: A new home...
+      objectReference: {fileID: 0}
+    - target: {fileID: 966725880279036400, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173758796061527117, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3948767143196915944, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: loadSprites.Array.size
@@ -429,6 +437,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789657756343877687, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299331640089521364, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443248234216335062, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}
+      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7968145418810440797, guid: d5b1e9b12c832774994f3b0fabad5354, type: 3}

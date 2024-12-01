@@ -7,8 +7,8 @@ group: opening
 <<set $metDorian to false>>
 <<set $metFern to false>>
 <<set $neighborsMet to 0>>
-
 <<Scene livingroom_empty>> 
+<<wait  1.5>>
 Rowan: Okay Selina, you can come out now.
 <<Character Selina true>>
 Selina: Meow.
@@ -69,7 +69,7 @@ Rowan: Hey, what’s the matter?
 Human Man?: Well, who do we have here?
 Rowan: AHHH!! Oh, sorry, I didn’t hear you approach.
 Rowan: My name’s Rowan, I just moved in next door, and this is my cat, Selina. Is this your apartment?
-Dorian: My apologies. Yes, it is. I'm Dorian Vayne. 
+Human Man?: My apologies. Yes, it is. I'm Dorian Vayne. 
 Dorian: I have to hand it to you, not many dare to venture upon my doorstep past sundown. 
 Dorian: You must be very brave.
 Rowan: Oh, uh, I wouldn’t say that necessarily, I just thought I should make the rounds and introduce myself.
@@ -105,6 +105,7 @@ Rowan: I’m sure he’s just messing with me. Right, Selina?
 <<if $neighborsMet < 3>>
     <<jump levelZeroSelectNeighbor>>
 <<else>>
+    <<update_card "Day 1">> // Setting up transition for next day
     <<change_scene Day_1>>
 <<endif>>
 ===
@@ -157,6 +158,7 @@ Selina: Meow!
 <<if $neighborsMet < 3>>
     <<jump levelZeroSelectNeighbor>>
 <<else>>
+    <<update_card "Day 1">> // Setting up transition for next day
     <<change_scene Day_1>>
 <<endif>>
 ===
@@ -173,6 +175,7 @@ Rowan: Looks like they'll be back tomorrow. I wish I was on a beach in Italy rig
 <<if $neighborsMet < 3>>
     <<jump levelZeroSelectNeighbor>>
 <<else>>
+    <<update_card "Day 1">> // Setting up transition for next day
     <<change_scene Day_1>>
 <<endif>>
 ===

@@ -5,10 +5,13 @@ group: ending
 //10.1 
 
 <<Scene livingroom_days789>>
-
+<<wait  2>>
 After the most recent incident, Selina stopped stealing the neighbor’s items. Maybe she’s finally gotten used to the new apartment. 
 
-ONE MEOWNTH LATER…
+<<commute_to_home "One meownth later...">>
+<<wait 2.5>>
+<<home_from_tart>>
+<<wait  1.5>>
 
 Rowan and Selina finally feel a sense of belonging in this odd space full of souls just living their best lives. 
 The memories made here will be bittersweet for as long as they’re here, however long that may be… 
@@ -18,6 +21,8 @@ Hopefully before their savings run out…
 But no matter what, Rowan knows everything will be okay as long as she never gives up, and stays true to herself. 
 It’s easy on most days to relax and not want to do anything, but the time they have now is the best time to reorient, and explore all the possibilities she couldn’t pursue on her own...
 
+<<commute_to_home "Selina's birthday">>
+<<wait 2.5>>
 <<jump levelTenPartyDescription>>
 ===
 
@@ -30,6 +35,8 @@ group: ending
 // this is placement/position heavy if we wanna have all 3 on screen
 
 <<Scene livingroom_bday>>
+<<home_from_tart>>
+<<wait  1.5>>
 
 Rowan: I know it’s only been a month since Selina and I moved into Tiramisu Apartments, but I feel like we’ve really gotten to bond over the past month! 
 

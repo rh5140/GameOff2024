@@ -4,6 +4,7 @@ group: videoCamera
 --- 
 //8.0 
 <<Scene tartfinal>>
+<<wait  1.5>>
 As Rowan sits on the TART scrolling through PikPok for fashion tips, they hear two of their neighbors approaching.
 <<Character Marie-Elle true>>
 <<Character Fern true>>
@@ -48,6 +49,8 @@ Fern: If I were human, hearing that would make me feel happy.
 Rowan smiles at Fern.
 Fern: Too bad I’m not!
 <<Character Fern false>>
+<<commute_to_home "Later that day,\nat Apartment T8...">>
+<<wait 2.5>>
 <<jump levelEightFindItem>>
 ===
 
@@ -57,6 +60,8 @@ group: videoCamera
 --- 
 //8.1
 <<Scene livingroom_days789>>
+<<home_from_tart>>
+<<wait  1.5>>
 There weren’t a lot of great finds at the thrift store today. Unfortunately, Rowan comes back empty handed. 
 Rowan: So unlucky. That violet dress was so cute, if only it was my size! 
 <<show_living_room>>
@@ -230,6 +235,7 @@ Rowan: It was more than passable to me.
 As Rowan head home, she reflects on what she may have inspired into the world. 
 <<Character Fern false>>
 <<Scene fern_apt>>
+<<update_card "Day 9">>
 <<change_scene Day_9>>
 ===
 

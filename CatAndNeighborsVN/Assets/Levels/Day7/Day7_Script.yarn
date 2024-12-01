@@ -4,8 +4,7 @@ group: idCard
 --- 
 //7.1
 <<Scene livingroom_days789>> // living room
-
-Day 7
+<<wait  1.5>>
 <<jump levelSevenFindItem>>
 ===
 
@@ -141,6 +140,7 @@ Rowan: Going to pretend I didn’t hear that!
 Rowan: Goodnight Dorian, or good morning for you I guess?
 Dorian: (<i>smiles</i>) Good morning!
 <<Character Dorian false>>
+<<update_card "Day 8">>
 <<change_scene Day_8>>
 ===
 

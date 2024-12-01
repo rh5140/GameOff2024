@@ -3,6 +3,7 @@ color: black
 group: tarotCard
 --- 
 //4.0 
+<<wait  1.5>>
 Rowan is dozing off in her corner seat on the TART, when a familiar presence sends shivers down her spine.
 <<Character Dorian true>>
 Dorian: Hello Rowan. I wasn’t expecting to see you here today.
@@ -32,6 +33,8 @@ Fern: I will make sure to disregard any further speech from him.
 Dorian: (<i>sighs</i>) I can’t keep up with kids these days…
 <<Character Dorian false>>
 <<Character Fern false>>
+<<commute_to_home "Later that day,\nat Apartment T8...">>
+<<wait 2.5>>
 <<jump levelFourFindItem>>
 ===
 
@@ -43,6 +46,8 @@ group: tarotCard
 --- 
 //4.1
 <<Scene livingroom_days456>>
+<<home_from_tart>>
+<<wait  1.5>>
 
 Evening arrives once again, and Rowan makes their way home with groceries in hand.
 Rowan: Hope Selina likes these new cat treats…can’t really afford much else right now.
@@ -59,7 +64,7 @@ color: black
 group: tarotCard
 --- 
 //4.2 
-A metal box containing a set of 22 tarot cards lined with silver foil. The cards show a bit of weathering from frequent use, but are otherwise in pristine condition.
+A red and black coffin-shaped metal box. It feels heavy in your hands.
 ===
 
 title: inspectionIncomplete
@@ -67,9 +72,14 @@ title: inspectionIncomplete
 I need more clues to figure out who this belongs to...
 ===
 
+title: Inspection1
+---
+Inside are 22 silver-lined tarot cards, weathered from frequent use.
+===
+
 title: Inspection2
 ---
-Silver Writing: There’s a note written here. It says, “Saw you looking at these and couldn’t help myself. I hope you’re always in my stars. Love, Kabir.” 
+There’s a note inside. It reads, “Saw you looking at these and couldn’t help myself. I hope you’re always in my stars. Love, Kabir.” 
 <<jump levelFourInspectionComplete>>
 ===
 
@@ -148,6 +158,7 @@ Rowan: Thanks, Dorian. This was actually really helpful.
 Dorian: Of course. It seems the stars are in your favor, despite your current circumstances. 
 Rowan: Yeah, I hope they stay that way. 
 <<Character Dorian false>>
+<<update_card "Day 5">>
 <<change_scene Day_5>>
 ===
 
