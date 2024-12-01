@@ -9,7 +9,10 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     [SerializeField] private bool changesItemState;
     [SerializeField] private string node;
     [SerializeField] private Texture2D cursorTexture;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
     private DialogueRunner dialogueRunner;
+
 
     public void Start() {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
@@ -17,6 +20,8 @@ public class ItemClick : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        audioSource.clip = audioClip;
+        audioSource.Play();
         if (dialogueRunner.IsDialogueRunning) dialogueRunner.Stop();
         dialogueRunner.StartDialogue(node);
 
