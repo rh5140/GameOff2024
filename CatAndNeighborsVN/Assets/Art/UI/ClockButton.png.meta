@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c7f30e725391b214682fd2c1f4fd4d11
+guid: eb2e8707a794d1840b11d1f9591f1aab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8686533336622864842
-    second: TimeIconTiny_0
+      213: -7039705160434274995
+    second: ClockButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,7 +73,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TimeIconTiny_0
+      name: ClockButton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
+        width: 196
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 636610d14fb337780800000000000000
-      internalID: -8686533336622864842
+      spriteID: d4da4dc5471fd4e90800000000000000
+      internalID: -7039705160434274995
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TimeIconTiny_0: -8686533336622864842
+      ClockButton_0: -7039705160434274995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
