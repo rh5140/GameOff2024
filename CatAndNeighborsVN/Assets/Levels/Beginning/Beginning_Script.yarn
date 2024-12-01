@@ -118,7 +118,7 @@ group: opening
 <<Scene fern_apt>>
 <<play_audio knocking>>
 (<i>Knock knock<i>)
-(<i>Thunk thunk thunk thunk. Rowan hears loud footsteps approach the door.<i>)
+(<i>Thunk thunk thunk thunk</i>) Rowan hears loud footsteps approach the door.
 Rowan: This neighbor’s a bit loud. 
 The door opens and you see a robot appear.
 <<Scene fern_apt_open>>
