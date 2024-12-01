@@ -1,4 +1,4 @@
-﻿title: Start
+title: Start
 color: orange
 group: videoCamera
 --- 
@@ -45,7 +45,7 @@ Marie-Elle: That thing can’t replace humans, but I’ll admit it’s tall. I t
 Fern: Do you really think it is better if I became more human-esque, Rowan? That we should coexist as equals? 
 Rowan: Yes, I do. 
 Fern: If I were human, hearing that would make me feel happy. 
-You smile at Fern.
+Rowan smiles at Fern.
 Fern: Too bad I’m not!
 <<Character Fern false>>
 <<jump levelEightFindItem>>
