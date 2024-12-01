@@ -279,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1401597389614263466, guid: fb299e41c7e2d6e49a1bf75d220cf59e, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2809106057272426460, guid: fb299e41c7e2d6e49a1bf75d220cf59e, type: 3}
       propertyPath: m_ReferenceResolution.x
@@ -1759,6 +1759,10 @@ PrefabInstance:
     - target: {fileID: 8613563051541040440, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710871444057044563, guid: 1867871892c693148bf06afcbefd11a9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
