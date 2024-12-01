@@ -2,7 +2,7 @@ title: Start
 tags:
 ---
 <<Scene livingroom_days789>>
-<<wait  2>>
+<<wait  1.5>>
 <<jump levelNineFindItem>>
 ===
 
@@ -306,5 +306,6 @@ Rowan: Does that mean, “I love Rowan?”
 Selina: (<i>judgemental</i>) …
 
 <<Character cat false>>
+<<update_card "">>
 <<change_scene Ending>>
 ===

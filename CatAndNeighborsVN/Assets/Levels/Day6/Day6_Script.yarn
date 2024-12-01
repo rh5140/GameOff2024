@@ -2,7 +2,7 @@ title: Start
 tags:
 ---
 <<Scene tartfinal>>
-<<wait  2>>
+<<wait  1.5>>
 <<jump levelSixIntro>>
 ===
 
@@ -58,6 +58,8 @@ Dorian: (<i>smiles</i>) Of course.
 
 <<Character marieelle false>>
 <<Character dorian false>>
+<<commute_to_home "Later that day,\nat Apartment T8...">>
+<<wait 2.5>>
 <<jump levelSixFindItem>>
 ===
 
@@ -68,6 +70,8 @@ group: newsArticle
 //6.1
 
 <<Scene livingroom_days456>>
+<<home_from_tart>>
+<<wait  1.5>>
 
 After hanging out with a university friend, Rowan returns back home with a new understanding of the relationships between their neighbors. 
 
@@ -334,5 +338,6 @@ Rowan: (<i>I’m glad I got to talk to Marie-Elle and help out. I hope we can be
 Rowan: (<i>I know I said it’s been easier with people around, but have I actually been doing what I said to Marie-Elle?</i>)
 Rowan: (<i>Maybe I should try opening up more.</i>)
 
+<<update_card "Day 7">>
 <<change_scene Day_7>>
 ===

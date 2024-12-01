@@ -4,7 +4,7 @@ group: usb
 --- 
 //3.1
 <<Scene livingroom_days123>>
-<<wait  2>>
+<<wait  1.5>>
 Rowan wakes up to see that the sun has already set. Even though her job used to let her sleep in every now and then, not feeling the pressure of having deadlines is better than having that anxious crawl creeping on her back. 
 
 <<show_living_room>>
@@ -196,5 +196,6 @@ Fern: My internal external alarm is ringing. This was a mediocre conversation, b
     Fern: Silly human, you are not trash. Go home.
 As Rowan heads home, they reflect on the conversation they've had with their new neighbor. 
 <<Character Fern false>>
+<<update_card "Day 4">>
 <<change_scene Day_4>>
 ===
