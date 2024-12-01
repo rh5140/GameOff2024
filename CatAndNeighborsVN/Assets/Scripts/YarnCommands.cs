@@ -24,6 +24,7 @@ public class YarnCommands : MonoBehaviour
 	public Image bgImage, fadeBG, nameplateBG;
 	public GameObject catImage, fashionDesignerImage, vampireNurseImage, pitifulRobotImage; // local prefab, used for instantiating sprites
 	public AudioSource audioSource; 
+	public AudioSource bgmSource;
 
     void Awake() {
         dialogueRunner.AddCommandHandler<string>("change_scene", ChangeScene);
@@ -38,6 +39,7 @@ public class YarnCommands : MonoBehaviour
 		dialogueRunner.AddCommandHandler<string>("update_card", UpdateTransitionCard);
 		dialogueRunner.AddCommandHandler<string>("commute_to_home", CommuteToHome);
 		dialogueRunner.AddCommandHandler("home_from_tart", HomeFromTart);
+		dialogueRunner.AddCommandHandler("playBgm", PlayBgm);
 
 		itemInteractionCanva.SetActive(false);
         neighborSelectionCanva.SetActive(false);
@@ -71,6 +73,12 @@ public class YarnCommands : MonoBehaviour
             Debug.LogWarning("Audio clip not found: " + audioName);
         }
     }
+
+	public void PlayBgm() {
+		if (bgmSource != null) {
+			bgmSource.Play();
+		}
+	}
 
 	// To turn on character image: <<Character cat true>>
 	// To turn off character image: <<Character FashionDesigner false>>

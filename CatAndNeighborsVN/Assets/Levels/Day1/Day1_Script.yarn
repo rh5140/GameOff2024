@@ -2,6 +2,7 @@
 tags:
 ---
 <<Scene livingroom_days123>>
+<<playBgm>>
 <<wait  1.5>>
 <<jump levelOneFindItem>>
 ===
@@ -128,9 +129,9 @@ group: mucciBag
 ---
 //1.6
 <<Scene marie_elle_apt>>
+<<wait 0.5>>
 <<play_audio knocking>>
 Rowan: Hello? Is anyone in right now?
-<<wait 0.5>>
 
 <<Scene marie_apt_open>>
 Cautious Woman: I currently don’t accept visitors! Or ever really!
