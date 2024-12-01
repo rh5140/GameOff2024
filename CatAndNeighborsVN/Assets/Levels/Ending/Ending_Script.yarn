@@ -134,14 +134,14 @@ Dorian: God no, I couldn’t stand all that exposure.
 Dorian: And besides, if I got famous…
 Dorian: I wouldn’t be able to see you all as often anymore.
 Rowan: Aww Dorian, that’s so sweet!
-Dorian: And expose my vampiric secret.
+Dorian: And I'd expose my vampiric secret.
 Rowan: …Of course. Well, I’m really glad you could make it.
 <<Character Dorian false>>
 <<Character cat true>>
 Selina: Meooow meow meow!!
 <<Character cat false>>
 <<Character Dorian true>>
-Dorian: (<i> smiles </i>) As am I. 
+Dorian: (<i>smiles</i>) As am I. 
 <<Character Dorian false>>
 <<if getAmountSoloConvoDone() != 3>>
     <<jump levelTenSelectNeighbor>>
@@ -159,7 +159,7 @@ group: ending
 <<Character Fern true>>
 Rowan: Thanks for making time to come to the party, Fern. I’m surprised your programming allowed you to take so much free time for yourself. 
 Fern: I did a deep clean last week in preparation of this joyous event. I am performing what humans call “hacking the system."
-Rowan: …hacking the system only to be in the service of humans, right? 
+Rowan: …Hacking the system only to be in the service of humans, right? 
 Fern: Of course! I realize with our interactions lately you’ve been reflecting on what Marie-Elle mentioned a while back on TART. 
 Fern: And I understand Marie–Elle’s concerns as well, but I cannot help but already exist.
 Fern: I can only try to keep doing what I was programmed to do in a more efficient way. 
@@ -191,7 +191,7 @@ Rowan: I meant, do they know you’re making such a positive impact?
 Fern: I don’t think they would care. I’m still doing the job they asked of me but with extra steps.  
 <<Character Fern false>>
 <<Character cat true>>
-Selina: Meowwwww
+Selina: Meowwwww.
 <<Character cat false>>
 <<Character Fern true>>
 Fern: Meow meow, indeed. 
@@ -199,7 +199,7 @@ Rowan: Do you think you know more about what happiness is now Fern?
 Fern: I always knew what happiness is, Rowan. It means pleasure or contentment. 
 Rowan: You seem more excited to be doing things on your own though. 
 Fern: Rowan, you are often recommending ways in which I should be living my life or feeling about things. It is very meddlesome of you! 
-Rowan: (<i>shy<i>) Hehe…I guess I am. I find you quite fascinating. 
+Rowan: (<i>shy</i>) Hehe…I guess I am. I find you quite fascinating. 
 Fern: All these decisions and choices have always been mine to decide. 
 Fern: Though I will say…your influence has impacted the way I have chosen to approach things. 
 Fern: You have helped expedite something that may have taken a longer time for me to realize on my own…like a mentor perhaps?
@@ -234,7 +234,7 @@ Selina: (<i>pleased</i>) Meow~
 
 <<Character cat false>>
 <<Character Marie-Elle true>>
-Rowana: I’m happy you could make Selina’s birthday party! And Selina is as well.
+Rowan: I’m happy you could make Selina’s birthday party! And Selina is as well.
 Marie-Elle: Wouldn’t miss it for the world. She is the one who brought all of us together.
 Rowan: I’m just glad she’s finally stopped stealing from everybody.
 Rowan: As nice as it was to get to know everybody, it was embarrassing having to knock on your guys’ doors everyday to return something.
@@ -300,7 +300,7 @@ Marie-Elle: Me too, although I’m not very good at video games…
 <<Character Dorian true>>
 Dorian: I suppose it’ll be a good learning experience for the both of us.
 Rowan: Don’t worry! It’s pretty easy to get the hang of.
-Everyone gathers around your computer screen and watches Rowan play through a level, entranced.
+Everyone gathers around Rowan's computer screen and watches her play through a level, entranced.
 Marie-Elle: So you just put in those commands and the game does what you want?
 Dorian: Amazing! I’ve never seen anything like it.
 Fern: I am very impressed you were able to achieve this level of polish in such a short time.
@@ -313,7 +313,7 @@ Rowan: So it’s WASD to move, and spacebar to jump.
 Marie-Elle: Okay, and you just click to attack?
 Rowan: Yeah you’re doing it!
 Dorian: Wow Fern, you’re quite good at this.
-Fern: This is as easy as reciting pi.  
+Fern: This is as easy as reciting Pi.  
 Marie-Elle: You died again Dorian?
 Dorian: It appears my mind isn’t as sharp as my fangs when it comes to video games...
 Fern: If you like, I could show you some strategies to maximize performance.
