@@ -137,7 +137,7 @@ Rowan: Okay… it feels right now.
 Dorian: Alright, now pick three. Past, present, and future. If you have any specific questions, think of them while you choose.
 Rowan: That’s it? What if I pick wrong?
 Dorian: Like most things, with tarot, you get what you give. Approach it with sincerity and you can’t go wrong.
-Rowan: Okay… (<i>Why am I so nervous?</i>) 
+Rowan: Okay…(<i>Why am I so nervous?</i>) 
 Dorian: Alright, let’s interpret your cards.
 Dorian: First, The Tower. Upheaval and sudden change. A single bolt of lightning sends the tower crashing down.
 Rowan: Yeah…that checks out. I got laid off pretty recently.
@@ -190,7 +190,7 @@ group: tarotCard
 <<Scene marie_open_nopeek>>
 <<Character Marie-Elle true>>
 Rowan: Any chance these tarot cards are yours?
-Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not… I know a superstitious designer who likes the assurance of some guidance in their future though. 
+Marie-Elle: Haven’t seen tarot cards in awhile so unfortunately not…I know a superstitious designer who likes the assurance of some guidance in their future though. 
 Rowan: Oh, does that mean you had your future read before?
 Marie-Elle: Of course, but I honestly find them creepy, and it makes me feel like somebody is peering into my life.
 Marie-Elle: (<i>shivers</i>) I personally prefer to take things into my own hands without any external help. 
