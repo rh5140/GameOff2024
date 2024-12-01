@@ -332,4 +332,6 @@ Right at that moment, Selina prances over and drops something in Rowan's lap.
 Rowan: Oh no, please don’t tell me you stole something…
 Selina: Meow!
 <<Character Selina false>>
+<<update_card The end...?>>
+<<change_scene Credits>>
 ===

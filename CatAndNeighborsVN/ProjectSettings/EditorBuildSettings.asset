@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Testing/TestingMenu.unity
     guid: aa5c7f47be93543479f520b2f9ba77c6
   - enabled: 1
@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Ending/Ending.unity
     guid: 93d35ae5da94ed54aaaeb6f08a07b420
+  - enabled: 1
+    path: Assets/Levels/Credits.unity
+    guid: ae477214bf3e85a4eb1b29c0930fdf1e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
