@@ -72,7 +72,7 @@ Even though Rowan doesn't have a job, they still feel just as tired by the end o
 Rowan: (<i>God, I’m exhausted. Hope Selina’s doing okay on her own…</i>)
 Rowan: Selina? Where are you?
 <<show_living_room>>
-She darts towards you and plops something at your feet.
+Selina darts towards Rowan and plops something at their feet.
 
 Rowan: Wait, don’t tell me you stole something again?
 <<hide_living_room>>
@@ -117,7 +117,7 @@ Selina: (<i>innocently</i>) Meow?
 Rowan: Don’t try to play dumb now.
 Rowan: We should probably return this to the owner. The bag, not the blood I mean. 
 
-She looks up at you, annoyed you took her treat.
+She looks up at Rowan, annoyed she took her treat.
 
 Rowan: No, you cannot have it. We’re giving it back.
 <<Character Selina false>>
