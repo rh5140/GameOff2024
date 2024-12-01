@@ -163,9 +163,9 @@ Cautious Woman: A bag? Would it happen to be a Mucci <b><i>purse</i></b>?
 Rowan: Ah yes! It is a Mucci <i>purse</i>. A pink Mucci purse?
 Cautious Woman: I believe I may be the owner of the purse you claim to have found. Your visit is now very much welcomed.
 Cautious Woman: Tell me again how and where you came upon my missing Mucci purse?
-Rowan: I came back from work today and saw a Mucci bag on the coffee table in my living room.
-Rowan: My cat, Selina, was sitting next to it and staring at me so the only explanation how the purse got into my apartment is that Selina stole it.
-Cautious Woman: … Your cat stole the purse and you found it lying in your living room after work? Is this some new variation of “my dog ate my homework?”
+Rowan: I came back from work today and saw a Mucci purse on the coffee table in my living room.
+Rowan: My cat, Selina, was sitting next to it and staring at me, so the only explanation as to how the purse got into my apartment is that Selina stole it.
+Cautious Woman: …Your cat stole the purse and you found it lying in your living room after work? Is this some new variation of “my dog ate my homework?”
 ->Prank
     Rowan: You’ve been pranked!
     Cautious Woman: Don’t tell me you’re secretly filming me for a hidden prank PikPok or something.
@@ -174,7 +174,7 @@ Cautious Woman: … Your cat stole the purse and you found it lying in your livi
     Rowan: My cat has a hidden talent in thievery it seems.
     Cautious Woman: I’m not sure that’s something to be proud of as the owner of the cat.
     Cautious Woman: It does not bode well for you in the future if you get implicated in a crime.
-Cautious Woman: Do you seriously think I’ll believe that your cat somehow stole a designer purse without a scratch or without bite marks to indicate how it apparently carried the purse to your apartment?
+Cautious Woman: Do you seriously think I’ll believe that your cat somehow stole a designer purse without a scratch <i>or</i> without bite marks to indicate how it apparently carried the purse to your apartment?
 Rowan: When you say it that way, it does seem far-fetched...but I swear it’s the truth!
 Rowan: Look! I even brought my cat to apologize!
 
@@ -206,7 +206,7 @@ Selina: (<i>outraged</i>) <b>MEOW?!</b>
 
 <<Character cat false>>
 <<Character marieelle true>>
-(<i>Rowan runs over to their apartment to put down Selina into her apartment</i>)
+Rowan runs over to their apartment to drop Selina off.
 Rowan: I’m sorry about that! If I knew you were allergic, I wouldn’t have brought Selina with me to return the purse.
 Cautious Woman: I was starting to wonder why my nose was starting to get stuffy out of the blue. AH CHOO!
 Rowan: How bad is your cat allergy? If you need to get any medicine, I’ll compensate you!
@@ -230,37 +230,41 @@ Cautious Woman: For this purse in particular? I am expected to wear this purse i
 Cautious Woman: You’ll be surprised at the kind of things they ask me to do. 
 Cautious Woman: Of course, I only complete requests that are within my boundaries as I still have dignity.
 Cautious Woman: This is a small request in comparison no matter how I feel about the purse personally. 
-(<i>Both of them stare at the purse.</i>)
+Both of them stare at the purse.
 ->Interesting
     Rowan: Your client has a very uhhhh… interesting taste in fashion.
     Cautious Woman: You don’t have to mince it.
-    Cautious Woman: Even I am a bit skeptical and I believe all fashion should be appreciated in its own way.
+    Cautious Woman: Even I am a bit skeptical, and I believe all fashion should be appreciated in its own way.
 -><i>Haute couture</i>
     Rowan: I love the design of the purse! Very <i>haute couture</i>.
     Cautious Woman: (<i>doubtful</i>) Ah… You do?
     Cautious Woman: Well, taste is subjective and varies by person.
-Cautious Woman: Every style has its own admirers since if somebody can think of a creation surely there will be someone in this world who can admire the piece.
+Cautious Woman: Every style has its own admirers.
+Cautious Woman: if somebody can think of a creation, surely there will be someone in this world who can admire the piece.
 Rowan: Well, I’m glad that I was able to return the purse to you. 
 Cautious Woman: Yes, thank you again.
 Cautious Woman: Is there anything else you need now that you’re lingering at my doorstep?
-Rowan: Ah… I introduced myself earlier, but still don’t know your name yet, so I was hoping you’ll introduce yourself?
-Cautious Woman: Why do you sound so uncertain that you want to know who I am? Either you do or you don’t. Ask again, but this time be more confident.
-Rowan: May I please know your name? I would like to get to know my neighbors that I’ll be seeing in the future.
+Rowan: Ah...I introduced myself earlier, but still don’t know your name yet, so I was hoping you’ll introduce yourself?
+Cautious Woman: Why do you sound so uncertain? Either you want to know or you don’t. 
+Cautious Woman: Ask again, but this time be more confident.
+Rowan: May I please know your name? I would like to get to know my neighbors I'll be seeing in the future.
 Cautious Woman: I am Marie-Elle, tenant of Apartment T7, owner of the Mucci purse your cat, Selina, “stole.” 
 Rowan: You’re never going to let me live that down are you?
 Marie-Elle: It is a memorable first impression I must say.
-Rowan: And if it’s not too much to ask, what do you do for a living to have high profile clients? 
-Rowan: I’m...funemployed if that makes you more comfortable.
+Rowan: And if it’s not too much to ask, what do you do for a living to have such high profile clients? 
+Rowan: I’m...funemployed if that makes you more comfortable sharing.
 Marie-Elle:  Let’s just say for now that I am a… creative. 
-Marie-Elle: I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. I still have a lot of work to do to stay at my level of caliber.
-Rowan: I’m sorry again! Bye and thanks for answering the door the second time.
-Marie-Elle: No need to apologize more about the same thing multiple times. When I say it’s fine, I really mean it.
+Marie-Elle: I must say goodbye now. Even if I do appreciate that you returned the Mucci purse to me, time waits for no one. 
+Marie-Elle: I still have a lot of work to do to stay at my level of caliber.
+Rowan: I’m sorry again! Bye, and thanks for answering the door the second time.
+Marie-Elle: No need to apologize more about the same thing multiple times. 
+Marie-Elle: When I say it’s fine, I really mean it.
 Marie-Elle: I hope our next meeting is on better terms. Goodbye, Rowan.
 
 <<Character fashiondesigner false>>
 
 Rowan: (<i>What a strange neighbor.</i>)
-Rowan: (<i>Wait. If she has high profile clientele, how come she lives in this no-name apartment complex?</i>)
+Rowan: (<i>Wait. If she has such high profile clientele, how come she lives in this no-name apartment complex?</i>)
 Rowan: (<i>And didn't she just return from a trip to Europe?! That's pretty expensive.</i>)
 Rowan: (<i>Suspicious…</i>)
 
