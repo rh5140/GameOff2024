@@ -10,12 +10,12 @@ The world is so full of mystery!
 <<Character Selina true>>
 Selina: Meow meow! Meow Meow! 
 Rowan: Not now, Selina. I already fed you. The story’s getting to the good part. 
-Selina pawed at Rowan’s blankets to get the attention she craved.
+Selina paws at Rowan’s blankets to get the attention she craves.
 Rowan: Selina, stop I-
 <<Character Selina false>>
 <<show_living_room>>
 Rowan: OH MY GOSH. What is that?
-A large shadow loomed over Rowan. 
+A large shadow looms over Rowan. 
 <<hide_living_room>>
 <<jump levelFiveItemDescription>>
 ===
@@ -95,11 +95,11 @@ group: chocolateBox
 <<Character Marie-Elle true>>
 Marie-Elle: Wow, what great taste in chocolate! Are you gifting me these? 
 Marie-Elle: I’ve seen reviews online about how this particular brand is not only tasty, but also sourced ethically.
-Rowan: Sadly, Selina stole these so it’s not mine to give out. I never even heard of this brand of chocolate.
+Rowan: Sadly, Selina stole these so it’s not mine to give out. I've never even heard of this brand of chocolate.
 Marie-Elle: Well, it’s not a well known brand here in this country so somebody must’ve scoured extensively online to even find where to buy this.
 Rowan: Oh no. It must be pretty expensive then. 
 Marie-Elle: Not particularly. Though I must admit that since starting my profession, my understanding of expensive things has changed immensely.
-Marie-Elle: … How did a cat steal a whole box of chocolate though? Are you sure it’s your Selina stealing the items and not a hidden kleptomaniac tendency you have that you refuse to acknowledge?
+Marie-Elle: …How did a cat steal a whole box of chocolate though? Are you sure it’s your Selina stealing the items and not a hidden kleptomaniac tendency you have that you refuse to acknowledge?
 Rowan: I think my apartment would be a lot less empty if I did have a kleptomaniac tendency.
 Rowan: Now I’m craving some chocolate. Do you think the owner would be willing to share some with me? 
 Marie-Elle: (<i>Amused</i>) If you ask very nicely, then it’s a possibility.
