@@ -3,7 +3,7 @@ tags:
 ---
 <<Scene livingroom_days123>>
 <<playBgm>>
-<<wait  1.5>>
+<<wait 1.5>>
 <<jump levelOneFindItem>>
 ===
 
